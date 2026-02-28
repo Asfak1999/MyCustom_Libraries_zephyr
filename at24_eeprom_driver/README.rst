@@ -18,4 +18,3 @@ Write function
  ```c
  #include <Eeprom_at24c256.h>
  Eeprom_at24c256 eeprom(0x50);
-```
