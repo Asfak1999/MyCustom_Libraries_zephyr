@@ -15,5 +15,5 @@ To read second block, use address 16, and block 16-31 will be readed.
 
 Write function
 ********
-:c:func:`K_THREAD_DEFINE`.
+ :c:func:`K_THREAD_DEFINE`.
 
