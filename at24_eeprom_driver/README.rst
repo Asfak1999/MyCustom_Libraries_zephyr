@@ -13,6 +13,7 @@ Write function
  we will use address 0. The following 16 chars will be readed (0-15). 
  To read second block, use address 16, and block 16-31 will be readed.
 
- ```c
-#include <Eeprom_at24c256.h>
-```
+
+```c
+  #include <Eeprom_at24c256.h>
+ ```
