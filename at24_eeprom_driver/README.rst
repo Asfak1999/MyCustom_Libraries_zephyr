@@ -17,6 +17,22 @@ your board:
    :goals: build flash
    :compact:
 
+
+Write Function
+==============
+
+.. code-block:: c
+
+	printf("Hello from readme fiile");
+
+
+Read Function
+==============
+
+.. code-block:: c
+
+	printf("Hello from readme fiile");
+
 Sample Output
 =============
 
@@ -28,11 +44,4 @@ Sample Output
     Echo: Hi there!
 
 
-Write Function
-==============
 
-.. code-block:: c
-	printf("Hello from readme fiile")
-
-End of line
-===========
