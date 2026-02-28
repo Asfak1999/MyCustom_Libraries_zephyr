@@ -19,7 +19,7 @@ Write function
 .. code-block:: c
    :caption: main.c
    :name: main
-    print("Explicit is better than implicit.");
+    print("Explicit is better than implicit.")
 
 example
 ********
@@ -27,4 +27,4 @@ example
 .. code-block:: c
    :caption: main.c
    :name: main
-    print("Explicit is better than implicit.");
+    print("Explicit is better than implicit.")
