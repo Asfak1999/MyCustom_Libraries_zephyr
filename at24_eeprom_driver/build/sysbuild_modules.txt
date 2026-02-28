@@ -1,0 +1,1 @@
+"mcuboot":"D:/Zephyr_Projects/external/bootloader/mcuboot":"D:/Zephyr_Projects/external/bootloader/mcuboot/boot/zephyr/sysbuild"

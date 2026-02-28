@@ -1,0 +1,20 @@
+
+
+/ {
+	aliases {
+		eeprom-0 = &at24_eeprom;
+	};
+};
+
+
+
+&i2c1 {
+	status = "okay";
+
+	clock-frequency = < 0x186A0 >; 
+
+	at24_eeprom: at24_eeprom@50 {
+        compatible = "i2c-device";
+        reg = < 0x50 >;
+    };
+};

@@ -1,0 +1,61 @@
+cmake:
+  application:
+    configuration-dir: 'D:/Zephyr_Projects/apps/at24_eeprom_driver'
+    source-dir: 'D:/Zephyr_Projects/apps/at24_eeprom_driver'
+  board:
+    name: 'stm32f4_disco'
+    path:
+     - 'D:/Zephyr_Projects/external/zephyr/boards/st/stm32f4_disco'
+    qualifiers: 'stm32f407xx'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'D:/Zephyr_Projects/external/zephyr/dts/bindings'
+    files:
+     - 'D:/Zephyr_Projects/external/zephyr/boards/st/stm32f4_disco/stm32f4_disco.dts'
+     - 'D:/Zephyr_Projects/apps/at24_eeprom_driver/boards/stm32f4_disco.overlay'
+    include-dirs:
+     - 'D:/Zephyr_Projects/external/modules/hal/ambiq/dts'
+     - 'D:/Zephyr_Projects/external/modules/hal/atmel/include'
+     - 'D:/Zephyr_Projects/external/modules/hal/bouffalolab/include'
+     - 'D:/Zephyr_Projects/external/modules/hal/bouffalolab/include/zephyr'
+     - 'D:/Zephyr_Projects/external/modules/hal/gigadevice/include'
+     - 'D:/Zephyr_Projects/external/modules/hal/microchip/include'
+     - 'D:/Zephyr_Projects/external/modules/hal/microchip/dts'
+     - 'D:/Zephyr_Projects/external/modules/hal/nuvoton/dts'
+     - 'D:/Zephyr_Projects/external/modules/hal/nxp/dts'
+     - 'D:/Zephyr_Projects/external/modules/hal/stm32/dts'
+     - 'D:/Zephyr_Projects/external/modules/hal/ti/dts'
+     - 'D:/Zephyr_Projects/external/zephyr/include'
+     - 'D:/Zephyr_Projects/external/zephyr/include/zephyr'
+     - 'D:/Zephyr_Projects/external/zephyr/dts/common'
+     - 'D:/Zephyr_Projects/external/zephyr/dts/vendor'
+     - 'D:/Zephyr_Projects/external/zephyr/dts/rx'
+     - 'D:/Zephyr_Projects/external/zephyr/dts/x86'
+     - 'D:/Zephyr_Projects/external/zephyr/dts/xtensa'
+     - 'D:/Zephyr_Projects/external/zephyr/dts/sparc'
+     - 'D:/Zephyr_Projects/external/zephyr/dts/riscv'
+     - 'D:/Zephyr_Projects/external/zephyr/dts/posix'
+     - 'D:/Zephyr_Projects/external/zephyr/dts/arm64'
+     - 'D:/Zephyr_Projects/external/zephyr/dts/arm'
+     - 'D:/Zephyr_Projects/external/zephyr/dts/arc'
+     - 'D:/Zephyr_Projects/external/zephyr/dts'
+    user-files:
+     - 'D:/Zephyr_Projects/apps/at24_eeprom_driver/boards/stm32f4_disco.overlay'
+  kconfig:
+    files:
+     - 'D:/Zephyr_Projects/external/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig'
+     - 'D:/Zephyr_Projects/apps/at24_eeprom_driver/prj.conf'
+    user-files:
+     - 'D:/Zephyr_Projects/apps/at24_eeprom_driver/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: 'C:/Users/User/zephyr-sdk-0.17.4'
+  zephyr:
+    version: '4.3.0'
+    zephyr-base: 'D:/Zephyr_Projects/external/zephyr'
+version: '0.1.0'
+west:
+  command: 'D:\Zephyr_Projects\.venv\Scripts\west build -b stm32f4_disco'
+  topdir: 'D:\Zephyr_Projects'
+  version: '1.5.0'
