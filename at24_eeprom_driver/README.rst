@@ -13,8 +13,8 @@ As we decided to divide memory into blocks of 16, to read the first block,
 we will use address 0. The following 16 chars will be readed (0-15). 
 To read second block, use address 16, and block 16-31 will be readed.
 
-Write function
-==============
+## Write function
+
 ```c
 #include <Eeprom_at24c256.h>
 Eeprom_at24c256 eeprom(0x50);
