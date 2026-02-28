@@ -21,10 +21,5 @@ Write function
    :name: main
     print("Explicit is better than implicit.")
 
-example
-********
 
-.. code-block:: c
-   :caption: main.c
-   :name: main
-    print("Explicit is better than implicit.")
+
