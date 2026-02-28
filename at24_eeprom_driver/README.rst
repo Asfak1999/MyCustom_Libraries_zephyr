@@ -5,15 +5,25 @@ AT24C256 EEPROM
 Zephyr RTOS library for AT24C256 EEPROM
 
 
-Write function
-==============
-Both read and write functions has 3 parameters - address, buffer and buffer size. 
-Address could be number from range 0-32768 - it addresses every single char. 
-As we decided to divide memory into blocks of 16, to read the first block, 
-we will use address 0. The following 16 chars will be readed (0-15). 
-To read second block, use address 16, and block 16-31 will be readed.
+Building and Running
+********************
 
-Write function
-********
- :c:func:`K_THREAD_DEFINE`.
+Build and flash the sample as follows, changing ``nrf52840dk/nrf52840`` for
+your board:
+
+.. zephyr-app-commands::
+   :zephyr-app: samples/drivers/uart/echo_bot
+   :board: nrf52840dk/nrf52840
+   :goals: build flash
+   :compact:
+
+Sample Output
+=============
+
+.. code-block:: console
+
+    Hello! I\'m your echo bot.
+    Tell me something and press enter:
+    # Type e.g. "Hi there!" and hit enter!
+    Echo: Hi there!
 
