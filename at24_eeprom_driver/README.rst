@@ -27,3 +27,10 @@ Sample Output
     # Type e.g. "Hi there!" and hit enter!
     Echo: Hi there!
 
+
+Write Function
+==============
+
+.. code-block:: c
+	printf("Hello from readme fiile")
+
