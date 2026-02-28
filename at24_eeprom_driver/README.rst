@@ -1,10 +1,6 @@
-.. zephyr:code-sample:: can-babbling
-   :name: Controller Area Network (CAN) babbling node
-   :relevant-api: can_interface
 
-   Simulate a babbling CAN node.
 
-Overview
+AT24C256 EEPROM 
 ********
 /* SPDX-License-Identifier: Apache-2.0 */
 
