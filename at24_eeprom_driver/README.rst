@@ -34,5 +34,3 @@ Write Function
 .. code-block:: c
 	printf("Hello from readme fiile")
 
-End of line
-===========

@@ -376,3 +376,6 @@ D:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/cmake/reports/CMakeFiles
 D:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/cmake/reports/CMakeFiles/footprint.dir
 D:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/cmake/reports/CMakeFiles/edit_cache.dir
 D:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/cmake/reports/CMakeFiles/rebuild_cache.dir
+D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Library/CMakeFiles/..__..__apps__at24_eeprom_driver__Library.dir
+D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Library/CMakeFiles/edit_cache.dir
+D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Library/CMakeFiles/rebuild_cache.dir
