@@ -156,9 +156,19 @@ build CMakeFiles/app.dir/src/main.c.obj: C_COMPILER__app_unscanned_ D$:/Zephyr_P
   DEFINES = -DCORE_CM4 -DHSE_VALUE=8000000 -DKERNEL -DK_HEAP_MEM_POOL_SIZE=0 -DPICOLIBC_LONG_LONG_PRINTF_SCANF -DSTM32F407xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DZVFS_OPEN_SIZE=0 -D_POSIX_THREAD_SAFE_FUNCTIONS=200809L -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1
   DEP_FILE = CMakeFiles\app.dir\src\main.c.obj.d
   FLAGS = -fno-strict-aliasing -Os -imacros D:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/include/generated/zephyr/autoconf.h -fno-printf-return-value -fno-common -g -gdwarf-4 -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfp16-format=ieee -mtp=soft --sysroot=C:/Users/User/zephyr-sdk-0.17.4/arm-zephyr-eabi/arm-zephyr-eabi -imacros D:/Zephyr_Projects/external/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=D:/Zephyr_Projects/apps/at24_eeprom_driver=CMAKE_SOURCE_DIR -fmacro-prefix-map=D:/Zephyr_Projects/external/zephyr=ZEPHYR_BASE -fmacro-prefix-map=D:/Zephyr_Projects=WEST_TOPDIR -ffunction-sections -fdata-sections -specs=picolibc.specs -std=c99
-  INCLUDES = -ID:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/include/generated/zephyr -ID:/Zephyr_Projects/external/zephyr/include -ID:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/include/generated -ID:/Zephyr_Projects/external/zephyr/soc/st/stm32 -ID:/Zephyr_Projects/external/zephyr/lib/libc/picolibc/include -ID:/Zephyr_Projects/external/zephyr/lib/posix/c_lib_ext/getopt -ID:/Zephyr_Projects/external/zephyr/lib/midi2/. -ID:/Zephyr_Projects/external/zephyr/soc/st/stm32/common/. -ID:/Zephyr_Projects/external/zephyr/drivers -ID:/Zephyr_Projects/external/zephyr/soc/st/stm32/stm32f4x/. -ID:/Zephyr_Projects/external/modules/hal/cmsis_6/CMSIS/Core/Include -ID:/Zephyr_Projects/external/zephyr/modules/cmsis_6/. -ID:/Zephyr_Projects/external/modules/hal/microchip/include -ID:/Zephyr_Projects/external/modules/hal/stm32/stm32cube/stm32f4xx/soc -ID:/Zephyr_Projects/external/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include -ID:/Zephyr_Projects/external/modules/hal/stm32/stm32cube/common_ll/include -ID:/Zephyr_Projects/external/modules/hal/ti/mspm0/source/ti/devices/msp/. -ID:/Zephyr_Projects/external/modules/hal/ti/mspm0/source/ti/devices/msp/m0p -ID:/Zephyr_Projects/external/modules/hal/ti/mspm0/source/ti/devices/msp/peripherals -ID:/Zephyr_Projects/external/modules/hal/ti/mspm0/source/ti/devices/msp/peripherals/m0p -ID:/Zephyr_Projects/external/modules/hal/ti/mspm0/source/ti/devices/msp/peripherals/m0p/sysctl -isystem D:/Zephyr_Projects/external/zephyr/lib/libc/common/include
+  INCLUDES = -ID:/Zephyr_Projects/apps/at24_eeprom_driver/Library -ID:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/include/generated/zephyr -ID:/Zephyr_Projects/external/zephyr/include -ID:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/include/generated -ID:/Zephyr_Projects/external/zephyr/soc/st/stm32 -ID:/Zephyr_Projects/external/zephyr/lib/libc/picolibc/include -ID:/Zephyr_Projects/external/zephyr/lib/posix/c_lib_ext/getopt -ID:/Zephyr_Projects/external/zephyr/lib/midi2/. -ID:/Zephyr_Projects/external/zephyr/soc/st/stm32/common/. -ID:/Zephyr_Projects/external/zephyr/drivers -ID:/Zephyr_Projects/external/zephyr/soc/st/stm32/stm32f4x/. -ID:/Zephyr_Projects/external/modules/hal/cmsis_6/CMSIS/Core/Include -ID:/Zephyr_Projects/external/zephyr/modules/cmsis_6/. -ID:/Zephyr_Projects/external/modules/hal/microchip/include -ID:/Zephyr_Projects/external/modules/hal/stm32/stm32cube/stm32f4xx/soc -ID:/Zephyr_Projects/external/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include -ID:/Zephyr_Projects/external/modules/hal/stm32/stm32cube/common_ll/include -ID:/Zephyr_Projects/external/modules/hal/ti/mspm0/source/ti/devices/msp/. -ID:/Zephyr_Projects/external/modules/hal/ti/mspm0/source/ti/devices/msp/m0p -ID:/Zephyr_Projects/external/modules/hal/ti/mspm0/source/ti/devices/msp/peripherals -ID:/Zephyr_Projects/external/modules/hal/ti/mspm0/source/ti/devices/msp/peripherals/m0p -ID:/Zephyr_Projects/external/modules/hal/ti/mspm0/source/ti/devices/msp/peripherals/m0p/sysctl -isystem D:/Zephyr_Projects/external/zephyr/lib/libc/common/include
   OBJECT_DIR = CMakeFiles\app.dir
   OBJECT_FILE_DIR = CMakeFiles\app.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\app.dir\app.pdb
+  TARGET_PDB = app\libapp.pdb
+
+build CMakeFiles/app.dir/Library/at24_eeprom.c.obj: C_COMPILER__app_unscanned_ D$:/Zephyr_Projects/apps/at24_eeprom_driver/Library/at24_eeprom.c || cmake_object_order_depends_target_app
+  DEFINES = -DCORE_CM4 -DHSE_VALUE=8000000 -DKERNEL -DK_HEAP_MEM_POOL_SIZE=0 -DPICOLIBC_LONG_LONG_PRINTF_SCANF -DSTM32F407xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DZVFS_OPEN_SIZE=0 -D_POSIX_THREAD_SAFE_FUNCTIONS=200809L -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1
+  DEP_FILE = CMakeFiles\app.dir\Library\at24_eeprom.c.obj.d
+  FLAGS = -fno-strict-aliasing -Os -imacros D:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/include/generated/zephyr/autoconf.h -fno-printf-return-value -fno-common -g -gdwarf-4 -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfp16-format=ieee -mtp=soft --sysroot=C:/Users/User/zephyr-sdk-0.17.4/arm-zephyr-eabi/arm-zephyr-eabi -imacros D:/Zephyr_Projects/external/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=D:/Zephyr_Projects/apps/at24_eeprom_driver=CMAKE_SOURCE_DIR -fmacro-prefix-map=D:/Zephyr_Projects/external/zephyr=ZEPHYR_BASE -fmacro-prefix-map=D:/Zephyr_Projects=WEST_TOPDIR -ffunction-sections -fdata-sections -specs=picolibc.specs -std=c99
+  INCLUDES = -ID:/Zephyr_Projects/apps/at24_eeprom_driver/Library -ID:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/include/generated/zephyr -ID:/Zephyr_Projects/external/zephyr/include -ID:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/include/generated -ID:/Zephyr_Projects/external/zephyr/soc/st/stm32 -ID:/Zephyr_Projects/external/zephyr/lib/libc/picolibc/include -ID:/Zephyr_Projects/external/zephyr/lib/posix/c_lib_ext/getopt -ID:/Zephyr_Projects/external/zephyr/lib/midi2/. -ID:/Zephyr_Projects/external/zephyr/soc/st/stm32/common/. -ID:/Zephyr_Projects/external/zephyr/drivers -ID:/Zephyr_Projects/external/zephyr/soc/st/stm32/stm32f4x/. -ID:/Zephyr_Projects/external/modules/hal/cmsis_6/CMSIS/Core/Include -ID:/Zephyr_Projects/external/zephyr/modules/cmsis_6/. -ID:/Zephyr_Projects/external/modules/hal/microchip/include -ID:/Zephyr_Projects/external/modules/hal/stm32/stm32cube/stm32f4xx/soc -ID:/Zephyr_Projects/external/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include -ID:/Zephyr_Projects/external/modules/hal/stm32/stm32cube/common_ll/include -ID:/Zephyr_Projects/external/modules/hal/ti/mspm0/source/ti/devices/msp/. -ID:/Zephyr_Projects/external/modules/hal/ti/mspm0/source/ti/devices/msp/m0p -ID:/Zephyr_Projects/external/modules/hal/ti/mspm0/source/ti/devices/msp/peripherals -ID:/Zephyr_Projects/external/modules/hal/ti/mspm0/source/ti/devices/msp/peripherals/m0p -ID:/Zephyr_Projects/external/modules/hal/ti/mspm0/source/ti/devices/msp/peripherals/m0p/sysctl -isystem D:/Zephyr_Projects/external/zephyr/lib/libc/common/include
+  OBJECT_DIR = CMakeFiles\app.dir
+  OBJECT_FILE_DIR = CMakeFiles\app.dir\Library
   TARGET_COMPILE_PDB = CMakeFiles\app.dir\app.pdb
   TARGET_PDB = app\libapp.pdb
 
@@ -170,7 +180,7 @@ build CMakeFiles/app.dir/src/main.c.obj: C_COMPILER__app_unscanned_ D$:/Zephyr_P
 #############################################
 # Link the static library app\libapp.a
 
-build app/libapp.a: C_STATIC_LIBRARY_LINKER__app_ CMakeFiles/app.dir/src/main.c.obj || zephyr/device_api_ld_target zephyr/driver_validation_h_target zephyr/kobj_types_h_target zephyr/offsets_h zephyr/syscall_list_h_target zephyr/version_h
+build app/libapp.a: C_STATIC_LIBRARY_LINKER__app_ CMakeFiles/app.dir/src/main.c.obj CMakeFiles/app.dir/Library/at24_eeprom.c.obj || zephyr/device_api_ld_target zephyr/driver_validation_h_target zephyr/kobj_types_h_target zephyr/offsets_h zephyr/syscall_list_h_target zephyr/version_h
   OBJECT_DIR = CMakeFiles\app.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -6957,41 +6967,6 @@ build zephyr/cmake/reports/CMakeFiles/footprint | ${cmake_ninja_workdir}zephyr/c
 # D:/Zephyr_Projects/apps/at24_eeprom_driver/CMakeLists.txt
 # =============================================================================
 
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target ..__..__apps__at24_eeprom_driver__Library
-
-
-#############################################
-# Order-only phony target for ..__..__apps__at24_eeprom_driver__Library
-
-build cmake_object_order_depends_target_..__..__apps__at24_eeprom_driver__Library: phony || zephyr/device_api_ld_target zephyr/driver_validation_h_target zephyr/kobj_types_h_target zephyr/syscall_list_h_target
-
-build Library/CMakeFiles/..__..__apps__at24_eeprom_driver__Library.dir/at24_eeprom.c.obj: C_COMPILER__.2e.2e__.2e.2e__apps__at24_eeprom_driver__Library_unscanned_ D$:/Zephyr_Projects/apps/at24_eeprom_driver/Library/at24_eeprom.c || cmake_object_order_depends_target_..__..__apps__at24_eeprom_driver__Library
-  DEFINES = -DCORE_CM4 -DHSE_VALUE=8000000 -DKERNEL -DK_HEAP_MEM_POOL_SIZE=0 -DPICOLIBC_LONG_LONG_PRINTF_SCANF -DSTM32F407xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DZVFS_OPEN_SIZE=0 -D_POSIX_THREAD_SAFE_FUNCTIONS=200809L -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1
-  DEP_FILE = Library\CMakeFiles\..__..__apps__at24_eeprom_driver__Library.dir\at24_eeprom.c.obj.d
-  FLAGS = -fno-strict-aliasing -Os -imacros D:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/include/generated/zephyr/autoconf.h -fno-printf-return-value -fno-common -g -gdwarf-4 -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfp16-format=ieee -mtp=soft --sysroot=C:/Users/User/zephyr-sdk-0.17.4/arm-zephyr-eabi/arm-zephyr-eabi -imacros D:/Zephyr_Projects/external/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=D:/Zephyr_Projects/apps/at24_eeprom_driver=CMAKE_SOURCE_DIR -fmacro-prefix-map=D:/Zephyr_Projects/external/zephyr=ZEPHYR_BASE -fmacro-prefix-map=D:/Zephyr_Projects=WEST_TOPDIR -ffunction-sections -fdata-sections -specs=picolibc.specs -std=c99
-  INCLUDES = -ID:/Zephyr_Projects/apps/at24_eeprom_driver/Library -ID:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/include/generated/zephyr -ID:/Zephyr_Projects/external/zephyr/include -ID:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/include/generated -ID:/Zephyr_Projects/external/zephyr/soc/st/stm32 -ID:/Zephyr_Projects/external/zephyr/lib/libc/picolibc/include -ID:/Zephyr_Projects/external/zephyr/lib/posix/c_lib_ext/getopt -ID:/Zephyr_Projects/external/zephyr/lib/midi2/. -ID:/Zephyr_Projects/external/zephyr/soc/st/stm32/common/. -ID:/Zephyr_Projects/external/zephyr/drivers -ID:/Zephyr_Projects/external/zephyr/soc/st/stm32/stm32f4x/. -ID:/Zephyr_Projects/external/modules/hal/cmsis_6/CMSIS/Core/Include -ID:/Zephyr_Projects/external/zephyr/modules/cmsis_6/. -ID:/Zephyr_Projects/external/modules/hal/microchip/include -ID:/Zephyr_Projects/external/modules/hal/stm32/stm32cube/stm32f4xx/soc -ID:/Zephyr_Projects/external/modules/hal/stm32/stm32cube/stm32f4xx/drivers/include -ID:/Zephyr_Projects/external/modules/hal/stm32/stm32cube/common_ll/include -ID:/Zephyr_Projects/external/modules/hal/ti/mspm0/source/ti/devices/msp/. -ID:/Zephyr_Projects/external/modules/hal/ti/mspm0/source/ti/devices/msp/m0p -ID:/Zephyr_Projects/external/modules/hal/ti/mspm0/source/ti/devices/msp/peripherals -ID:/Zephyr_Projects/external/modules/hal/ti/mspm0/source/ti/devices/msp/peripherals/m0p -ID:/Zephyr_Projects/external/modules/hal/ti/mspm0/source/ti/devices/msp/peripherals/m0p/sysctl -isystem D:/Zephyr_Projects/external/zephyr/lib/libc/common/include
-  OBJECT_DIR = Library\CMakeFiles\..__..__apps__at24_eeprom_driver__Library.dir
-  OBJECT_FILE_DIR = Library\CMakeFiles\..__..__apps__at24_eeprom_driver__Library.dir
-  TARGET_COMPILE_PDB = Library\CMakeFiles\..__..__apps__at24_eeprom_driver__Library.dir\..__..__apps__at24_eeprom_driver__Library.pdb
-  TARGET_PDB = Library\lib..__..__apps__at24_eeprom_driver__Library.pdb
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target ..__..__apps__at24_eeprom_driver__Library
-
-
-#############################################
-# Link the static library Library\lib..__..__apps__at24_eeprom_driver__Library.a
-
-build Library/lib..__..__apps__at24_eeprom_driver__Library.a: C_STATIC_LIBRARY_LINKER__.2e.2e__.2e.2e__apps__at24_eeprom_driver__Library_ Library/CMakeFiles/..__..__apps__at24_eeprom_driver__Library.dir/at24_eeprom.c.obj || zephyr/device_api_ld_target zephyr/driver_validation_h_target zephyr/kobj_types_h_target zephyr/syscall_list_h_target
-  OBJECT_DIR = Library\CMakeFiles\..__..__apps__at24_eeprom_driver__Library.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = Library\CMakeFiles\..__..__apps__at24_eeprom_driver__Library.dir\..__..__apps__at24_eeprom_driver__Library.pdb
-  TARGET_FILE = Library\lib..__..__apps__at24_eeprom_driver__Library.a
-  TARGET_PDB = Library\lib..__..__apps__at24_eeprom_driver__Library.pdb
-
 
 #############################################
 # Utility command for edit_cache
@@ -7018,8 +6993,6 @@ build Library/rebuild_cache: phony Library/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Target aliases.
-
-build ..__..__apps__at24_eeprom_driver__Library: phony Library/lib..__..__apps__at24_eeprom_driver__Library.a
 
 build ..__modules__hal__stm32__stm32cube: phony modules/hal_stm32/stm32cube/lib..__modules__hal__stm32__stm32cube.a
 
@@ -7074,8 +7047,6 @@ build isr_tables: phony zephyr/arch/common/libisr_tables.a
 build kernel: phony zephyr/kernel/libkernel.a
 
 build kobj_types_h_target: phony zephyr/kobj_types_h_target
-
-build lib..__..__apps__at24_eeprom_driver__Library.a: phony Library/lib..__..__apps__at24_eeprom_driver__Library.a
 
 build lib..__modules__hal__stm32__stm32cube.a: phony modules/hal_stm32/stm32cube/lib..__modules__hal__stm32__stm32cube.a
 
@@ -7176,7 +7147,7 @@ build all: phony app/libapp.a zephyr/all Library/all
 #############################################
 # Folder: D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Library
 
-build Library/all: phony Library/lib..__..__apps__at24_eeprom_driver__Library.a
+build Library/all: phony
 
 # =============================================================================
 
