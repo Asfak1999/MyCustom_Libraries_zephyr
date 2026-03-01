@@ -45,7 +45,8 @@ typedef enum
 void eepromInit(at24_eeprom_t *config, const struct i2c_dt_spec *dev);
 void eepromRead8(at24_eeprom_t *config, uint8_t *data, uint16_t memAddr);
 void eepromWrite8(at24_eeprom_t *config, uint8_t *data, uint16_t memAddr);
-
-
+void eepromWrite16(at24_eeprom_t *config, uint16_t *data, uint16_t memAddr);
+void eepromRead16(at24_eeprom_t *config, uint16_t *data, uint16_t memAddr);
+void eepromFullErase(at24_eeprom_t *config);
 #endif
 
