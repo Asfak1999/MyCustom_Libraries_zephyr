@@ -49,6 +49,6 @@ Sample Output
 	printf("Hello from readme fiile")
 
 
-.. image:: at24_eeprom_driver\Library\EEPROM.png
+.. image:: Library\EEPROM.png
    :alt: Project diagram
    :width: 547px
