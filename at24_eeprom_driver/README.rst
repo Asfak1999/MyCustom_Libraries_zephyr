@@ -46,9 +46,8 @@ Sample Output
 
 
 .. code-block:: c
+
 	printf("Hello from readme fiile")
 
 
 .. image:: Library\EEPROM.png
-   :alt: Project diagram
-   :width: 547px
