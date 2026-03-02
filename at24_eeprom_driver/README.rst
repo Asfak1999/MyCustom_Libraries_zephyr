@@ -50,4 +50,4 @@ Sample Output
 	printf("Hello from readme fiile")
 
 
-.. image:: Library\EEPROM.png
+.. image:: Library/EEPROM.png
