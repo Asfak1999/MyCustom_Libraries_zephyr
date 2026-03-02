@@ -23,7 +23,7 @@ Prerequisites
 Table of Contents
 =================
 
-- `Building and Running`_
+- `Prerequisites`_
 - `Write Function`_
 - `Read Function`_
 - `Sample Output`_
