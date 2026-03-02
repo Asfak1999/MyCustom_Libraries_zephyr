@@ -5,17 +5,29 @@ AT24C256 EEPROM
 Zephyr RTOS library for AT24C256 EEPROM
 
 
-Building and Running
+overview of EEPROM
 ********************
 
-Build and flash the sample as follows, changing ``nrf52840dk/nrf52840`` for
-your board:
+if you want store your data in your zephyr project ``AT24C256 EEPROM`` is best choice. in this project,
+I was added the tutorial and zephyr driver. we will interface AT24C256 with Zephyr using I2C communication.
+you will learn how write, read and erase the data in the EEPROM. specially how to write 1-Byte, 2-Byte and 
+multiple byte in the order.
 
-.. zephyr-app-commands::
-   :zephyr-app: samples/drivers/uart/echo_bot
-   :board: nrf52840dk/nrf52840
-   :goals: build flash
-   :compact:
+in additon. we will see the specification of AT24C256 EEPROM.
+
+
+Prerequisites
+=============
+
+
+Table of Contents
+=================
+
+- `Building and Running`_
+- `Write Function`_
+- `Read Function`_
+- `Sample Output`_
+
 
 
 Write Function
