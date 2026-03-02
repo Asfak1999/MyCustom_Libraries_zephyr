@@ -19,6 +19,10 @@ in additon. we will see the specification of AT24C256 EEPROM.
 Prerequisites
 =============
 
+- Konwledge in Zephyr RTOS
+- C or C++
+- I2C interface
+
 
 Table of Contents
 =================
