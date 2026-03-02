@@ -45,9 +45,10 @@ Sample Output
 
 
 
-<<<<<<< HEAD
 .. code-block:: c
 	printf("Hello from readme fiile")
 
-=======
->>>>>>> a757fa54852de67805fe82a689f2eb18cf18d604
+
+.. image:: at24_eeprom_driver\Library\EEPROM.png
+   :alt: Project diagram
+   :width: 547px

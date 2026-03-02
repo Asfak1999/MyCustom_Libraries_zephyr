@@ -135,17 +135,15 @@ void eepromRead16(at24_eeprom_t *config, uint16_t *data, uint16_t memAddr){
 
 void eepromFullErase(at24_eeprom_t *config)
 {
-	uint16_t pageAddr = 0;
 	uint8_t pdata[64];
+	uint8_t addr[2];
 
 	memset(&pdata, 0xFF, sizeof(pdata));
 
-	for(int pageIndex = 0; pageIndex < 512; pageIndex++)
-	{
-		pageAddr = (uint16_t)(pageIndex << 6);
-
-		eepromWrite8(config, pdata, pageAddr);
-
-		k_msleep(50);
+	int ret = i2c_burst_write_dt(config->i2c, 0x00, pdata, sizeof(pdata));
+	if(ret != 0){
+		printk("Failed to write/read I2C device address \n\r");
 	}
+	k_msleep(100);
+
 }

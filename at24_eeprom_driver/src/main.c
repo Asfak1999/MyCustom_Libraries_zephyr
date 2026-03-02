@@ -14,8 +14,8 @@ static const struct i2c_dt_spec i2c_dev = I2C_DT_SPEC_GET(EEPROM_NODE);
 
 at24_eeprom_t eeprom;
 
-uint16_t writeData;
-uint16_t readData;
+uint8_t writeData;
+uint8_t readData;
 
 int main(void)
 {
@@ -23,12 +23,31 @@ int main(void)
 
 	eepromInit(&eeprom , &i2c_dev);
 
-	writeData = 1200;
+	writeData = 12;
+	eepromWrite8(&eeprom, &writeData, 0x0001);
+	eepromRead8(&eeprom, &readData, 0x0001);
 	
-	eepromWrite16(&eeprom, &writeData, 0x0002);
-	eepromRead16(&eeprom, &readData, 0x0002);
+	writeData = 15;
+	eepromWrite8(&eeprom, &writeData, 0x0002);
+	eepromRead8(&eeprom, &readData, 0x0002);
+
+	writeData = 15;
+	eepromWrite8(&eeprom, &writeData, 0x0003);
+	eepromRead8(&eeprom, &readData, 0x0003);
+
+	writeData = 20;
+	eepromWrite8(&eeprom, &writeData, 0x0004);
+	eepromRead8(&eeprom, &readData, 0x0004);
+
 	eepromFullErase(&eeprom);
-	eepromRead16(&eeprom, &readData, 0x0002);
+	eepromRead8(&eeprom, &readData, 0x0004);
+	eepromRead8(&eeprom, &readData, 0x0003);
+	eepromRead8(&eeprom, &readData, 0x0002);
+	eepromRead8(&eeprom, &readData, 0x0001);
+
+
+
+
 
 
 	while(1){
