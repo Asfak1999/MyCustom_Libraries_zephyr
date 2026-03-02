@@ -51,3 +51,4 @@ Sample Output
 
 
 .. image:: Library/EEPROM.png
+    :align: center
