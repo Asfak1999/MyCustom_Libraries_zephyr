@@ -291,6 +291,18 @@ uintptr_t z_mrsh_k_thread_stack_space_get(uintptr_t arg1, uintptr_t arg2, uintpt
          uintptr_t arg4, uintptr_t arg5, uintptr_t arg6, void *ssf);
 
 __weak ALIAS_OF(handler_no_syscall)
+uintptr_t z_mrsh_k_thread_runtime_stack_unused_threshold_pct_set(uintptr_t arg1, uintptr_t arg2, uintptr_t arg3,
+         uintptr_t arg4, uintptr_t arg5, uintptr_t arg6, void *ssf);
+
+__weak ALIAS_OF(handler_no_syscall)
+uintptr_t z_mrsh_k_thread_runtime_stack_unused_threshold_set(uintptr_t arg1, uintptr_t arg2, uintptr_t arg3,
+         uintptr_t arg4, uintptr_t arg5, uintptr_t arg6, void *ssf);
+
+__weak ALIAS_OF(handler_no_syscall)
+uintptr_t z_mrsh_k_thread_runtime_stack_unused_threshold_get(uintptr_t arg1, uintptr_t arg2, uintptr_t arg3,
+         uintptr_t arg4, uintptr_t arg5, uintptr_t arg6, void *ssf);
+
+__weak ALIAS_OF(handler_no_syscall)
 uintptr_t z_mrsh_k_thread_join(uintptr_t arg1, uintptr_t arg2, uintptr_t arg3,
          uintptr_t arg4, uintptr_t arg5, uintptr_t arg6, void *ssf);
 
@@ -725,6 +737,9 @@ const _k_syscall_handler_t _k_syscall_table[K_SYSCALL_LIMIT] = {
 	[K_SYSCALL_K_THREAD_STACK_FREE] = z_mrsh_k_thread_stack_free,
 	[K_SYSCALL_K_THREAD_CREATE] = z_mrsh_k_thread_create,
 	[K_SYSCALL_K_THREAD_STACK_SPACE_GET] = z_mrsh_k_thread_stack_space_get,
+	[K_SYSCALL_K_THREAD_RUNTIME_STACK_UNUSED_THRESHOLD_PCT_SET] = z_mrsh_k_thread_runtime_stack_unused_threshold_pct_set,
+	[K_SYSCALL_K_THREAD_RUNTIME_STACK_UNUSED_THRESHOLD_SET] = z_mrsh_k_thread_runtime_stack_unused_threshold_set,
+	[K_SYSCALL_K_THREAD_RUNTIME_STACK_UNUSED_THRESHOLD_GET] = z_mrsh_k_thread_runtime_stack_unused_threshold_get,
 	[K_SYSCALL_K_THREAD_JOIN] = z_mrsh_k_thread_join,
 	[K_SYSCALL_K_SLEEP] = z_mrsh_k_sleep,
 	[K_SYSCALL_K_USLEEP] = z_mrsh_k_usleep,

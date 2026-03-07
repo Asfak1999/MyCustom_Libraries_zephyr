@@ -103,6 +103,56 @@ static inline int k_thread_stack_space_get(const struct k_thread * thread, size_
 }
 
 
+extern int z_impl_k_thread_runtime_stack_unused_threshold_pct_set(struct k_thread * thread, uint32_t pct);
+
+__pinned_func
+static inline int k_thread_runtime_stack_unused_threshold_pct_set(struct k_thread * thread, uint32_t pct)
+{
+#ifdef CONFIG_USERSPACE
+	if (z_syscall_trap()) {
+		union { uintptr_t x; struct k_thread * val; } parm0 = { .val = thread };
+		union { uintptr_t x; uint32_t val; } parm1 = { .val = pct };
+		return (int) arch_syscall_invoke2(parm0.x, parm1.x, K_SYSCALL_K_THREAD_RUNTIME_STACK_UNUSED_THRESHOLD_PCT_SET);
+	}
+#endif
+	compiler_barrier();
+	return z_impl_k_thread_runtime_stack_unused_threshold_pct_set(thread, pct);
+}
+
+
+extern int z_impl_k_thread_runtime_stack_unused_threshold_set(struct k_thread * thread, size_t threshold);
+
+__pinned_func
+static inline int k_thread_runtime_stack_unused_threshold_set(struct k_thread * thread, size_t threshold)
+{
+#ifdef CONFIG_USERSPACE
+	if (z_syscall_trap()) {
+		union { uintptr_t x; struct k_thread * val; } parm0 = { .val = thread };
+		union { uintptr_t x; size_t val; } parm1 = { .val = threshold };
+		return (int) arch_syscall_invoke2(parm0.x, parm1.x, K_SYSCALL_K_THREAD_RUNTIME_STACK_UNUSED_THRESHOLD_SET);
+	}
+#endif
+	compiler_barrier();
+	return z_impl_k_thread_runtime_stack_unused_threshold_set(thread, threshold);
+}
+
+
+extern size_t z_impl_k_thread_runtime_stack_unused_threshold_get(struct k_thread * thread);
+
+__pinned_func
+static inline size_t k_thread_runtime_stack_unused_threshold_get(struct k_thread * thread)
+{
+#ifdef CONFIG_USERSPACE
+	if (z_syscall_trap()) {
+		union { uintptr_t x; struct k_thread * val; } parm0 = { .val = thread };
+		return (size_t) arch_syscall_invoke1(parm0.x, K_SYSCALL_K_THREAD_RUNTIME_STACK_UNUSED_THRESHOLD_GET);
+	}
+#endif
+	compiler_barrier();
+	return z_impl_k_thread_runtime_stack_unused_threshold_get(thread);
+}
+
+
 extern int z_impl_k_thread_join(struct k_thread * thread, k_timeout_t timeout);
 
 __pinned_func

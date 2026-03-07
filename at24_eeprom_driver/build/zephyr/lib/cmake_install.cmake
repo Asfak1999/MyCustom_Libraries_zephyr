@@ -1,4 +1,4 @@
-# Install script for directory: D:/Zephyr_Projects/external/zephyr/lib
+# Install script for directory: G:/Zephyr_Projects/zephyr/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,52 +39,52 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/lib/libc/cmake_install.cmake")
+  include("G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/zephyr/lib/libc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/lib/posix/cmake_install.cmake")
+  include("G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/zephyr/lib/posix/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/lib/hash/cmake_install.cmake")
+  include("G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/zephyr/lib/hash/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/lib/heap/cmake_install.cmake")
+  include("G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/zephyr/lib/heap/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/lib/mem_blocks/cmake_install.cmake")
+  include("G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/zephyr/lib/mem_blocks/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/lib/midi2/cmake_install.cmake")
+  include("G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/zephyr/lib/midi2/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/lib/os/cmake_install.cmake")
+  include("G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/zephyr/lib/os/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/lib/utils/cmake_install.cmake")
+  include("G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/zephyr/lib/utils/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/lib/uuid/cmake_install.cmake")
+  include("G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/zephyr/lib/uuid/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/zephyr/lib/install_local_manifest.txt"
+  file(WRITE "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/zephyr/lib/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

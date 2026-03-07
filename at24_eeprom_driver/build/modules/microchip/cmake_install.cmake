@@ -1,4 +1,4 @@
-# Install script for directory: D:/Zephyr_Projects/external/modules/hal/microchip
+# Install script for directory: G:/Zephyr_Projects/modules/hal/microchip
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,14 +37,9 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "C:/Users/User/zephyr-sdk-0.17.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-objdump.exe")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("D:/Zephyr_Projects/apps/at24_eeprom_driver/build/modules/microchip/packs/cmake_install.cmake")
-endif()
-
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/modules/microchip/install_local_manifest.txt"
+  file(WRITE "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/modules/microchip/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -6,7 +6,7 @@
     "0x010",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/Kconfig",
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/Kconfig",
       8
     ]
   ],
@@ -41,8 +41,492 @@
     "3",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/Kconfig",
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/Kconfig",
       32
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ARM_ARMV7M_SYSTICK_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      1038
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ARM_CORTEX_M4F_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      1193
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ARM_V7M_NVIC_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      1443
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_CIRRUS_CS43L22_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      2273
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_FIXED_CLOCK_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      2803
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_FIXED_LAYOUT_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      2813
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_GPIO_KEYS_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      3093
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_GPIO_LEDS_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      3098
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_MMIO_SRAM_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      5728
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_PWM_LEDS_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      9228
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_SOC_NV_FLASH_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12048
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_ADC_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12443
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_BBRAM_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12458
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_BXCAN_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12473
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_CCM_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12478
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_DMA_V1_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12533
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_ETHERNET_CONTROLLER_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12568
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_EXTI_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12573
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_FLASH_CONTROLLER_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12583
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_GPIO_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12608
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_HSE_CLOCK_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12618
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_I2C_V1_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12633
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_I2S_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12643
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_NV_FLASH_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12713
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_NVM_OTP_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12718
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_OTGFS_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12748
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_PINCTRL_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12758
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_PWM_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12763
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_RCC_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12793
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_RCC_RCTL_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12798
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_RTC_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12813
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_TEMP_CAL_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12863
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_TIMERS_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12868
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_UART_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12878
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_USART_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12888
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_VBAT_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12903
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32_VREF_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      12913
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32F4_ADC_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      13018
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32F4_FLASH_CONTROLLER_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      13023
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32F4_NV_FLASH_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      13033
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ST_STM32FX_PLL_CLOCK_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      13048
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_USB_NOP_XCEIV_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      14643
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ZEPHYR_MEMORY_REGION_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      15903
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ZEPHYR_POWER_STATE_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
+      16013
     ]
   ],
   [
@@ -62,6 +546,17 @@
     null
   ],
   [
+    "CONFIG_MAIN_STACK_SIZE",
+    "y",
+    "int",
+    "1024",
+    "default",
+    [
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      164
+    ]
+  ],
+  [
     "CONFIG_REGULATOR",
     "y",
     "bool",
@@ -76,19 +571,8 @@
     "1024",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      590
-    ]
-  ],
-  [
-    "CONFIG_MAIN_STACK_SIZE",
-    "y",
-    "int",
-    "1024",
-    "default",
-    [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      161
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      621
     ]
   ],
   [
@@ -106,7 +590,7 @@
     "y",
     "assign",
     [
-      "D:/Zephyr_Projects/external/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig",
+      "G:/Zephyr_Projects/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig",
       9
     ]
   ],
@@ -165,7 +649,7 @@
     "82",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/soc/st/stm32\\stm32f4x\\Kconfig.defconfig.stm32f407xx",
+      "G:/Zephyr_Projects/zephyr/soc/st/stm32\\stm32f4x\\Kconfig.defconfig.stm32f407xx",
       9
     ]
   ],
@@ -176,8 +660,8 @@
     "168000000",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/soc/st/stm32/Kconfig.defconfig",
-      65
+      "G:/Zephyr_Projects/zephyr/soc/st/stm32/Kconfig.defconfig",
+      61
     ]
   ],
   [
@@ -187,8 +671,8 @@
     "1024",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\arch\\Kconfig",
-      252
+      "G:\\Zephyr_Projects\\zephyr\\arch\\Kconfig",
+      251
     ]
   ],
   [
@@ -198,8 +682,8 @@
     "0x8000000",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/soc/st/stm32/Kconfig.defconfig",
-      109
+      "G:/Zephyr_Projects/zephyr/soc/st/stm32/Kconfig.defconfig",
+      105
     ]
   ],
   [
@@ -209,7 +693,7 @@
     "1",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig.smp",
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig.smp",
       43
     ]
   ],
@@ -222,13 +706,35 @@
     null
   ],
   [
+    "CONFIG_DCACHE_LINE_SIZE",
+    "n",
+    "int",
+    "32",
+    "default",
+    [
+      "G:/Zephyr_Projects/zephyr/arch/arm\\core\\cortex_m/Kconfig",
+      115
+    ]
+  ],
+  [
+    "CONFIG_ICACHE_LINE_SIZE",
+    "n",
+    "int",
+    "32",
+    "default",
+    [
+      "G:/Zephyr_Projects/zephyr/arch/arm\\core\\cortex_m/Kconfig",
+      118
+    ]
+  ],
+  [
     "CONFIG_CLOCK_CONTROL",
     "y",
     "bool",
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/soc/st/stm32/Kconfig.defconfig",
+      "G:/Zephyr_Projects/zephyr/soc/st/stm32/Kconfig.defconfig",
       18
     ]
   ],
@@ -239,8 +745,8 @@
     "320",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      175
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      178
     ]
   ],
   [
@@ -250,8 +756,8 @@
     "2048",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      185
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      188
     ]
   ],
   [
@@ -261,8 +767,8 @@
     "10000",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      806
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      843
     ]
   ],
   [
@@ -272,8 +778,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      747
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      822
     ]
   ],
   [
@@ -283,8 +789,8 @@
     "0",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      134
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      154
     ]
   ],
   [
@@ -294,8 +800,8 @@
     "__start",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      206
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      226
     ]
   ],
   [
@@ -335,6 +841,14 @@
     null
   ],
   [
+    "CONFIG_SHARED_INTERRUPTS",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
     "CONFIG_CPU_HAS_ARM_MPU",
     "n",
     "bool",
@@ -345,7 +859,18 @@
     ]
   ],
   [
-    "CONFIG_SHARED_INTERRUPTS",
+    "CONFIG_STM32_FLASH_PREFETCH",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/zephyr/soc/st/stm32/Kconfig",
+      37
+    ]
+  ],
+  [
+    "CONFIG_PM_DEVICE",
     "y",
     "bool",
     null,
@@ -353,18 +878,15 @@
     null
   ],
   [
-    "CONFIG_STM32_FLASH_PREFETCH",
+    "CONFIG_OTP",
     "y",
     "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/external/zephyr/soc/st/stm32/Kconfig",
-      65
-    ]
+    null,
+    "unset",
+    null
   ],
   [
-    "CONFIG_PM_DEVICE",
+    "CONFIG_NVMEM",
     "y",
     "bool",
     null,
@@ -378,8 +900,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      1067
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      1104
     ]
   ],
   [
@@ -389,7 +911,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\timer\\Kconfig.cortex_m_systick",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\timer\\Kconfig.cortex_m_systick",
       11
     ]
   ],
@@ -400,8 +922,8 @@
     "1",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/soc/st/stm32/Kconfig.defconfig",
-      96
+      "G:/Zephyr_Projects/zephyr/soc/st/stm32/Kconfig.defconfig",
+      92
     ]
   ],
   [
@@ -419,8 +941,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/soc/st/stm32/Kconfig.defconfig",
-      131
+      "G:/Zephyr_Projects/zephyr/soc/st/stm32/Kconfig.defconfig",
+      127
     ]
   ],
   [
@@ -454,9 +976,17 @@
     "0",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      94
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      97
     ]
+  ],
+  [
+    "CONFIG_POWER_DOMAIN",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_NUM_PREEMPT_PRIORITIES",
@@ -465,7 +995,7 @@
     "15",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
       55
     ]
   ],
@@ -486,8 +1016,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\arch\\Kconfig",
-      529
+      "G:\\Zephyr_Projects\\zephyr\\arch\\Kconfig",
+      528
     ]
   ],
   [
@@ -505,8 +1035,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/arch/arm\\core\\cortex_m/Kconfig",
-      324
+      "G:/Zephyr_Projects/zephyr/arch/arm\\core\\cortex_m/Kconfig",
+      325
     ]
   ],
   [
@@ -524,8 +1054,8 @@
     "20",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      672
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      703
     ]
   ],
   [
@@ -535,8 +1065,8 @@
     "0",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      106
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      126
     ]
   ],
   [
@@ -546,8 +1076,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      842
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      879
     ]
   ],
   [
@@ -567,7 +1097,23 @@
     null
   ],
   [
+    "CONFIG_ROMSTART_RELOCATION_ROM",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
     "CONFIG_FLASH",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_CODE_DATA_RELOCATION",
     "y",
     "bool",
     null,
@@ -581,17 +1127,9 @@
     "y",
     "assign",
     [
-      "D:/Zephyr_Projects/external/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig",
+      "G:/Zephyr_Projects/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig",
       7
     ]
-  ],
-  [
-    "CONFIG_POWER_DOMAIN",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
   ],
   [
     "CONFIG_CPU_HAS_CUSTOM_FIXED_SOC_MPU_REGIONS",
@@ -608,9 +1146,17 @@
     "y",
     "assign",
     [
-      "D:/Zephyr_Projects/external/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig",
+      "G:/Zephyr_Projects/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig",
       16
     ]
+  ],
+  [
+    "CONFIG_SYSTEM_CLOCK_HW_CYCLES_PER_SEC_RUNTIME_UPDATE",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_MFD",
@@ -645,33 +1191,6 @@
     null
   ],
   [
-    "CONFIG_DCACHE_LINE_SIZE",
-    "n",
-    "int",
-    "32",
-    "default",
-    [
-      "D:/Zephyr_Projects/external/zephyr/arch/arm\\core\\cortex_m/Kconfig",
-      115
-    ]
-  ],
-  [
-    "CONFIG_CODE_DATA_RELOCATION",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_ROMSTART_RELOCATION_ROM",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
     "CONFIG_RESET",
     "y",
     "bool",
@@ -688,8 +1207,8 @@
     "4",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\arch\\Kconfig",
-      587
+      "G:\\Zephyr_Projects\\zephyr\\arch\\Kconfig",
+      586
     ]
   ],
   [
@@ -715,7 +1234,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\serial\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\serial\\Kconfig",
       53
     ]
   ],
@@ -744,7 +1263,7 @@
     "y",
     "assign",
     [
-      "D:/Zephyr_Projects/external/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig",
+      "G:/Zephyr_Projects/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig",
       12
     ]
   ],
@@ -763,7 +1282,7 @@
     "-1",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\lib\\libc\\common\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\lib\\libc\\common\\Kconfig",
       64
     ]
   ],
@@ -774,8 +1293,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\arch\\Kconfig",
-      576
+      "G:\\Zephyr_Projects\\zephyr\\arch\\Kconfig",
+      575
     ]
   ],
   [
@@ -793,8 +1312,8 @@
     "0",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\arch\\Kconfig",
-      597
+      "G:\\Zephyr_Projects\\zephyr\\arch\\Kconfig",
+      596
     ]
   ],
   [
@@ -804,8 +1323,8 @@
     "0",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      225
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      245
     ]
   ],
   [
@@ -815,8 +1334,8 @@
     "4",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\arch\\Kconfig",
-      541
+      "G:\\Zephyr_Projects\\zephyr\\arch\\Kconfig",
+      540
     ]
   ],
   [
@@ -826,8 +1345,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\arch\\Kconfig",
-      475
+      "G:\\Zephyr_Projects\\zephyr\\arch\\Kconfig",
+      474
     ]
   ],
   [
@@ -853,8 +1372,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      748
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      785
     ]
   ],
   [
@@ -864,7 +1383,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
       14
     ]
   ],
@@ -883,8 +1402,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      318
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      338
     ]
   ],
   [
@@ -896,506 +1415,12 @@
     null
   ],
   [
-    "CONFIG_ICACHE_LINE_SIZE",
-    "n",
-    "int",
-    "32",
-    "default",
-    [
-      "D:/Zephyr_Projects/external/zephyr/arch/arm\\core\\cortex_m/Kconfig",
-      118
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ARM_ARMV7M_SYSTICK_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      948
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ARM_CORTEX_M4F_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      1078
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ARM_V7M_NVIC_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      1308
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_CIRRUS_CS43L22_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      2068
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_FIXED_CLOCK_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      2558
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_GPIO_KEYS_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      2823
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_GPIO_LEDS_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      2828
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_MMIO_SRAM_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      5133
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_PWM_LEDS_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      8408
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_SOC_NV_FLASH_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      10863
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_ADC_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11228
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_BBRAM_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11243
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_BXCAN_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11253
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_CCM_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11258
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_DMA_V1_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11313
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_ETHERNET_CONTROLLER_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11343
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_EXTI_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11348
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_FLASH_CONTROLLER_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11358
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_GPIO_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11383
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_HSE_CLOCK_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11393
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_I2C_V1_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11408
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_I2S_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11418
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_NV_FLASH_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11478
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_OTGFS_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11498
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_PINCTRL_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11508
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_PWM_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11513
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_RCC_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11538
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_RCC_RCTL_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11543
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_RTC_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11558
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_TEMP_CAL_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11608
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_TIMERS_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11613
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_UART_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11623
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_USART_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11633
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_VBAT_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11648
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_VREF_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11658
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32F4_ADC_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11758
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32F4_FLASH_CONTROLLER_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11763
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32F4_NV_FLASH_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11773
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32F4_PLL_CLOCK_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11778
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32F4_PLLI2S_CLOCK_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      11783
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_USB_NOP_XCEIV_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      13258
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ZEPHYR_MEMORY_REGION_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      14408
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ZEPHYR_POWER_STATE_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.dts",
-      14528
-    ]
-  ],
-  [
     "CONFIG_BUILD_ONLY_NO_BLOBS",
     "y",
     "bool",
     null,
     "unset",
     null
-  ],
-  [
-    "CONFIG_TAINT_BLOBS",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "ZEPHYR_HAL_ESPRESSIF_MODULE"
-    ]
   ],
   [
     "CONFIG_ACPI",
@@ -1412,7 +1437,7 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
       5
     ]
   ],
@@ -1423,7 +1448,7 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
       11
     ]
   ],
@@ -1445,7 +1470,7 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
       17
     ]
   ],
@@ -1464,7 +1489,7 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
       23
     ]
   ],
@@ -1483,7 +1508,7 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
       29
     ]
   ],
@@ -1512,7 +1537,7 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
       35
     ]
   ],
@@ -1523,7 +1548,7 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
       39
     ]
   ],
@@ -1534,7 +1559,7 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
       44
     ]
   ],
@@ -1545,7 +1570,7 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
       53
     ]
   ],
@@ -1556,7 +1581,7 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
       57
     ]
   ],
@@ -1567,7 +1592,7 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
       62
     ]
   ],
@@ -1578,19 +1603,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
       68
-    ]
-  ],
-  [
-    "CONFIG_ZEPHYR_HAL_ESPRESSIF_MODULE_BLOBS",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      73
     ]
   ],
   [
@@ -1608,8 +1622,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      79
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      77
     ]
   ],
   [
@@ -1619,8 +1633,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      85
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      83
     ]
   ],
   [
@@ -1630,8 +1644,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      91
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      89
     ]
   ],
   [
@@ -1649,8 +1663,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      100
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      98
     ]
   ],
   [
@@ -1660,8 +1674,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      104
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      102
     ]
   ],
   [
@@ -1671,8 +1685,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      109
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      107
     ]
   ],
   [
@@ -1682,8 +1696,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      116
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      114
     ]
   ],
   [
@@ -1693,8 +1707,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      121
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      119
     ]
   ],
   [
@@ -1704,8 +1718,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      128
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      126
     ]
   ],
   [
@@ -1715,9 +1729,228 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      131
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      129
     ]
+  ],
+  [
+    "CONFIG_ZEPHYR_HAL_REALTEK_MODULE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      134
+    ]
+  ],
+  [
+    "CONFIG_REALTEK_BEE_ADC",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_CAN",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_CODEC",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_DMA",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_GPIO",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_I2C",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_I2S",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_IR",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_KEYSCAN",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_MAC_802154",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_NVIC",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_PINMUX",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_AON_QDEC",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_QDEC",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_RCC",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_RTC",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_SDHC",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_SPI",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_TIM",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_ENHTIM",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_UART",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_USB",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_USING_USB_HAL",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_AON_WDT",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_REALTEK_BEE_CORE_WDT",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_USE_REALTEK_BEE_OS_INTERFACE",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_ZEPHYR_HAL_RENESAS_MODULE",
@@ -1726,8 +1959,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      134
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      141
     ]
   ],
   [
@@ -1737,8 +1970,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      142
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      149
     ]
   ],
   [
@@ -1748,8 +1981,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      148
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      155
     ]
   ],
   [
@@ -1759,8 +1992,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      154
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      164
     ]
   ],
   [
@@ -1770,8 +2003,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      163
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      173
     ]
   ],
   [
@@ -1781,8 +2014,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      167
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      177
     ]
   ],
   [
@@ -1792,8 +2025,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      175
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      185
     ]
   ],
   [
@@ -1811,8 +2044,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      181
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      191
     ]
   ],
   [
@@ -1822,8 +2055,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      185
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      195
     ]
   ],
   [
@@ -1833,8 +2066,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      190
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      200
     ]
   ],
   [
@@ -1844,8 +2077,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      194
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      204
     ]
   ],
   [
@@ -1855,8 +2088,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      197
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      207
     ]
   ],
   [
@@ -1874,8 +2107,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      202
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      212
     ]
   ],
   [
@@ -1885,8 +2118,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      208
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      218
     ]
   ],
   [
@@ -1896,8 +2129,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      212
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      222
     ]
   ],
   [
@@ -1907,8 +2140,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      215
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      225
     ]
   ],
   [
@@ -1918,20 +2151,12 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      220
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      230
     ]
   ],
   [
-    "CONFIG_LIBSBC_ENCODER",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_LIBSBC_DECODER",
+    "CONFIG_LIBSBC",
     "y",
     "bool",
     null,
@@ -1945,8 +2170,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      226
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      236
     ]
   ],
   [
@@ -1956,8 +2181,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      232
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      242
     ]
   ],
   [
@@ -1967,8 +2192,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      238
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      248
     ]
   ],
   [
@@ -1986,8 +2211,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      244
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      254
     ]
   ],
   [
@@ -1997,8 +2222,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      250
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      260
     ]
   ],
   [
@@ -2024,8 +2249,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      254
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      264
     ]
   ],
   [
@@ -2035,8 +2260,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      257
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      267
     ]
   ],
   [
@@ -2046,8 +2271,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      262
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      272
     ]
   ],
   [
@@ -2065,8 +2290,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      268
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      278
     ]
   ],
   [
@@ -2084,8 +2309,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      275
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      285
     ]
   ],
   [
@@ -2103,8 +2328,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      280
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      290
     ]
   ],
   [
@@ -2122,8 +2347,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      286
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      296
     ]
   ],
   [
@@ -2141,8 +2366,19 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      292
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      302
+    ]
+  ],
+  [
+    "CONFIG_ZEPHYR_PSA_ARCH_TESTS_MODULE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      306
     ]
   ],
   [
@@ -2152,8 +2388,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      298
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      311
     ]
   ],
   [
@@ -2175,14 +2411,25 @@
     null
   ],
   [
+    "CONFIG_ZEPHYR_TF_M_TESTS_MODULE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      315
+    ]
+  ],
+  [
     "CONFIG_ZEPHYR_TRUSTED_FIRMWARE_A_MODULE",
     "n",
     "bool",
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      304
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      320
     ]
   ],
   [
@@ -2200,8 +2447,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      310
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      326
     ]
   ],
   [
@@ -2211,8 +2458,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      316
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      332
     ]
   ],
   [
@@ -2222,8 +2469,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      322
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      338
     ]
   ],
   [
@@ -2241,8 +2488,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
-      326
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/Kconfig/Kconfig.modules",
+      342
     ]
   ],
   [
@@ -2354,7 +2601,7 @@
     "stm32f4_disco",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\boards\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\boards\\Kconfig",
       5
     ]
   ],
@@ -2365,7 +2612,7 @@
     "",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\boards\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\boards\\Kconfig",
       14
     ]
   ],
@@ -2376,7 +2623,7 @@
     "stm32f4_disco/stm32f407xx",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\boards\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\boards\\Kconfig",
       24
     ]
   ],
@@ -2395,8 +2642,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\boards\\Kconfig.v2",
-      10
+      "G:\\Zephyr_Projects\\zephyr\\boards\\Kconfig.v2",
+      9
     ]
   ],
   [
@@ -2406,8 +2653,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\boards\\Kconfig.v2",
-      15
+      "G:\\Zephyr_Projects\\zephyr\\boards\\Kconfig.v2",
+      14
     ]
   ],
   [
@@ -2417,8 +2664,8 @@
     "stm32f407xx",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\boards\\Kconfig.v2",
-      21
+      "G:\\Zephyr_Projects\\zephyr\\boards\\Kconfig.v2",
+      20
     ]
   ],
   [
@@ -2428,7 +2675,7 @@
     "stm32f407xx",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/soc/st/stm32\\stm32f4x\\Kconfig.soc",
+      "G:/Zephyr_Projects/zephyr/soc/st/stm32\\stm32f4x\\Kconfig.soc",
       111
     ]
   ],
@@ -2439,7 +2686,7 @@
     "stm32f4x",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/soc/st/stm32\\stm32f4x\\Kconfig.soc",
+      "G:/Zephyr_Projects/zephyr/soc/st/stm32\\stm32f4x\\Kconfig.soc",
       11
     ]
   ],
@@ -2450,7 +2697,7 @@
     "stm32",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/soc/st/stm32/Kconfig.soc",
+      "G:/Zephyr_Projects/zephyr/soc/st/stm32/Kconfig.soc",
       10
     ]
   ],
@@ -2493,17 +2740,6 @@
     null
   ],
   [
-    "CONFIG_STM32_CCM",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "D:/Zephyr_Projects/external/zephyr/soc/st/stm32/Kconfig",
-      19
-    ]
-  ],
-  [
     "CONFIG_STM32_ENABLE_DEBUG_SLEEP_STOP",
     "y",
     "bool",
@@ -2518,8 +2754,19 @@
     "49",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/soc/st/stm32/Kconfig",
-      52
+      "G:/Zephyr_Projects/zephyr/soc/st/stm32\\common\\Kconfig",
+      37
+    ]
+  ],
+  [
+    "CONFIG_STM32_IOCELL_PRIORITY",
+    "y",
+    "int",
+    "50",
+    "default",
+    [
+      "G:/Zephyr_Projects/zephyr/soc/st/stm32\\common\\Kconfig",
+      64
     ]
   ],
   [
@@ -2547,7 +2794,7 @@
     "40",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\gpio\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\gpio\\Kconfig",
       50
     ]
   ],
@@ -2558,7 +2805,7 @@
     "arm",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/arch/arm/Kconfig",
+      "G:/Zephyr_Projects/zephyr/arch/arm/Kconfig",
       10
     ]
   ],
@@ -2597,7 +2844,7 @@
     "32",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/arch/arm\\core\\mpu/Kconfig",
+      "G:/Zephyr_Projects/zephyr/arch/arm\\core\\mpu/Kconfig",
       14
     ]
   ],
@@ -2644,7 +2891,7 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/arch/arm\\core/Kconfig",
+      "G:/Zephyr_Projects/zephyr/arch/arm\\core/Kconfig",
       117
     ]
   ],
@@ -2655,7 +2902,7 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/arch/arm\\core/Kconfig",
+      "G:/Zephyr_Projects/zephyr/arch/arm\\core/Kconfig",
       134
     ]
   ],
@@ -2666,7 +2913,7 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/arch/arm\\core/Kconfig",
+      "G:/Zephyr_Projects/zephyr/arch/arm\\core/Kconfig",
       152
     ]
   ],
@@ -2693,8 +2940,8 @@
     "2",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/arch/arm\\core/Kconfig",
-      180
+      "G:/Zephyr_Projects/zephyr/arch/arm\\core/Kconfig",
+      196
     ]
   ],
   [
@@ -2704,8 +2951,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/arch/arm\\core/Kconfig",
-      203
+      "G:/Zephyr_Projects/zephyr/arch/arm\\core/Kconfig",
+      219
     ]
   ],
   [
@@ -2715,8 +2962,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/arch/arm\\core/Kconfig",
-      299
+      "G:/Zephyr_Projects/zephyr/arch/arm\\core/Kconfig",
+      315
     ]
   ],
   [
@@ -2726,8 +2973,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/arch/arm\\core/Kconfig",
-      307
+      "G:/Zephyr_Projects/zephyr/arch/arm\\core/Kconfig",
+      323
     ]
   ],
   [
@@ -2857,8 +3104,8 @@
     "y",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/arch/arm\\core\\cortex_m/Kconfig",
-      418
+      "G:/Zephyr_Projects/zephyr/arch/arm\\core\\cortex_m/Kconfig",
+      419
     ]
   ],
   [
@@ -2910,9 +3157,17 @@
     "32",
     "default",
     [
-      "D:/Zephyr_Projects/external/zephyr/arch/arm\\core\\mpu/Kconfig",
+      "G:/Zephyr_Projects/zephyr/arch/arm\\core\\mpu/Kconfig",
       65
     ]
+  ],
+  [
+    "CONFIG_ARM_MPU_SRAM_WRITE_THROUGH",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_HAS_SWO",
@@ -2959,7 +3214,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\arch\\common\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\arch\\common\\Kconfig",
       29
     ]
   ],
@@ -2970,7 +3225,7 @@
     "y",
     "assign",
     [
-      "D:/Zephyr_Projects/external/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig",
+      "G:/Zephyr_Projects/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig",
       4
     ]
   ],
@@ -2981,8 +3236,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\arch\\Kconfig",
-      205
+      "G:\\Zephyr_Projects\\zephyr\\arch\\Kconfig",
+      204
     ]
   ],
   [
@@ -2992,8 +3247,8 @@
     "128",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\arch\\Kconfig",
-      221
+      "G:\\Zephyr_Projects\\zephyr\\arch\\Kconfig",
+      220
     ]
   ],
   [
@@ -3003,8 +3258,8 @@
     "0x20000000",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\arch\\Kconfig",
-      229
+      "G:\\Zephyr_Projects\\zephyr\\arch\\Kconfig",
+      228
     ]
   ],
   [
@@ -3064,8 +3319,8 @@
     "4",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\arch\\Kconfig",
-      551
+      "G:\\Zephyr_Projects\\zephyr\\arch\\Kconfig",
+      550
     ]
   ],
   [
@@ -3075,8 +3330,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\arch\\Kconfig",
-      559
+      "G:\\Zephyr_Projects\\zephyr\\arch\\Kconfig",
+      558
     ]
   ],
   [
@@ -3102,8 +3357,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\arch\\Kconfig",
-      642
+      "G:\\Zephyr_Projects\\zephyr\\arch\\Kconfig",
+      641
     ]
   ],
   [
@@ -3335,14 +3590,22 @@
     ]
   ],
   [
+    "CONFIG_CACHE_DOUBLEMAP",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
     "CONFIG_TOOLCHAIN_HAS_BUILTIN_FFS",
     "n",
     "bool",
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\arch\\Kconfig",
-      1191
+      "G:\\Zephyr_Projects\\zephyr\\arch\\Kconfig",
+      1211
     ]
   ],
   [
@@ -3362,7 +3625,7 @@
     "16",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
       30
     ]
   ],
@@ -3373,7 +3636,7 @@
     "0",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
       73
     ]
   ],
@@ -3384,7 +3647,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
       79
     ]
   ],
@@ -3395,7 +3658,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
       82
     ]
   ],
@@ -3403,10 +3666,10 @@
     "CONFIG_PRIORITY_CEILING",
     "y",
     "int",
-    "-127",
+    "-128",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
       86
     ]
   ],
@@ -3459,8 +3722,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      309
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      312
     ]
   ],
   [
@@ -3502,8 +3765,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      369
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      372
     ]
   ],
   [
@@ -3523,8 +3786,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      406
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      409
     ]
   ],
   [
@@ -3534,9 +3797,17 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      430
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      433
     ]
+  ],
+  [
+    "CONFIG_NONZERO_SPINLOCK_SIZE",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_BOOT_BANNER",
@@ -3545,8 +3816,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      459
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      469
     ]
   ],
   [
@@ -3556,8 +3827,8 @@
     "Booting Zephyr OS build",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      468
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      478
     ]
   ],
   [
@@ -3567,8 +3838,8 @@
     "0",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      475
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      485
     ]
   ],
   [
@@ -3604,6 +3875,14 @@
     null
   ],
   [
+    "CONFIG_THREAD_RUNTIME_STACK_SAFETY",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
     "CONFIG_OBJ_CORE",
     "y",
     "bool",
@@ -3626,8 +3905,8 @@
     "-1",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      596
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      627
     ]
   ],
   [
@@ -3645,8 +3924,8 @@
     "0",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      614
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      645
     ]
   ],
   [
@@ -3676,8 +3955,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      664
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      695
     ]
   ],
   [
@@ -3687,12 +3966,20 @@
     "0",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      683
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      714
     ]
   ],
   [
     "CONFIG_TIMESLICE_PER_THREAD",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_TIMER_OBSERVER",
     "y",
     "bool",
     null,
@@ -3730,8 +4017,8 @@
     "10",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      726
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      763
     ]
   ],
   [
@@ -3749,8 +4036,8 @@
     "0",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      758
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      795
     ]
   ],
   [
@@ -3778,8 +4065,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      852
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      889
     ]
   ],
   [
@@ -3789,8 +4076,8 @@
     "365",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      863
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      900
     ]
   ],
   [
@@ -3810,8 +4097,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig.mem_domain",
-      66
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig.mem_domain",
+      73
     ]
   ],
   [
@@ -3849,8 +4136,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig",
-      1097
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig",
+      1134
     ]
   ],
   [
@@ -3889,12 +4176,9 @@
     "CONFIG_DEVICE_DEINIT_SUPPORT",
     "y",
     "bool",
-    "y",
-    "default",
-    [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig.device",
-      38
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_KERNEL_INIT_PRIORITY_OBJECTS",
@@ -3903,8 +4187,8 @@
     "30",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig.device",
-      52
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig.device",
+      51
     ]
   ],
   [
@@ -3914,8 +4198,8 @@
     "35",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig.device",
-      60
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig.device",
+      59
     ]
   ],
   [
@@ -3925,8 +4209,8 @@
     "40",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig.device",
-      68
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig.device",
+      67
     ]
   ],
   [
@@ -3936,8 +4220,8 @@
     "50",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig.device",
-      74
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig.device",
+      73
     ]
   ],
   [
@@ -3947,8 +4231,8 @@
     "90",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\kernel\\Kconfig.device",
-      82
+      "G:\\Zephyr_Projects\\zephyr\\kernel\\Kconfig.device",
+      81
     ]
   ],
   [
@@ -4032,6 +4316,14 @@
     null
   ],
   [
+    "CONFIG_BIOMETRICS",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
     "CONFIG_CAN",
     "y",
     "bool",
@@ -4048,13 +4340,21 @@
     null
   ],
   [
+    "CONFIG_CLOCK_CONTROL_FIXED_RATE_CLOCK",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
     "CONFIG_CLOCK_CONTROL_STM32_CUBE",
     "y",
     "bool",
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\clock_control\\Kconfig.stm32",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\clock_control\\Kconfig.stm32",
       11
     ]
   ],
@@ -4065,17 +4365,20 @@
     "8000000",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\clock_control\\Kconfig.stm32",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\clock_control\\Kconfig.stm32",
       27
     ]
   ],
   [
-    "CONFIG_CLOCK_CONTROL_FIXED_RATE_CLOCK",
+    "CONFIG_CLOCK_CONTROL_TISCI_PRIORITY",
     "y",
-    "bool",
-    null,
-    "unset",
-    null
+    "int",
+    "40",
+    "default",
+    [
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\clock_control\\Kconfig.tisci",
+      13
+    ]
   ],
   [
     "CONFIG_COMPARATOR",
@@ -4092,7 +4395,7 @@
     "128",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\console\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\console\\Kconfig",
       16
     ]
   ],
@@ -4121,7 +4424,7 @@
     "60",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\console\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\console\\Kconfig",
       37
     ]
   ],
@@ -4132,7 +4435,7 @@
     "y",
     "assign",
     [
-      "D:/Zephyr_Projects/external/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig",
+      "G:/Zephyr_Projects/zephyr/boards/st/stm32f4_disco/stm32f4_disco_defconfig",
       13
     ]
   ],
@@ -4305,6 +4608,14 @@
     null
   ],
   [
+    "CONFIG_MDIO",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
     "CONFIG_ARM_SCMI",
     "y",
     "bool",
@@ -4367,7 +4678,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\gpio\\Kconfig.stm32",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\gpio\\Kconfig.stm32",
       9
     ]
   ],
@@ -4394,8 +4705,19 @@
     "y",
     "assign",
     [
-      "D:/Zephyr_Projects/apps/at24_eeprom_driver/prj.conf",
+      "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/prj.conf",
       1
+    ]
+  ],
+  [
+    "CONFIG_I2C_SHELL_BUFFER_SIZE",
+    "y",
+    "int",
+    "16",
+    "default",
+    [
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\i2c\\Kconfig",
+      27
     ]
   ],
   [
@@ -4431,13 +4753,21 @@
     null
   ],
   [
+    "CONFIG_I2C_DW_PM_POLICY_STATE_LOCK",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
     "CONFIG_I2C_STM32",
     "y",
     "bool",
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\i2c\\Kconfig.stm32",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\i2c\\Kconfig.stm32",
       6
     ]
   ],
@@ -4448,7 +4778,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\i2c\\Kconfig.stm32",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\i2c\\Kconfig.stm32",
       16
     ]
   ],
@@ -4459,7 +4789,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\i2c\\Kconfig.stm32",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\i2c\\Kconfig.stm32",
       35
     ]
   ],
@@ -4478,7 +4808,7 @@
     "500",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\i2c\\Kconfig.stm32",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\i2c\\Kconfig.stm32",
       71
     ]
   ],
@@ -4489,8 +4819,8 @@
     "50",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\i2c\\Kconfig",
-      171
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\i2c\\Kconfig",
+      183
     ]
   ],
   [
@@ -4516,8 +4846,8 @@
     "40",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\interrupt_controller\\Kconfig",
-      51
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\interrupt_controller\\Kconfig",
+      52
     ]
   ],
   [
@@ -4527,7 +4857,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\interrupt_controller\\Kconfig.stm32",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\interrupt_controller\\Kconfig.stm32",
       11
     ]
   ],
@@ -4538,7 +4868,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\interrupt_controller\\Kconfig.stm32",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\interrupt_controller\\Kconfig.stm32",
       18
     ]
   ],
@@ -4576,14 +4906,6 @@
   ],
   [
     "CONFIG_MBOX",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_MDIO",
     "y",
     "bool",
     null,
@@ -4677,12 +4999,17 @@
     "CONFIG_PINCTRL_KEEP_SLEEP_STATE",
     "y",
     "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_PINCTRL_MCHP_COMMON",
     "y",
-    "default",
-    [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\pinctrl\\Kconfig",
-      39
-    ]
+    "bool",
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_PINCTRL_NPCX_EX",
@@ -4699,7 +5026,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\pinctrl\\Kconfig.stm32",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\pinctrl\\Kconfig.stm32",
       6
     ]
   ],
@@ -4710,7 +5037,7 @@
     "2",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\pinctrl\\Kconfig.stm32",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\pinctrl\\Kconfig.stm32",
       13
     ]
   ],
@@ -4761,7 +5088,7 @@
     "35",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\reset\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\reset\\Kconfig",
       21
     ]
   ],
@@ -4772,7 +5099,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\reset\\Kconfig.stm32",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\reset\\Kconfig.stm32",
       6
     ]
   ],
@@ -4853,7 +5180,7 @@
     "50",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\serial\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\serial\\Kconfig",
       36
     ]
   ],
@@ -4906,14 +5233,6 @@
     null
   ],
   [
-    "CONFIG_UART_NATIVE_POSIX",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
     "CONFIG_UART_NPCX_FIFO_EX",
     "y",
     "bool",
@@ -4928,7 +5247,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\serial\\Kconfig.stm32",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\serial\\Kconfig.stm32",
       8
     ]
   ],
@@ -4981,8 +5300,8 @@
     "0",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\timer\\Kconfig",
-      35
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\timer\\Kconfig",
+      55
     ]
   ],
   [
@@ -5022,7 +5341,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\drivers\\timer\\Kconfig.cortex_m_systick",
+      "G:\\Zephyr_Projects\\zephyr\\drivers\\timer\\Kconfig.cortex_m_systick",
       33
     ]
   ],
@@ -5032,6 +5351,14 @@
     "bool",
     "y",
     "default",
+    null
+  ],
+  [
+    "CONFIG_UAOL",
+    "y",
+    "bool",
+    null,
+    "unset",
     null
   ],
   [
@@ -5180,7 +5507,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\lib\\libc\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\lib\\libc\\Kconfig",
       42
     ]
   ],
@@ -5191,7 +5518,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\lib\\libc\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\lib\\libc\\Kconfig",
       48
     ]
   ],
@@ -5202,7 +5529,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\lib\\libc\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\lib\\libc\\Kconfig",
       58
     ]
   ],
@@ -5221,7 +5548,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\lib\\libc\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\lib\\libc\\Kconfig",
       81
     ]
   ],
@@ -5304,7 +5631,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\lib\\libc\\common\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\lib\\libc\\common\\Kconfig",
       88
     ]
   ],
@@ -5315,7 +5642,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\lib\\libc\\common\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\lib\\libc\\common\\Kconfig",
       97
     ]
   ],
@@ -5342,7 +5669,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\lib\\libc\\picolibc\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\lib\\libc\\picolibc\\Kconfig",
       8
     ]
   ],
@@ -5361,7 +5688,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\lib\\libc\\picolibc\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\lib\\libc\\picolibc\\Kconfig",
       34
     ]
   ],
@@ -5372,7 +5699,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\lib\\libc\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\lib\\libc\\Kconfig",
       173
     ]
   ],
@@ -5434,7 +5761,7 @@
     "3",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\lib\\heap\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\lib\\heap\\Kconfig",
       36
     ]
   ],
@@ -5453,7 +5780,7 @@
     "0",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\lib\\heap\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\lib\\heap\\Kconfig",
       57
     ]
   ],
@@ -5472,7 +5799,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\lib\\heap\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\lib\\heap\\Kconfig",
       84
     ]
   ],
@@ -5533,25 +5860,6 @@
     null
   ],
   [
-    "CONFIG_FDTABLE",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_ZVFS_OPEN_MAX",
-    "y",
-    "int",
-    "0",
-    "default",
-    [
-      "D:\\Zephyr_Projects\\external\\zephyr\\lib\\os\\Kconfig",
-      15
-    ]
-  ],
-  [
     "CONFIG_ZVFS_OPEN_IGNORE_MIN",
     "y",
     "bool",
@@ -5608,7 +5916,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\lib\\os\\Kconfig.cbprintf",
+      "G:\\Zephyr_Projects\\zephyr\\lib\\os\\Kconfig.cbprintf",
       6
     ]
   ],
@@ -5627,7 +5935,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\lib\\os\\Kconfig.cbprintf",
+      "G:\\Zephyr_Projects\\zephyr\\lib\\os\\Kconfig.cbprintf",
       29
     ]
   ],
@@ -5686,7 +5994,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\lib\\os\\Kconfig.cbprintf",
+      "G:\\Zephyr_Projects\\zephyr\\lib\\os\\Kconfig.cbprintf",
       170
     ]
   ],
@@ -5737,7 +6045,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\lib\\posix\\Kconfig.profile",
+      "G:\\Zephyr_Projects\\zephyr\\lib\\posix\\Kconfig.profile",
       29
     ]
   ],
@@ -5804,14 +6112,6 @@
     ]
   ],
   [
-    "CONFIG_GETOPT_LONG",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
     "CONFIG_EVENTFD",
     "y",
     "bool",
@@ -5834,7 +6134,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\lib\\runtime\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\lib\\runtime\\Kconfig",
       13
     ]
   ],
@@ -5903,6 +6203,35 @@
     null,
     "unset",
     null
+  ],
+  [
+    "CONFIG_GETOPT",
+    "y",
+    "bool",
+    "y",
+    "select",
+    [
+      "POSIX_C_LIB_EXT"
+    ]
+  ],
+  [
+    "CONFIG_GETOPT_LONG",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_TIMEUTIL_APPLY_SKEW",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:\\Zephyr_Projects\\zephyr\\lib\\utils\\Kconfig",
+      103
+    ]
   ],
   [
     "CONFIG_UUID",
@@ -6035,8 +6364,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\subsys\\debug\\Kconfig",
-      230
+      "G:\\Zephyr_Projects\\zephyr\\subsys\\debug\\Kconfig",
+      240
     ]
   ],
   [
@@ -6176,14 +6505,6 @@
     null
   ],
   [
-    "CONFIG_ZMS",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
     "CONFIG_GNSS_RTK",
     "y",
     "bool",
@@ -6232,6 +6553,14 @@
     null
   ],
   [
+    "CONFIG_ZMS",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
     "CONFIG_LLEXT",
     "y",
     "bool",
@@ -6262,7 +6591,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\subsys\\mem_mgmt\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\subsys\\mem_mgmt\\Kconfig",
       6
     ]
   ],
@@ -6308,14 +6637,6 @@
   ],
   [
     "CONFIG_NETWORKING",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_NVMEM",
     "y",
     "bool",
     null,
@@ -6371,9 +6692,17 @@
     "123456789",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\subsys\\random\\Kconfig",
+      "G:\\Zephyr_Projects\\zephyr\\subsys\\random\\Kconfig",
       33
     ]
+  ],
+  [
+    "CONFIG_CSPRNG_NEEDED",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_RTIO",
@@ -6510,7 +6839,7 @@
     "",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\subsys\\testsuite\\Kconfig.coverage",
+      "G:\\Zephyr_Projects\\zephyr\\subsys\\testsuite\\Kconfig.coverage",
       96
     ]
   ],
@@ -6626,7 +6955,7 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
       62
     ]
   ],
@@ -6645,8 +6974,8 @@
     "0",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      119
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      139
     ]
   ],
   [
@@ -6656,8 +6985,8 @@
     "0",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      147
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      167
     ]
   ],
   [
@@ -6667,8 +6996,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      158
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      178
     ]
   ],
   [
@@ -6678,8 +7007,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      162
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      182
     ]
   ],
   [
@@ -6705,8 +7034,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      212
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      232
     ]
   ],
   [
@@ -6732,8 +7061,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      273
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      293
     ]
   ],
   [
@@ -6743,8 +7072,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      286
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      306
     ]
   ],
   [
@@ -6754,8 +7083,8 @@
     "0xE015E015",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      302
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      322
     ]
   ],
   [
@@ -6765,8 +7094,8 @@
     "4",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      332
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      352
     ]
   ],
   [
@@ -6776,8 +7105,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      338
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      358
     ]
   ],
   [
@@ -6800,12 +7129,9 @@
     "CONFIG_STD_C99",
     "y",
     "bool",
-    "y",
-    "default",
-    [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      386
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_STD_C11",
@@ -6819,9 +7145,12 @@
     "CONFIG_STD_C17",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "y",
+    "default",
+    [
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      405
+    ]
   ],
   [
     "CONFIG_STD_C23",
@@ -6872,8 +7201,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      484
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      506
     ]
   ],
   [
@@ -6939,8 +7268,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      553
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      583
     ]
   ],
   [
@@ -6950,8 +7279,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      561
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      591
     ]
   ],
   [
@@ -6969,8 +7298,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      568
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      598
     ]
   ],
   [
@@ -7004,9 +7333,55 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      617
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      647
     ]
+  ],
+  [
+    "CONFIG_TOOLCHAIN_SUPPORTS_VARIABLE_CLEANUP_ATTRIBUTE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      654
+    ]
+  ],
+  [
+    "CONFIG_SCOPE_CLEANUP_HELPERS",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_COMPILER_CODEGEN_VLIW_AUTO",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      670
+    ]
+  ],
+  [
+    "CONFIG_COMPILER_CODEGEN_VLIW_ENABLED",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_COMPILER_CODEGEN_VLIW_DISABLED",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_ASSERT_ON_ERRORS",
@@ -7031,8 +7406,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      626
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      701
     ]
   ],
   [
@@ -7042,8 +7417,8 @@
     "zephyr",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      650
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      725
     ]
   ],
   [
@@ -7053,8 +7428,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      656
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      731
     ]
   ],
   [
@@ -7072,8 +7447,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      698
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      773
     ]
   ],
   [
@@ -7091,8 +7466,8 @@
     "0xFF",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      719
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      794
     ]
   ],
   [
@@ -7198,8 +7573,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      964
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      1039
     ]
   ],
   [
@@ -7209,8 +7584,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      978
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      1053
     ]
   ],
   [
@@ -7228,8 +7603,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      1010
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      1085
     ]
   ],
   [
@@ -7241,24 +7616,14 @@
     null
   ],
   [
-    "CONFIG_TAINT",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "TAINT_BLOBS"
-    ]
-  ],
-  [
     "CONFIG_ENFORCE_ZEPHYR_STDINT",
     "y",
     "bool",
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      1045
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      1121
     ]
   ],
   [
@@ -7284,8 +7649,8 @@
     "y",
     "default",
     [
-      "D:\\Zephyr_Projects\\external\\zephyr\\Kconfig.zephyr",
-      1117
+      "G:\\Zephyr_Projects\\zephyr\\Kconfig.zephyr",
+      1191
     ]
   ]
 ]

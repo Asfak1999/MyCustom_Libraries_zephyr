@@ -1,4 +1,4 @@
-# Install script for directory: D:/Zephyr_Projects/external/modules/hal/espressif/zephyr
+# Install script for directory: G:/Zephyr_Projects/modules/hal/espressif/zephyr
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "D:/Zephyr_Projects/apps/at24_eeprom_driver/build/modules/hal_espressif/install_local_manifest.txt"
+  file(WRITE "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/build/modules/hal_espressif/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

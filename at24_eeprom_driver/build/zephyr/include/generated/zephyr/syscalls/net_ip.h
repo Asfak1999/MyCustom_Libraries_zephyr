@@ -20,14 +20,14 @@
 extern "C" {
 #endif
 
-extern int z_impl_net_addr_pton(sa_family_t family, const char * src, void * dst);
+extern int z_impl_net_addr_pton(net_sa_family_t family, const char * src, void * dst);
 
 __pinned_func
-static inline int net_addr_pton(sa_family_t family, const char * src, void * dst)
+static inline int net_addr_pton(net_sa_family_t family, const char * src, void * dst)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
-		union { uintptr_t x; sa_family_t val; } parm0 = { .val = family };
+		union { uintptr_t x; net_sa_family_t val; } parm0 = { .val = family };
 		union { uintptr_t x; const char * val; } parm1 = { .val = src };
 		union { uintptr_t x; void * val; } parm2 = { .val = dst };
 		return (int) arch_syscall_invoke3(parm0.x, parm1.x, parm2.x, K_SYSCALL_NET_ADDR_PTON);
@@ -45,14 +45,14 @@ static inline int net_addr_pton(sa_family_t family, const char * src, void * dst
 #endif
 
 
-extern char * z_impl_net_addr_ntop(sa_family_t family, const void * src, char * dst, size_t size);
+extern char * z_impl_net_addr_ntop(net_sa_family_t family, const void * src, char * dst, size_t size);
 
 __pinned_func
-static inline char * net_addr_ntop(sa_family_t family, const void * src, char * dst, size_t size)
+static inline char * net_addr_ntop(net_sa_family_t family, const void * src, char * dst, size_t size)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
-		union { uintptr_t x; sa_family_t val; } parm0 = { .val = family };
+		union { uintptr_t x; net_sa_family_t val; } parm0 = { .val = family };
 		union { uintptr_t x; const void * val; } parm1 = { .val = src };
 		union { uintptr_t x; char * val; } parm2 = { .val = dst };
 		union { uintptr_t x; size_t val; } parm3 = { .val = size };

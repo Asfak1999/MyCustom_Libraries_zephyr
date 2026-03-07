@@ -141,16 +141,16 @@ static inline int zsock_shutdown(int sock, int how)
 #endif
 
 
-extern int z_impl_zsock_bind(int sock, const struct sockaddr * addr, socklen_t addrlen);
+extern int z_impl_zsock_bind(int sock, const struct net_sockaddr * addr, net_socklen_t addrlen);
 
 __pinned_func
-static inline int zsock_bind(int sock, const struct sockaddr * addr, socklen_t addrlen)
+static inline int zsock_bind(int sock, const struct net_sockaddr * addr, net_socklen_t addrlen)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
 		union { uintptr_t x; int val; } parm0 = { .val = sock };
-		union { uintptr_t x; const struct sockaddr * val; } parm1 = { .val = addr };
-		union { uintptr_t x; socklen_t val; } parm2 = { .val = addrlen };
+		union { uintptr_t x; const struct net_sockaddr * val; } parm1 = { .val = addr };
+		union { uintptr_t x; net_socklen_t val; } parm2 = { .val = addrlen };
 		return (int) arch_syscall_invoke3(parm0.x, parm1.x, parm2.x, K_SYSCALL_ZSOCK_BIND);
 	}
 #endif
@@ -166,16 +166,16 @@ static inline int zsock_bind(int sock, const struct sockaddr * addr, socklen_t a
 #endif
 
 
-extern int z_impl_zsock_connect(int sock, const struct sockaddr * addr, socklen_t addrlen);
+extern int z_impl_zsock_connect(int sock, const struct net_sockaddr * addr, net_socklen_t addrlen);
 
 __pinned_func
-static inline int zsock_connect(int sock, const struct sockaddr * addr, socklen_t addrlen)
+static inline int zsock_connect(int sock, const struct net_sockaddr * addr, net_socklen_t addrlen)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
 		union { uintptr_t x; int val; } parm0 = { .val = sock };
-		union { uintptr_t x; const struct sockaddr * val; } parm1 = { .val = addr };
-		union { uintptr_t x; socklen_t val; } parm2 = { .val = addrlen };
+		union { uintptr_t x; const struct net_sockaddr * val; } parm1 = { .val = addr };
+		union { uintptr_t x; net_socklen_t val; } parm2 = { .val = addrlen };
 		return (int) arch_syscall_invoke3(parm0.x, parm1.x, parm2.x, K_SYSCALL_ZSOCK_CONNECT);
 	}
 #endif
@@ -215,16 +215,16 @@ static inline int zsock_listen(int sock, int backlog)
 #endif
 
 
-extern int z_impl_zsock_accept(int sock, struct sockaddr * addr, socklen_t * addrlen);
+extern int z_impl_zsock_accept(int sock, struct net_sockaddr * addr, net_socklen_t * addrlen);
 
 __pinned_func
-static inline int zsock_accept(int sock, struct sockaddr * addr, socklen_t * addrlen)
+static inline int zsock_accept(int sock, struct net_sockaddr * addr, net_socklen_t * addrlen)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
 		union { uintptr_t x; int val; } parm0 = { .val = sock };
-		union { uintptr_t x; struct sockaddr * val; } parm1 = { .val = addr };
-		union { uintptr_t x; socklen_t * val; } parm2 = { .val = addrlen };
+		union { uintptr_t x; struct net_sockaddr * val; } parm1 = { .val = addr };
+		union { uintptr_t x; net_socklen_t * val; } parm2 = { .val = addrlen };
 		return (int) arch_syscall_invoke3(parm0.x, parm1.x, parm2.x, K_SYSCALL_ZSOCK_ACCEPT);
 	}
 #endif
@@ -240,10 +240,10 @@ static inline int zsock_accept(int sock, struct sockaddr * addr, socklen_t * add
 #endif
 
 
-extern ssize_t z_impl_zsock_sendto(int sock, const void * buf, size_t len, int flags, const struct sockaddr * dest_addr, socklen_t addrlen);
+extern ssize_t z_impl_zsock_sendto(int sock, const void * buf, size_t len, int flags, const struct net_sockaddr * dest_addr, net_socklen_t addrlen);
 
 __pinned_func
-static inline ssize_t zsock_sendto(int sock, const void * buf, size_t len, int flags, const struct sockaddr * dest_addr, socklen_t addrlen)
+static inline ssize_t zsock_sendto(int sock, const void * buf, size_t len, int flags, const struct net_sockaddr * dest_addr, net_socklen_t addrlen)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
@@ -251,8 +251,8 @@ static inline ssize_t zsock_sendto(int sock, const void * buf, size_t len, int f
 		union { uintptr_t x; const void * val; } parm1 = { .val = buf };
 		union { uintptr_t x; size_t val; } parm2 = { .val = len };
 		union { uintptr_t x; int val; } parm3 = { .val = flags };
-		union { uintptr_t x; const struct sockaddr * val; } parm4 = { .val = dest_addr };
-		union { uintptr_t x; socklen_t val; } parm5 = { .val = addrlen };
+		union { uintptr_t x; const struct net_sockaddr * val; } parm4 = { .val = dest_addr };
+		union { uintptr_t x; net_socklen_t val; } parm5 = { .val = addrlen };
 		return (ssize_t) arch_syscall_invoke6(parm0.x, parm1.x, parm2.x, parm3.x, parm4.x, parm5.x, K_SYSCALL_ZSOCK_SENDTO);
 	}
 #endif
@@ -268,15 +268,15 @@ static inline ssize_t zsock_sendto(int sock, const void * buf, size_t len, int f
 #endif
 
 
-extern ssize_t z_impl_zsock_sendmsg(int sock, const struct msghdr * msg, int flags);
+extern ssize_t z_impl_zsock_sendmsg(int sock, const struct net_msghdr * msg, int flags);
 
 __pinned_func
-static inline ssize_t zsock_sendmsg(int sock, const struct msghdr * msg, int flags)
+static inline ssize_t zsock_sendmsg(int sock, const struct net_msghdr * msg, int flags)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
 		union { uintptr_t x; int val; } parm0 = { .val = sock };
-		union { uintptr_t x; const struct msghdr * val; } parm1 = { .val = msg };
+		union { uintptr_t x; const struct net_msghdr * val; } parm1 = { .val = msg };
 		union { uintptr_t x; int val; } parm2 = { .val = flags };
 		return (ssize_t) arch_syscall_invoke3(parm0.x, parm1.x, parm2.x, K_SYSCALL_ZSOCK_SENDMSG);
 	}
@@ -293,10 +293,10 @@ static inline ssize_t zsock_sendmsg(int sock, const struct msghdr * msg, int fla
 #endif
 
 
-extern ssize_t z_impl_zsock_recvfrom(int sock, void * buf, size_t max_len, int flags, struct sockaddr * src_addr, socklen_t * addrlen);
+extern ssize_t z_impl_zsock_recvfrom(int sock, void * buf, size_t max_len, int flags, struct net_sockaddr * src_addr, net_socklen_t * addrlen);
 
 __pinned_func
-static inline ssize_t zsock_recvfrom(int sock, void * buf, size_t max_len, int flags, struct sockaddr * src_addr, socklen_t * addrlen)
+static inline ssize_t zsock_recvfrom(int sock, void * buf, size_t max_len, int flags, struct net_sockaddr * src_addr, net_socklen_t * addrlen)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
@@ -304,8 +304,8 @@ static inline ssize_t zsock_recvfrom(int sock, void * buf, size_t max_len, int f
 		union { uintptr_t x; void * val; } parm1 = { .val = buf };
 		union { uintptr_t x; size_t val; } parm2 = { .val = max_len };
 		union { uintptr_t x; int val; } parm3 = { .val = flags };
-		union { uintptr_t x; struct sockaddr * val; } parm4 = { .val = src_addr };
-		union { uintptr_t x; socklen_t * val; } parm5 = { .val = addrlen };
+		union { uintptr_t x; struct net_sockaddr * val; } parm4 = { .val = src_addr };
+		union { uintptr_t x; net_socklen_t * val; } parm5 = { .val = addrlen };
 		return (ssize_t) arch_syscall_invoke6(parm0.x, parm1.x, parm2.x, parm3.x, parm4.x, parm5.x, K_SYSCALL_ZSOCK_RECVFROM);
 	}
 #endif
@@ -321,15 +321,15 @@ static inline ssize_t zsock_recvfrom(int sock, void * buf, size_t max_len, int f
 #endif
 
 
-extern ssize_t z_impl_zsock_recvmsg(int sock, struct msghdr * msg, int flags);
+extern ssize_t z_impl_zsock_recvmsg(int sock, struct net_msghdr * msg, int flags);
 
 __pinned_func
-static inline ssize_t zsock_recvmsg(int sock, struct msghdr * msg, int flags)
+static inline ssize_t zsock_recvmsg(int sock, struct net_msghdr * msg, int flags)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
 		union { uintptr_t x; int val; } parm0 = { .val = sock };
-		union { uintptr_t x; struct msghdr * val; } parm1 = { .val = msg };
+		union { uintptr_t x; struct net_msghdr * val; } parm1 = { .val = msg };
 		union { uintptr_t x; int val; } parm2 = { .val = flags };
 		return (ssize_t) arch_syscall_invoke3(parm0.x, parm1.x, parm2.x, K_SYSCALL_ZSOCK_RECVMSG);
 	}
@@ -399,10 +399,10 @@ static inline int zsock_ioctl_impl(int sock, unsigned long request, va_list ap)
 #endif
 
 
-extern int z_impl_zsock_getsockopt(int sock, int level, int optname, void * optval, socklen_t * optlen);
+extern int z_impl_zsock_getsockopt(int sock, int level, int optname, void * optval, net_socklen_t * optlen);
 
 __pinned_func
-static inline int zsock_getsockopt(int sock, int level, int optname, void * optval, socklen_t * optlen)
+static inline int zsock_getsockopt(int sock, int level, int optname, void * optval, net_socklen_t * optlen)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
@@ -410,7 +410,7 @@ static inline int zsock_getsockopt(int sock, int level, int optname, void * optv
 		union { uintptr_t x; int val; } parm1 = { .val = level };
 		union { uintptr_t x; int val; } parm2 = { .val = optname };
 		union { uintptr_t x; void * val; } parm3 = { .val = optval };
-		union { uintptr_t x; socklen_t * val; } parm4 = { .val = optlen };
+		union { uintptr_t x; net_socklen_t * val; } parm4 = { .val = optlen };
 		return (int) arch_syscall_invoke5(parm0.x, parm1.x, parm2.x, parm3.x, parm4.x, K_SYSCALL_ZSOCK_GETSOCKOPT);
 	}
 #endif
@@ -426,10 +426,10 @@ static inline int zsock_getsockopt(int sock, int level, int optname, void * optv
 #endif
 
 
-extern int z_impl_zsock_setsockopt(int sock, int level, int optname, const void * optval, socklen_t optlen);
+extern int z_impl_zsock_setsockopt(int sock, int level, int optname, const void * optval, net_socklen_t optlen);
 
 __pinned_func
-static inline int zsock_setsockopt(int sock, int level, int optname, const void * optval, socklen_t optlen)
+static inline int zsock_setsockopt(int sock, int level, int optname, const void * optval, net_socklen_t optlen)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
@@ -437,7 +437,7 @@ static inline int zsock_setsockopt(int sock, int level, int optname, const void 
 		union { uintptr_t x; int val; } parm1 = { .val = level };
 		union { uintptr_t x; int val; } parm2 = { .val = optname };
 		union { uintptr_t x; const void * val; } parm3 = { .val = optval };
-		union { uintptr_t x; socklen_t val; } parm4 = { .val = optlen };
+		union { uintptr_t x; net_socklen_t val; } parm4 = { .val = optlen };
 		return (int) arch_syscall_invoke5(parm0.x, parm1.x, parm2.x, parm3.x, parm4.x, K_SYSCALL_ZSOCK_SETSOCKOPT);
 	}
 #endif
@@ -453,16 +453,16 @@ static inline int zsock_setsockopt(int sock, int level, int optname, const void 
 #endif
 
 
-extern int z_impl_zsock_getpeername(int sock, struct sockaddr * addr, socklen_t * addrlen);
+extern int z_impl_zsock_getpeername(int sock, struct net_sockaddr * addr, net_socklen_t * addrlen);
 
 __pinned_func
-static inline int zsock_getpeername(int sock, struct sockaddr * addr, socklen_t * addrlen)
+static inline int zsock_getpeername(int sock, struct net_sockaddr * addr, net_socklen_t * addrlen)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
 		union { uintptr_t x; int val; } parm0 = { .val = sock };
-		union { uintptr_t x; struct sockaddr * val; } parm1 = { .val = addr };
-		union { uintptr_t x; socklen_t * val; } parm2 = { .val = addrlen };
+		union { uintptr_t x; struct net_sockaddr * val; } parm1 = { .val = addr };
+		union { uintptr_t x; net_socklen_t * val; } parm2 = { .val = addrlen };
 		return (int) arch_syscall_invoke3(parm0.x, parm1.x, parm2.x, K_SYSCALL_ZSOCK_GETPEERNAME);
 	}
 #endif
@@ -478,16 +478,16 @@ static inline int zsock_getpeername(int sock, struct sockaddr * addr, socklen_t 
 #endif
 
 
-extern int z_impl_zsock_getsockname(int sock, struct sockaddr * addr, socklen_t * addrlen);
+extern int z_impl_zsock_getsockname(int sock, struct net_sockaddr * addr, net_socklen_t * addrlen);
 
 __pinned_func
-static inline int zsock_getsockname(int sock, struct sockaddr * addr, socklen_t * addrlen)
+static inline int zsock_getsockname(int sock, struct net_sockaddr * addr, net_socklen_t * addrlen)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
 		union { uintptr_t x; int val; } parm0 = { .val = sock };
-		union { uintptr_t x; struct sockaddr * val; } parm1 = { .val = addr };
-		union { uintptr_t x; socklen_t * val; } parm2 = { .val = addrlen };
+		union { uintptr_t x; struct net_sockaddr * val; } parm1 = { .val = addr };
+		union { uintptr_t x; net_socklen_t * val; } parm2 = { .val = addrlen };
 		return (int) arch_syscall_invoke3(parm0.x, parm1.x, parm2.x, K_SYSCALL_ZSOCK_GETSOCKNAME);
 	}
 #endif
@@ -527,14 +527,14 @@ static inline int zsock_gethostname(char * buf, size_t len)
 #endif
 
 
-extern int z_impl_zsock_inet_pton(sa_family_t family, const char * src, void * dst);
+extern int z_impl_zsock_inet_pton(net_sa_family_t family, const char * src, void * dst);
 
 __pinned_func
-static inline int zsock_inet_pton(sa_family_t family, const char * src, void * dst)
+static inline int zsock_inet_pton(net_sa_family_t family, const char * src, void * dst)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
-		union { uintptr_t x; sa_family_t val; } parm0 = { .val = family };
+		union { uintptr_t x; net_sa_family_t val; } parm0 = { .val = family };
 		union { uintptr_t x; const char * val; } parm1 = { .val = src };
 		union { uintptr_t x; void * val; } parm2 = { .val = dst };
 		return (int) arch_syscall_invoke3(parm0.x, parm1.x, parm2.x, K_SYSCALL_ZSOCK_INET_PTON);

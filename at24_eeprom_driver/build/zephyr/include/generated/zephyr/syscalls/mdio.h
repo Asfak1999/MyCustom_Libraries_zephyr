@@ -20,54 +20,6 @@
 extern "C" {
 #endif
 
-extern void z_impl_mdio_bus_enable(const struct device * dev);
-
-__pinned_func
-static inline void mdio_bus_enable(const struct device * dev)
-{
-#ifdef CONFIG_USERSPACE
-	if (z_syscall_trap()) {
-		union { uintptr_t x; const struct device * val; } parm0 = { .val = dev };
-		(void) arch_syscall_invoke1(parm0.x, K_SYSCALL_MDIO_BUS_ENABLE);
-		return;
-	}
-#endif
-	compiler_barrier();
-	z_impl_mdio_bus_enable(dev);
-}
-
-#if defined(CONFIG_TRACING_SYSCALL)
-#ifndef DISABLE_SYSCALL_TRACING
-
-#define mdio_bus_enable(dev) do { 	sys_port_trace_syscall_enter(K_SYSCALL_MDIO_BUS_ENABLE, mdio_bus_enable, dev); 	mdio_bus_enable(dev); 	sys_port_trace_syscall_exit(K_SYSCALL_MDIO_BUS_ENABLE, mdio_bus_enable, dev); } while(false)
-#endif
-#endif
-
-
-extern void z_impl_mdio_bus_disable(const struct device * dev);
-
-__pinned_func
-static inline void mdio_bus_disable(const struct device * dev)
-{
-#ifdef CONFIG_USERSPACE
-	if (z_syscall_trap()) {
-		union { uintptr_t x; const struct device * val; } parm0 = { .val = dev };
-		(void) arch_syscall_invoke1(parm0.x, K_SYSCALL_MDIO_BUS_DISABLE);
-		return;
-	}
-#endif
-	compiler_barrier();
-	z_impl_mdio_bus_disable(dev);
-}
-
-#if defined(CONFIG_TRACING_SYSCALL)
-#ifndef DISABLE_SYSCALL_TRACING
-
-#define mdio_bus_disable(dev) do { 	sys_port_trace_syscall_enter(K_SYSCALL_MDIO_BUS_DISABLE, mdio_bus_disable, dev); 	mdio_bus_disable(dev); 	sys_port_trace_syscall_exit(K_SYSCALL_MDIO_BUS_DISABLE, mdio_bus_disable, dev); } while(false)
-#endif
-#endif
-
-
 extern int z_impl_mdio_read(const struct device * dev, uint8_t prtad, uint8_t regad, uint16_t * data);
 
 __pinned_func

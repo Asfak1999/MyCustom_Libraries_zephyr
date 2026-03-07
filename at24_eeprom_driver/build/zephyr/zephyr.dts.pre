@@ -1,7 +1,7 @@
-# 0 "D:/Zephyr_Projects/external/zephyr/misc/empty_file.c"
+# 0 "G:/Zephyr_Projects/zephyr/misc/empty_file.c"
 # 0 "<built-in>"
 # 0 "<command-line>"
-# 1 "D:/Zephyr_Projects/external/zephyr/boards/st/stm32f4_disco/stm32f4_disco.dts" 1
+# 1 "G:/Zephyr_Projects/zephyr/boards/st/stm32f4_disco/stm32f4_disco.dts" 1
 
 
 
@@ -9,21 +9,21 @@
 
 
 /dts-v1/;
-# 1 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f407Xg.dtsi" 1 3 4
+# 1 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f407Xg.dtsi" 1 3 4
 
 
 
 
 
 
-# 1 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f407.dtsi" 1 3 4
+# 1 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f407.dtsi" 1 3 4
 
 
 
 
 
 
-# 1 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f405.dtsi" 1 3 4
+# 1 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f405.dtsi" 1 3 4
 
 
 
@@ -31,20 +31,20 @@
 
 
 
-# 1 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f401.dtsi" 1 3 4
+# 1 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f401.dtsi" 1 3 4
 
 
 
 
 
 
-# 1 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f4.dtsi" 1 3 4
-# 10 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f4.dtsi" 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/dts/arm/armv7-m.dtsi" 1 3 4
+# 1 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f4.dtsi" 1 3 4
+# 10 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f4.dtsi" 3 4
+# 1 "G:/Zephyr_Projects/zephyr/dts/arm/armv7-m.dtsi" 1 3 4
 
 
-# 1 "D:/Zephyr_Projects/external/zephyr/dts/common/skeleton.dtsi" 1 3 4
-# 9 "D:/Zephyr_Projects/external/zephyr/dts/common/skeleton.dtsi" 3 4
+# 1 "G:/Zephyr_Projects/zephyr/dts/common/skeleton.dtsi" 1 3 4
+# 9 "G:/Zephyr_Projects/zephyr/dts/common/skeleton.dtsi" 3 4
 / {
  #address-cells = <1>;
  #size-cells = <1>;
@@ -53,7 +53,7 @@
 
  aliases {};
 };
-# 4 "D:/Zephyr_Projects/external/zephyr/dts/arm/armv7-m.dtsi" 2 3 4
+# 4 "G:/Zephyr_Projects/zephyr/dts/arm/armv7-m.dtsi" 2 3 4
 
 / {
  soc {
@@ -77,71 +77,66 @@
   };
  };
 };
-# 11 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/adc/adc.h" 1 3 4
-# 9 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/adc/adc.h" 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/dt-util.h" 1 3 4
-# 19 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/dt-util.h" 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/sys/util_macro.h" 1 3 4
-# 34 "D:/Zephyr_Projects/external/zephyr/include/zephyr/sys/util_macro.h" 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/sys/util_internal.h" 1 3 4
-# 18 "D:/Zephyr_Projects/external/zephyr/include/zephyr/sys/util_internal.h" 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/sys/util_loops.h" 1 3 4
-# 1083 "D:/Zephyr_Projects/external/zephyr/include/zephyr/sys/util_loops.h" 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/sys/util_listify.h" 1 3 4
-# 1084 "D:/Zephyr_Projects/external/zephyr/include/zephyr/sys/util_loops.h" 2 3 4
-# 19 "D:/Zephyr_Projects/external/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
-# 162 "D:/Zephyr_Projects/external/zephyr/include/zephyr/sys/util_internal.h" 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/sys/util_internal_is_eq.h" 1 3 4
-# 163 "D:/Zephyr_Projects/external/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
-# 193 "D:/Zephyr_Projects/external/zephyr/include/zephyr/sys/util_internal.h" 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/sys/util_internal_util_inc.h" 1 3 4
-# 194 "D:/Zephyr_Projects/external/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 11 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/adc/adc.h" 1 3 4
+# 9 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/adc/adc.h" 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/dt-util.h" 1 3 4
+# 19 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/dt-util.h" 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/sys/util_macro.h" 1 3 4
+# 34 "G:/Zephyr_Projects/zephyr/include/zephyr/sys/util_macro.h" 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/sys/util_internal.h" 1 3 4
+# 18 "G:/Zephyr_Projects/zephyr/include/zephyr/sys/util_internal.h" 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/sys/util_loops.h" 1 3 4
+# 1465 "G:/Zephyr_Projects/zephyr/include/zephyr/sys/util_loops.h" 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/sys/util_listify.h" 1 3 4
+# 1466 "G:/Zephyr_Projects/zephyr/include/zephyr/sys/util_loops.h" 2 3 4
+# 19 "G:/Zephyr_Projects/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 203 "G:/Zephyr_Projects/zephyr/include/zephyr/sys/util_internal.h" 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/sys/util_internal_is_eq.h" 1 3 4
+# 204 "G:/Zephyr_Projects/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 234 "G:/Zephyr_Projects/zephyr/include/zephyr/sys/util_internal.h" 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/sys/util_internal_util_inc.h" 1 3 4
+# 235 "G:/Zephyr_Projects/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
 
 
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/sys/util_internal_util_dec.h" 1 3 4
-# 197 "D:/Zephyr_Projects/external/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/sys/util_internal_util_dec.h" 1 3 4
+# 238 "G:/Zephyr_Projects/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
 
 
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/sys/util_internal_util_x2.h" 1 3 4
-# 200 "D:/Zephyr_Projects/external/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
-# 35 "D:/Zephyr_Projects/external/zephyr/include/zephyr/sys/util_macro.h" 2 3 4
-# 20 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/dt-util.h" 2 3 4
-# 10 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/adc/adc.h" 2 3 4
-# 12 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/clock/stm32f4_clock.h" 1 3 4
-# 9 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/clock/stm32f4_clock.h" 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/clock/stm32_common_clocks.h" 1 3 4
-# 10 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/clock/stm32f4_clock.h" 2 3 4
-# 13 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/i2c/i2c.h" 1 3 4
-# 14 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/gpio/gpio.h" 1 3 4
-# 15 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/pwm/pwm.h" 1 3 4
-# 16 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/pwm/stm32_pwm.h" 1 3 4
-# 17 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/dma/stm32_dma.h" 1 3 4
-# 18 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/adc/stm32f4_adc.h" 1 3 4
-# 9 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/adc/stm32f4_adc.h" 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/adc/stm32_adc.h" 1 3 4
-# 10 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/adc/stm32f4_adc.h" 2 3 4
-# 19 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/reset/stm32f2_4_7_reset.h" 1 3 4
-# 10 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/reset/stm32f2_4_7_reset.h" 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/reset/stm32-common.h" 1 3 4
-# 11 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/reset/stm32f2_4_7_reset.h" 2 3 4
-# 20 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/sensor/qdec_stm32.h" 1 3 4
-# 21 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/power/stm32_pwr.h" 1 3 4
-# 22 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/dts/common/freq.h" 1 3 4
-# 23 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/dts/common/mem.h" 1 3 4
-# 24 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/sys/util_internal_util_x2.h" 1 3 4
+# 241 "G:/Zephyr_Projects/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 35 "G:/Zephyr_Projects/zephyr/include/zephyr/sys/util_macro.h" 2 3 4
+# 20 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/dt-util.h" 2 3 4
+# 10 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/adc/adc.h" 2 3 4
+# 12 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/clock/stm32f4_clock.h" 1 3 4
+# 9 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/clock/stm32f4_clock.h" 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/clock/stm32_common_clocks.h" 1 3 4
+# 10 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/clock/stm32f4_clock.h" 2 3 4
+# 13 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/i2c/i2c.h" 1 3 4
+# 14 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/gpio/gpio.h" 1 3 4
+# 15 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/pwm/pwm.h" 1 3 4
+# 16 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/pwm/stm32_pwm.h" 1 3 4
+# 17 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/dma/stm32_dma.h" 1 3 4
+# 18 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/reset/stm32f2_4_7_reset.h" 1 3 4
+# 10 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/reset/stm32f2_4_7_reset.h" 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/reset/stm32-common.h" 1 3 4
+# 11 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/reset/stm32f2_4_7_reset.h" 2 3 4
+# 19 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/sensor/qdec_stm32.h" 1 3 4
+# 20 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/power/stm32_pwr.h" 1 3 4
+# 21 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
+# 1 "G:/Zephyr_Projects/zephyr/dts/common/freq.h" 1 3 4
+# 22 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
+# 1 "G:/Zephyr_Projects/zephyr/dts/common/mem.h" 1 3 4
+# 23 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f4.dtsi" 2 3 4
 
 / {
  chosen {
@@ -211,7 +206,7 @@
 
   pll: pll {
    #clock-cells = <0>;
-   compatible = "st,stm32f4-pll-clock";
+   compatible = "st,stm32fx-pll-clock";
    status = "disabled";
   };
  };
@@ -244,6 +239,41 @@
     write-block-size = <1>;
 
     max-erase-time = <4000>;
+   };
+
+   st_nvm_user_otp: flash@1fff7800 {
+    compatible = "st,stm32-nvm-otp";
+    reg = <0x1fff7800 512>;
+    status = "disabled";
+   };
+# 144 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f4.dtsi" 3 4
+   flash@1fff7a00 {
+    compatible = "st,stm32-nvm-otp";
+    reg = <0x1fff7a00 256>;
+
+    nvmem-layout {
+     compatible = "fixed-layout";
+     #address-cells = <1>;
+     #size-cells = <1>;
+
+     vrefint_otp: vrefint@2a {
+      reg = <0x2a 0x2>;
+      #nvmem-cell-cells = <0>;
+      read-only;
+     };
+
+     ts_cal1_otp: ts-cal1@2c {
+      reg = <0x2c 0x2>;
+      #nvmem-cell-cells = <0>;
+      read-only;
+     };
+
+     ts_cal2_otp: ts-cal2@2e {
+      reg = <0x2e 0x2>;
+      #nvmem-cell-cells = <0>;
+      read-only;
+     };
+    };
    };
   };
 
@@ -353,7 +383,7 @@
 
   wwdg: watchdog@40002c00 {
    compatible = "st,stm32-window-watchdog";
-   reg = <0x40002C00 0x400>;
+   reg = <0x40002c00 0x400>;
    clocks = <&rcc (0x040) (1 << 11)>;
    interrupts = <0 7>;
    status = "disabled";
@@ -429,6 +459,7 @@
    reg = <0x40013000 0x400>;
    clocks = <&rcc (0x044) (1 << 12)>;
    interrupts = <35 5>;
+   st,spi-data-width = "limited-8-16-bit";
    status = "disabled";
   };
 
@@ -450,7 +481,7 @@
    compatible = "st,stm32-timers";
    reg = <0x40010000 0x400>;
    clocks = <&rcc (0x044) (1 << 0)>,
-     <&rcc ((((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
+     <&rcc (((((((((((((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
    resets = <&rctl (((0x24) << 5U) | (0))>;
    interrupts = <24 0>, <25 0>, <26 0>, <27 0>;
    interrupt-names = "brk", "up", "trgcom", "cc";
@@ -461,6 +492,11 @@
     compatible = "st,stm32-pwm";
     status = "disabled";
     #pwm-cells = <3>;
+   };
+
+   counter {
+    compatible = "st,stm32-counter";
+    status = "disabled";
    };
 
    qdec {
@@ -474,7 +510,7 @@
    compatible = "st,stm32-timers";
    reg = <0x40000000 0x400>;
    clocks = <&rcc (0x040) (1 << 0)>,
-     <&rcc (((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
+     <&rcc ((((((((((((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
    resets = <&rctl (((0x20) << 5U) | (0))>;
    interrupts = <28 0>;
    interrupt-names = "global";
@@ -503,7 +539,7 @@
    compatible = "st,stm32-timers";
    reg = <0x40000400 0x400>;
    clocks = <&rcc (0x040) (1 << 1)>,
-     <&rcc (((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
+     <&rcc ((((((((((((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
    resets = <&rctl (((0x20) << 5U) | (1))>;
    interrupts = <29 0>;
    interrupt-names = "global";
@@ -532,7 +568,7 @@
    compatible = "st,stm32-timers";
    reg = <0x40000800 0x400>;
    clocks = <&rcc (0x040) (1 << 2)>,
-     <&rcc (((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
+     <&rcc ((((((((((((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
    resets = <&rctl (((0x20) << 5U) | (2))>;
    interrupts = <30 0>;
    interrupt-names = "global";
@@ -561,7 +597,7 @@
    compatible = "st,stm32-timers";
    reg = <0x40000c00 0x400>;
    clocks = <&rcc (0x040) (1 << 3)>,
-     <&rcc (((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
+     <&rcc ((((((((((((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
    resets = <&rctl (((0x20) << 5U) | (3))>;
    interrupts = <50 0>;
    interrupt-names = "global";
@@ -590,7 +626,7 @@
    compatible = "st,stm32-timers";
    reg = <0x40014000 0x400>;
    clocks = <&rcc (0x044) (1 << 16)>,
-     <&rcc ((((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
+     <&rcc (((((((((((((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
    resets = <&rctl (((0x24) << 5U) | (16))>;
    interrupts = <24 0>;
    interrupt-names = "global";
@@ -613,7 +649,7 @@
    compatible = "st,stm32-timers";
    reg = <0x40014400 0x400>;
    clocks = <&rcc (0x044) (1 << 17)>,
-     <&rcc ((((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
+     <&rcc (((((((((((((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
    resets = <&rctl (((0x24) << 5U) | (17))>;
    interrupts = <25 0>;
    interrupt-names = "global";
@@ -636,7 +672,7 @@
    compatible = "st,stm32-timers";
    reg = <0x40014800 0x400>;
    clocks = <&rcc (0x044) (1 << 18)>,
-     <&rcc ((((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
+     <&rcc (((((((((((((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
    resets = <&rctl (((0x24) << 5U) | (18))>;
    interrupts = <26 0>;
    interrupt-names = "global";
@@ -679,10 +715,7 @@
    clock-names = "adcx";
    interrupts = <18 0>;
    #io-channel-cells = <1>;
-   resolutions = <((((0x04) & ((1UL << (8)) - 1UL)) << 0U) | (((24) & ((1UL << (5)) - 1UL)) << 8U) | (((((1UL << (2)) - 1UL)) & ((1UL << (3)) - 1UL)) << 13U) | (((0x00) & ((1UL << (3)) - 1UL)) << 16U) | (((12) & ((1UL << (13)) - 1UL)) << 19U))
-           ((((0x04) & ((1UL << (8)) - 1UL)) << 0U) | (((24) & ((1UL << (5)) - 1UL)) << 8U) | (((((1UL << (2)) - 1UL)) & ((1UL << (3)) - 1UL)) << 13U) | (((0x01) & ((1UL << (3)) - 1UL)) << 16U) | (((10) & ((1UL << (13)) - 1UL)) << 19U))
-           ((((0x04) & ((1UL << (8)) - 1UL)) << 0U) | (((24) & ((1UL << (5)) - 1UL)) << 8U) | (((((1UL << (2)) - 1UL)) & ((1UL << (3)) - 1UL)) << 13U) | (((0x02) & ((1UL << (3)) - 1UL)) << 16U) | (((8) & ((1UL << (13)) - 1UL)) << 19U))
-           ((((0x04) & ((1UL << (8)) - 1UL)) << 0U) | (((24) & ((1UL << (5)) - 1UL)) << 8U) | (((((1UL << (2)) - 1UL)) & ((1UL << (3)) - 1UL)) << 13U) | (((0x03) & ((1UL << (3)) - 1UL)) << 16U) | (((6) & ((1UL << (13)) - 1UL)) << 19U))>;
+   st,adc-resolutions = <12 10 8 6>;
    sampling-times = <3 15 28 56 84 112 144 480>;
    st,adc-clock-source = "SYNC";
    st,adc-sequencer = "programmable";
@@ -739,8 +772,8 @@
 
  die_temp: dietemp {
   compatible = "st,stm32-temp-cal";
-  ts-cal1-addr = <0x1FFF7A2C>;
-  ts-cal2-addr = <0x1FFF7A2E>;
+  nvmem-cells = <&ts_cal1_otp>, <&ts_cal2_otp>;
+  nvmem-cell-names = "TS_CAL1", "TS_CAL2";
   ts-cal1-temp = <30>;
   ts-cal2-temp = <110>;
   ts-cal-vrefanalog = <3300>;
@@ -750,7 +783,7 @@
 
  vref: vref {
   compatible = "st,stm32-vref";
-  vrefint-cal-addr = <0x1FFF7A2A>;
+  nvmem-cells = <&vrefint_otp>;
   vrefint-cal-mv = <3300>;
   io-channels = <&adc1 17>;
   status = "disabled";
@@ -796,13 +829,13 @@
 &nvic {
  arm,num-irq-priority-bits = <4>;
 };
-# 8 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f401.dtsi" 2 3 4
+# 8 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f401.dtsi" 2 3 4
 
 / {
  clocks {
   plli2s: plli2s {
    #clock-cells = <0>;
-   compatible = "st,stm32f4-plli2s-clock";
+   compatible = "st,stm32fx-pll-clock";
    status = "disabled";
   };
  };
@@ -817,6 +850,7 @@
    reg = <0x40003800 0x400>;
    clocks = <&rcc (0x040) (1 << 14)>;
    interrupts = <36 5>;
+   st,spi-data-width = "limited-8-16-bit";
    status = "disabled";
   };
 
@@ -827,6 +861,7 @@
    reg = <0x40003c00 0x400>;
    clocks = <&rcc (0x040) (1 << 15)>;
    interrupts = <51 5>;
+   st,spi-data-width = "limited-8-16-bit";
    status = "disabled";
   };
 
@@ -837,6 +872,7 @@
    reg = <0x40013400 0x400>;
    clocks = <&rcc (0x044) (1 << 13)>;
    interrupts = <84 5>;
+   st,spi-data-width = "limited-8-16-bit";
    status = "disabled";
   };
 
@@ -867,7 +903,7 @@
   };
  };
 };
-# 9 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f405.dtsi" 2 3 4
+# 9 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f405.dtsi" 2 3 4
 
 
 / {
@@ -941,7 +977,7 @@
    compatible = "st,stm32-timers";
    reg = <0x40001000 0x400>;
    clocks = <&rcc (0x040) (1 << 4)>,
-     <&rcc (((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
+     <&rcc ((((((((((((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
    resets = <&rctl (((0x20) << 5U) | (4))>;
    interrupts = <54 0>;
    interrupt-names = "global";
@@ -958,7 +994,7 @@
    compatible = "st,stm32-timers";
    reg = <0x40001400 0x400>;
    clocks = <&rcc (0x040) (1 << 5)>,
-     <&rcc (((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
+     <&rcc ((((((((((((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
    resets = <&rctl (((0x20) << 5U) | (5))>;
    interrupts = <55 0>;
    interrupt-names = "global";
@@ -975,7 +1011,7 @@
    compatible = "st,stm32-timers";
    reg = <0x40010400 0x400>;
    clocks = <&rcc (0x044) (1 << 1)>,
-     <&rcc ((((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
+     <&rcc (((((((((((((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
    resets = <&rctl (((0x24) << 5U) | (1))>;
    interrupts = <43 0>, <44 0>, <45 0>, <46 0>;
    interrupt-names = "brk", "up", "trgcom", "cc";
@@ -986,6 +1022,11 @@
     compatible = "st,stm32-pwm";
     status = "disabled";
     #pwm-cells = <3>;
+   };
+
+   counter {
+    compatible = "st,stm32-counter";
+    status = "disabled";
    };
 
    qdec {
@@ -999,7 +1040,7 @@
    compatible = "st,stm32-timers";
    reg = <0x40001800 0x400>;
    clocks = <&rcc (0x040) (1 << 6)>,
-     <&rcc (((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
+     <&rcc ((((((((((((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
    resets = <&rctl (((0x20) << 5U) | (6))>;
    interrupts = <43 0>;
    interrupt-names = "global";
@@ -1022,7 +1063,7 @@
    compatible = "st,stm32-timers";
    reg = <0x40001c00 0x400>;
    clocks = <&rcc (0x040) (1 << 7)>,
-     <&rcc (((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
+     <&rcc ((((((((((((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
    resets = <&rctl (((0x20) << 5U) | (7))>;
    interrupts = <44 0>;
    interrupt-names = "global";
@@ -1045,7 +1086,7 @@
    compatible = "st,stm32-timers";
    reg = <0x40002000 0x400>;
    clocks = <&rcc (0x040) (1 << 8)>,
-     <&rcc (((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
+     <&rcc ((((((((((((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) 0xFF>;
    resets = <&rctl (((0x20) << 5U) | (8))>;
    interrupts = <45 0>;
    interrupt-names = "global";
@@ -1115,16 +1156,13 @@
   };
 
   adc2: adc@40012100 {
-   compatible = "st,stm32-adc";
+   compatible = "st,stm32f4-adc", "st,stm32-adc";
    reg = <0x40012100 0x050>;
    clocks = <&rcc (0x044) (1 << 9)>;
    clock-names = "adcx";
    interrupts = <18 0>;
    #io-channel-cells = <1>;
-   resolutions = <((((0x04) & ((1UL << (8)) - 1UL)) << 0U) | (((24) & ((1UL << (5)) - 1UL)) << 8U) | (((((1UL << (2)) - 1UL)) & ((1UL << (3)) - 1UL)) << 13U) | (((0x00) & ((1UL << (3)) - 1UL)) << 16U) | (((12) & ((1UL << (13)) - 1UL)) << 19U))
-           ((((0x04) & ((1UL << (8)) - 1UL)) << 0U) | (((24) & ((1UL << (5)) - 1UL)) << 8U) | (((((1UL << (2)) - 1UL)) & ((1UL << (3)) - 1UL)) << 13U) | (((0x01) & ((1UL << (3)) - 1UL)) << 16U) | (((10) & ((1UL << (13)) - 1UL)) << 19U))
-           ((((0x04) & ((1UL << (8)) - 1UL)) << 0U) | (((24) & ((1UL << (5)) - 1UL)) << 8U) | (((((1UL << (2)) - 1UL)) & ((1UL << (3)) - 1UL)) << 13U) | (((0x02) & ((1UL << (3)) - 1UL)) << 16U) | (((8) & ((1UL << (13)) - 1UL)) << 19U))
-           ((((0x04) & ((1UL << (8)) - 1UL)) << 0U) | (((24) & ((1UL << (5)) - 1UL)) << 8U) | (((((1UL << (2)) - 1UL)) & ((1UL << (3)) - 1UL)) << 13U) | (((0x03) & ((1UL << (3)) - 1UL)) << 16U) | (((6) & ((1UL << (13)) - 1UL)) << 19U))>;
+   st,adc-resolutions = <12 10 8 6>;
    sampling-times = <3 15 28 56 84 112 144 480>;
    st,adc-clock-source = "SYNC";
    st,adc-sequencer = "programmable";
@@ -1134,16 +1172,13 @@
   };
 
   adc3: adc@40012200 {
-   compatible = "st,stm32-adc";
+   compatible = "st,stm32f4-adc", "st,stm32-adc";
    reg = <0x40012200 0x050>;
    clocks = <&rcc (0x044) (1 << 10)>;
    clock-names = "adcx";
    interrupts = <18 0>;
    #io-channel-cells = <1>;
-   resolutions = <((((0x04) & ((1UL << (8)) - 1UL)) << 0U) | (((24) & ((1UL << (5)) - 1UL)) << 8U) | (((((1UL << (2)) - 1UL)) & ((1UL << (3)) - 1UL)) << 13U) | (((0x00) & ((1UL << (3)) - 1UL)) << 16U) | (((12) & ((1UL << (13)) - 1UL)) << 19U))
-           ((((0x04) & ((1UL << (8)) - 1UL)) << 0U) | (((24) & ((1UL << (5)) - 1UL)) << 8U) | (((((1UL << (2)) - 1UL)) & ((1UL << (3)) - 1UL)) << 13U) | (((0x01) & ((1UL << (3)) - 1UL)) << 16U) | (((10) & ((1UL << (13)) - 1UL)) << 19U))
-           ((((0x04) & ((1UL << (8)) - 1UL)) << 0U) | (((24) & ((1UL << (5)) - 1UL)) << 8U) | (((((1UL << (2)) - 1UL)) & ((1UL << (3)) - 1UL)) << 13U) | (((0x02) & ((1UL << (3)) - 1UL)) << 16U) | (((8) & ((1UL << (13)) - 1UL)) << 19U))
-           ((((0x04) & ((1UL << (8)) - 1UL)) << 0U) | (((24) & ((1UL << (5)) - 1UL)) << 8U) | (((((1UL << (2)) - 1UL)) & ((1UL << (3)) - 1UL)) << 13U) | (((0x03) & ((1UL << (3)) - 1UL)) << 16U) | (((6) & ((1UL << (13)) - 1UL)) << 19U))>;
+   st,adc-resolutions = <12 10 8 6>;
    sampling-times = <3 15 28 56 84 112 144 480>;
    st,adc-clock-source = "SYNC";
    st,adc-sequencer = "programmable";
@@ -1166,7 +1201,7 @@
   #phy-cells = <0>;
  };
 };
-# 8 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f407.dtsi" 2 3 4
+# 8 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f407.dtsi" 2 3 4
 
 / {
  soc {
@@ -1175,17 +1210,15 @@
   ethernet@40028000 {
    reg = <0x40028000 0x8000>;
    compatible = "st,stm32-ethernet-controller";
-   clock-names = "stm-eth";
-   clocks = <&rcc (0x030) (1 << 25)>;
+   clock-names = "stm-eth", "mac-clk-tx", "mac-clk-rx", "mac-clk-ptp";
+   clocks = <&rcc (0x030) (1 << 25)>,
+     <&rcc (0x030) (1 << 26)>,
+     <&rcc (0x030) (1 << 27)>,
+     <&rcc (0x030) (1 << 28)>;
 
    mac: ethernet {
     compatible = "st,stm32-ethernet";
     interrupts = <61 0>;
-    clock-names = "mac-clk-tx", "mac-clk-rx",
-           "mac-clk-ptp";
-    clocks = <&rcc (0x030) (1 << 26)>,
-      <&rcc (0x030) (1 << 27)>,
-      <&rcc (0x030) (1 << 28)>;
     status = "disabled";
    };
 
@@ -1198,13 +1231,13 @@
   };
  };
 };
-# 8 "D:/Zephyr_Projects/external/zephyr/dts/arm/st/f4/stm32f407Xg.dtsi" 2 3 4
+# 8 "G:/Zephyr_Projects/zephyr/dts/arm/st/f4/stm32f407Xg.dtsi" 2 3 4
 
 / {
  ccm0: memory@10000000 {
   compatible = "zephyr,memory-region", "st,stm32-ccm";
   reg = <0x10000000 ((64) * 1024)>;
-  zephyr,memory-region = "CCM";
+  zephyr,memory-region = "DTCM";
  };
 
  sram0: memory@20000000 {
@@ -1219,19 +1252,19 @@
   };
  };
 };
-# 9 "D:/Zephyr_Projects/external/zephyr/boards/st/stm32f4_disco/stm32f4_disco.dts" 2
-# 1 "D:/Zephyr_Projects/external/modules/hal/stm32/dts/st/f4/stm32f407v(e-g)tx-pinctrl.dtsi" 1 3 4
+# 9 "G:/Zephyr_Projects/zephyr/boards/st/stm32f4_disco/stm32f4_disco.dts" 2
+# 1 "G:/Zephyr_Projects/modules/hal/stm32/dts/st/f4/stm32f407v(e-g)tx-pinctrl.dtsi" 1 3 4
 
 
 
 
 
 
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/pinctrl/stm32-pinctrl.h" 1 3 4
-# 10 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/pinctrl/stm32-pinctrl.h" 3 4
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/pinctrl/stm32-pinctrl-common.h" 1 3 4
-# 11 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/pinctrl/stm32-pinctrl.h" 2 3 4
-# 8 "D:/Zephyr_Projects/external/modules/hal/stm32/dts/st/f4/stm32f407v(e-g)tx-pinctrl.dtsi" 2 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/pinctrl/stm32-pinctrl.h" 1 3 4
+# 10 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/pinctrl/stm32-pinctrl.h" 3 4
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/pinctrl/stm32-pinctrl-common.h" 1 3 4
+# 11 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/pinctrl/stm32-pinctrl.h" 2 3 4
+# 8 "G:/Zephyr_Projects/modules/hal/stm32/dts/st/f4/stm32f407v(e-g)tx-pinctrl.dtsi" 2 3 4
 
 / {
  soc {
@@ -2247,31 +2280,37 @@
    /omit-if-no-ref/ spi1_miso_pa6: spi1_miso_pa6 {
     pinmux = <((((('A') - 'A') & 0x1FU) << 9U) | (((6) & 0xFU) << 5U) | (((0x5) & 0x1FU) << 0U))>;
     bias-pull-down;
+    slew-rate = "very-high-speed";
    };
 
    /omit-if-no-ref/ spi1_miso_pb4: spi1_miso_pb4 {
     pinmux = <((((('B') - 'A') & 0x1FU) << 9U) | (((4) & 0xFU) << 5U) | (((0x5) & 0x1FU) << 0U))>;
     bias-pull-down;
+    slew-rate = "very-high-speed";
    };
 
    /omit-if-no-ref/ spi2_miso_pb14: spi2_miso_pb14 {
     pinmux = <((((('B') - 'A') & 0x1FU) << 9U) | (((14) & 0xFU) << 5U) | (((0x5) & 0x1FU) << 0U))>;
     bias-pull-down;
+    slew-rate = "very-high-speed";
    };
 
    /omit-if-no-ref/ spi2_miso_pc2: spi2_miso_pc2 {
     pinmux = <((((('C') - 'A') & 0x1FU) << 9U) | (((2) & 0xFU) << 5U) | (((0x5) & 0x1FU) << 0U))>;
     bias-pull-down;
+    slew-rate = "very-high-speed";
    };
 
    /omit-if-no-ref/ spi3_miso_pb4: spi3_miso_pb4 {
     pinmux = <((((('B') - 'A') & 0x1FU) << 9U) | (((4) & 0xFU) << 5U) | (((0x6) & 0x1FU) << 0U))>;
     bias-pull-down;
+    slew-rate = "very-high-speed";
    };
 
    /omit-if-no-ref/ spi3_miso_pc11: spi3_miso_pc11 {
     pinmux = <((((('C') - 'A') & 0x1FU) << 9U) | (((11) & 0xFU) << 5U) | (((0x6) & 0x1FU) << 0U))>;
     bias-pull-down;
+    slew-rate = "very-high-speed";
    };
 
 
@@ -2279,31 +2318,37 @@
    /omit-if-no-ref/ spi1_mosi_pa7: spi1_mosi_pa7 {
     pinmux = <((((('A') - 'A') & 0x1FU) << 9U) | (((7) & 0xFU) << 5U) | (((0x5) & 0x1FU) << 0U))>;
     bias-pull-down;
+    slew-rate = "very-high-speed";
    };
 
    /omit-if-no-ref/ spi1_mosi_pb5: spi1_mosi_pb5 {
     pinmux = <((((('B') - 'A') & 0x1FU) << 9U) | (((5) & 0xFU) << 5U) | (((0x5) & 0x1FU) << 0U))>;
     bias-pull-down;
+    slew-rate = "very-high-speed";
    };
 
    /omit-if-no-ref/ spi2_mosi_pb15: spi2_mosi_pb15 {
     pinmux = <((((('B') - 'A') & 0x1FU) << 9U) | (((15) & 0xFU) << 5U) | (((0x5) & 0x1FU) << 0U))>;
     bias-pull-down;
+    slew-rate = "very-high-speed";
    };
 
    /omit-if-no-ref/ spi2_mosi_pc3: spi2_mosi_pc3 {
     pinmux = <((((('C') - 'A') & 0x1FU) << 9U) | (((3) & 0xFU) << 5U) | (((0x5) & 0x1FU) << 0U))>;
     bias-pull-down;
+    slew-rate = "very-high-speed";
    };
 
    /omit-if-no-ref/ spi3_mosi_pb5: spi3_mosi_pb5 {
     pinmux = <((((('B') - 'A') & 0x1FU) << 9U) | (((5) & 0xFU) << 5U) | (((0x6) & 0x1FU) << 0U))>;
     bias-pull-down;
+    slew-rate = "very-high-speed";
    };
 
    /omit-if-no-ref/ spi3_mosi_pc12: spi3_mosi_pc12 {
     pinmux = <((((('C') - 'A') & 0x1FU) << 9U) | (((12) & 0xFU) << 5U) | (((0x6) & 0x1FU) << 0U))>;
     bias-pull-down;
+    slew-rate = "very-high-speed";
    };
 
 
@@ -2311,31 +2356,37 @@
    /omit-if-no-ref/ spi1_nss_pa4: spi1_nss_pa4 {
     pinmux = <((((('A') - 'A') & 0x1FU) << 9U) | (((4) & 0xFU) << 5U) | (((0x5) & 0x1FU) << 0U))>;
     bias-pull-up;
+    slew-rate = "very-high-speed";
    };
 
    /omit-if-no-ref/ spi1_nss_pa15: spi1_nss_pa15 {
     pinmux = <((((('A') - 'A') & 0x1FU) << 9U) | (((15) & 0xFU) << 5U) | (((0x5) & 0x1FU) << 0U))>;
     bias-pull-up;
+    slew-rate = "very-high-speed";
    };
 
    /omit-if-no-ref/ spi2_nss_pb9: spi2_nss_pb9 {
     pinmux = <((((('B') - 'A') & 0x1FU) << 9U) | (((9) & 0xFU) << 5U) | (((0x5) & 0x1FU) << 0U))>;
     bias-pull-up;
+    slew-rate = "very-high-speed";
    };
 
    /omit-if-no-ref/ spi2_nss_pb12: spi2_nss_pb12 {
     pinmux = <((((('B') - 'A') & 0x1FU) << 9U) | (((12) & 0xFU) << 5U) | (((0x5) & 0x1FU) << 0U))>;
     bias-pull-up;
+    slew-rate = "very-high-speed";
    };
 
    /omit-if-no-ref/ spi3_nss_pa4: spi3_nss_pa4 {
     pinmux = <((((('A') - 'A') & 0x1FU) << 9U) | (((4) & 0xFU) << 5U) | (((0x6) & 0x1FU) << 0U))>;
     bias-pull-up;
+    slew-rate = "very-high-speed";
    };
 
    /omit-if-no-ref/ spi3_nss_pa15: spi3_nss_pa15 {
     pinmux = <((((('A') - 'A') & 0x1FU) << 9U) | (((15) & 0xFU) << 5U) | (((0x6) & 0x1FU) << 0U))>;
     bias-pull-up;
+    slew-rate = "very-high-speed";
    };
 
 
@@ -2934,9 +2985,9 @@
   };
  };
 };
-# 10 "D:/Zephyr_Projects/external/zephyr/boards/st/stm32f4_disco/stm32f4_disco.dts" 2
-# 1 "D:/Zephyr_Projects/external/zephyr/include/zephyr/dt-bindings/input/input-event-codes.h" 1 3 4
-# 11 "D:/Zephyr_Projects/external/zephyr/boards/st/stm32f4_disco/stm32f4_disco.dts" 2
+# 10 "G:/Zephyr_Projects/zephyr/boards/st/stm32f4_disco/stm32f4_disco.dts" 2
+# 1 "G:/Zephyr_Projects/zephyr/include/zephyr/dt-bindings/input/input-event-codes.h" 1 3 4
+# 11 "G:/Zephyr_Projects/zephyr/boards/st/stm32f4_disco/stm32f4_disco.dts" 2
 
 / {
  model = "STMicroelectronics STM32F4DISCOVERY board";
@@ -2947,7 +2998,7 @@
   zephyr,shell-uart = &usart2;
   zephyr,sram = &sram0;
   zephyr,flash = &flash0;
-  zephyr,ccm = &ccm0;
+  zephyr,dtcm = &ccm0;
   zephyr,canbus = &can2;
  };
 
@@ -3129,8 +3180,10 @@ zephyr_udc0: &usbotg_fs {
 
 
 
+ div-m = <8>;
  mul-n = <271>;
  div-r = <2>;
+ clocks = <&clk_hse>;
  status = "okay";
 };
 
@@ -3139,7 +3192,7 @@ zephyr_udc0: &usbotg_fs {
  pinctrl-0 = <&i2s3_ws_pa4 &i2s3_ck_pc10 &i2s3_sd_pc12 &i2s3_mck_pc7>;
  pinctrl-names = "default";
  clocks = <&rcc (0x040) (1 << 15)>,
-   <&rcc (((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) ((((0x08) & 0xFFFFU) << 0U) | (((23) & 0x1FU) << 16U) | ((((23) - (23)) & 0x3U) << 21U) | ((((0)) & 0xFFU) << 24U))>;
+   <&rcc ((((((((((0x003 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) ((((0x08) & 0xFFFFU) << 0U) | (((23) & 0x1FU) << 16U) | ((((23) - (23)) & 0x3U) << 21U) | ((((0)) & 0xFFU) << 24U))>;
  status = "okay";
 };
 
@@ -3156,7 +3209,7 @@ zephyr_udc0: &usbotg_fs {
  };
 };
 # 0 "<command-line>" 2
-# 1 "D:/Zephyr_Projects/apps/at24_eeprom_driver/boards/stm32f4_disco.overlay" 1
+# 1 "G:/Zephyr_Projects/apps/at24_eeprom_driver/MyCustom_Libraries_zephyr/at24_eeprom_driver/boards/stm32f4_disco.overlay" 1
 
 
 / {
@@ -3178,4 +3231,4 @@ zephyr_udc0: &usbotg_fs {
     };
 };
 # 0 "<command-line>" 2
-# 1 "D:/Zephyr_Projects/external/zephyr/misc/empty_file.c"
+# 1 "G:/Zephyr_Projects/zephyr/misc/empty_file.c"

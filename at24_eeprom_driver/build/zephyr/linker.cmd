@@ -4,7 +4,7 @@ MEMORY
     {
     FLASH (rx) : ORIGIN = (0x8000000 + 0x0), LENGTH = (1024 * 1024 - 0x0 - 0x0)
     RAM (wx) : ORIGIN = 0x20000000, LENGTH = (128 * 1K)
-    SRAM0 ( rw ) : ORIGIN = (536870912), LENGTH = (131072) CCM ( rw ) : ORIGIN = (268435456), LENGTH = (65536)
+    SRAM0 ( rw ) : ORIGIN = (536870912), LENGTH = (131072) DTCM ( rw ) : ORIGIN = (268435456), LENGTH = (65536)
     IDT_LIST (wx) : ORIGIN = 0xFFFF7FFF, LENGTH = 32K
     }
 ENTRY("__start")
@@ -64,7 +64,6 @@ KEEP(*(.gnu.linkonce.irq_vector_table*))
  __text_region_start = .;
  *(.text)
  *(".text.*")
- *(".TEXT.*")
  *(.gnu.linkonce.t.*)
  *(.glue_7t) *(.glue_7) *(.vfp11_veneer) *(.v4_bx)
  . = ALIGN(4);
@@ -122,6 +121,7 @@ crypto_driver_api_area : { _crypto_driver_api_list_start = .; KEEP(*(SORT_BY_NAM
 adc_driver_api_area : { _adc_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._adc_driver_api.static.*))); _adc_driver_api_list_end = .;; } > FLASH
 auxdisplay_driver_api_area : { _auxdisplay_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._auxdisplay_driver_api.static.*))); _auxdisplay_driver_api_list_end = .;; } > FLASH
 bbram_driver_api_area : { _bbram_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._bbram_driver_api.static.*))); _bbram_driver_api_list_end = .;; } > FLASH
+biometric_driver_api_area : { _biometric_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._biometric_driver_api.static.*))); _biometric_driver_api_list_end = .;; } > FLASH
 bt_hci_driver_api_area : { _bt_hci_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._bt_hci_driver_api.static.*))); _bt_hci_driver_api_list_end = .;; } > FLASH
 can_driver_api_area : { _can_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._can_driver_api.static.*))); _can_driver_api_list_end = .;; } > FLASH
 cellular_driver_api_area : { _cellular_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._cellular_driver_api.static.*))); _cellular_driver_api_list_end = .;; } > FLASH
@@ -161,6 +161,7 @@ mipi_dbi_driver_api_area : { _mipi_dbi_driver_api_list_start = .; KEEP(*(SORT_BY
 mipi_dsi_driver_api_area : { _mipi_dsi_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._mipi_dsi_driver_api.static.*))); _mipi_dsi_driver_api_list_end = .;; } > FLASH
 mspi_driver_api_area : { _mspi_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._mspi_driver_api.static.*))); _mspi_driver_api_list_end = .;; } > FLASH
 opamp_driver_api_area : { _opamp_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._opamp_driver_api.static.*))); _opamp_driver_api_list_end = .;; } > FLASH
+otp_driver_api_area : { _otp_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._otp_driver_api.static.*))); _otp_driver_api_list_end = .;; } > FLASH
 peci_driver_api_area : { _peci_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._peci_driver_api.static.*))); _peci_driver_api_list_end = .;; } > FLASH
 ps2_driver_api_area : { _ps2_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._ps2_driver_api.static.*))); _ps2_driver_api_list_end = .;; } > FLASH
 ptp_clock_driver_api_area : { _ptp_clock_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._ptp_clock_driver_api.static.*))); _ptp_clock_driver_api_list_end = .;; } > FLASH
@@ -173,9 +174,9 @@ sdhc_driver_api_area : { _sdhc_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._
 sensor_driver_api_area : { _sensor_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._sensor_driver_api.static.*))); _sensor_driver_api_list_end = .;; } > FLASH
 smbus_driver_api_area : { _smbus_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._smbus_driver_api.static.*))); _smbus_driver_api_list_end = .;; } > FLASH
 spi_driver_api_area : { _spi_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._spi_driver_api.static.*))); _spi_driver_api_list_end = .;; } > FLASH
-stepper_driver_api_area : { _stepper_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._stepper_driver_api.static.*))); _stepper_driver_api_list_end = .;; } > FLASH
 syscon_driver_api_area : { _syscon_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._syscon_driver_api.static.*))); _syscon_driver_api_list_end = .;; } > FLASH
 tee_driver_api_area : { _tee_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._tee_driver_api.static.*))); _tee_driver_api_list_end = .;; } > FLASH
+uaol_driver_api_area : { _uaol_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._uaol_driver_api.static.*))); _uaol_driver_api_list_end = .;; } > FLASH
 video_driver_api_area : { _video_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._video_driver_api.static.*))); _video_driver_api_list_end = .;; } > FLASH
 virtio_driver_api_area : { _virtio_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._virtio_driver_api.static.*))); _virtio_driver_api_list_end = .;; } > FLASH
 w1_driver_api_area : { _w1_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._w1_driver_api.static.*))); _w1_driver_api_list_end = .;; } > FLASH
@@ -192,6 +193,8 @@ pcie_ep_driver_api_area : { _pcie_ep_driver_api_list_start = .; KEEP(*(SORT_BY_N
 psi5_driver_api_area : { _psi5_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._psi5_driver_api.static.*))); _psi5_driver_api_list_end = .;; } > FLASH
 sent_driver_api_area : { _sent_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._sent_driver_api.static.*))); _sent_driver_api_list_end = .;; } > FLASH
 svc_driver_api_area : { _svc_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._svc_driver_api.static.*))); _svc_driver_api_list_end = .;; } > FLASH
+stepper_driver_api_area : { _stepper_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._stepper_driver_api.static.*))); _stepper_driver_api_list_end = .;; } > FLASH
+stepper_ctrl_driver_api_area : { _stepper_ctrl_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._stepper_ctrl_driver_api.static.*))); _stepper_ctrl_driver_api_list_end = .;; } > FLASH
 uart_driver_api_area : { _uart_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._uart_driver_api.static.*))); _uart_driver_api_list_end = .;; } > FLASH
 bc12_emul_driver_api_area : { _bc12_emul_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._bc12_emul_driver_api.static.*))); _bc12_emul_driver_api_list_end = .;; } > FLASH
 bc12_driver_api_area : { _bc12_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._bc12_driver_api.static.*))); _bc12_driver_api_list_end = .;; } > FLASH
@@ -343,30 +346,30 @@ __ramfunc_load_start = LOADADDR(.ramfunc);
  net_buf_pool_area : ALIGN_WITH_INPUT { _net_buf_pool_list_start = .; KEEP(*(SORT_BY_NAME(._net_buf_pool.static.*))); _net_buf_pool_list_end = .;; } > RAM AT > FLASH
     __data_region_end = .;
 
- .ccm_bss (NOLOAD) : SUBALIGN(4)
+ .dtcm_bss (NOLOAD) : SUBALIGN(4)
  {
-  __ccm_start = .;
-  __ccm_bss_start = .;
-  *(.ccm_bss)
-  *(".ccm_bss.*")
-  __ccm_bss_end = .;
- } > CCM
- .ccm_noinit (NOLOAD) : SUBALIGN(4)
+  __dtcm_start = .;
+  __dtcm_bss_start = .;
+  *(.dtcm_bss)
+  *(".dtcm_bss.*")
+  __dtcm_bss_end = .;
+ } > DTCM
+ .dtcm_noinit (NOLOAD) : SUBALIGN(4)
  {
-  __ccm_noinit_start = .;
-  *(.ccm_noinit)
-  *(".ccm_noinit.*")
-  __ccm_noinit_end = .;
- } > CCM
- .ccm_data : SUBALIGN(4)
+  __dtcm_noinit_start = .;
+  *(.dtcm_noinit)
+  *(".dtcm_noinit.*")
+  __dtcm_noinit_end = .;
+ } > DTCM
+ .dtcm_data : SUBALIGN(4)
  {
-  __ccm_data_start = .;
-  *(.ccm_data)
-  *(".ccm_data.*")
-  __ccm_data_end = .;
- } > CCM AT> FLASH
- __ccm_end = .;
- __ccm_data_load_start = LOADADDR(.ccm_data);
+  __dtcm_data_start = .;
+  *(.dtcm_data)
+  *(".dtcm_data.*")
+  __dtcm_data_end = .;
+ } > DTCM AT> FLASH
+ __dtcm_end = .;
+ __dtcm_data_load_start = LOADADDR(.dtcm_data);
 
 /DISCARD/ :
 {
@@ -414,7 +417,7 @@ __ramfunc_load_start = LOADADDR(.ramfunc);
  KEEP(*(.ARM.attributes))
  KEEP(*(.gnu.attributes))
  }
-    SRAM0 (NOLOAD) : { __SRAM0_start = .; KEEP(*(SRAM0)) KEEP(*(SRAM0.*)) __SRAM0_end = .; } > SRAM0 __SRAM0_size = __SRAM0_end - __SRAM0_start; __SRAM0_load_start = LOADADDR(SRAM0); CCM (NOLOAD) : { __CCM_start = .; KEEP(*(CCM)) KEEP(*(CCM.*)) __CCM_end = .; } > CCM __CCM_size = __CCM_end - __CCM_start; __CCM_load_start = LOADADDR(CCM);
+    SRAM0 (NOLOAD) : { __SRAM0_start = .; KEEP(*(SRAM0)) KEEP(*(SRAM0.*)) __SRAM0_end = .; } > SRAM0 __SRAM0_size = __SRAM0_end - __SRAM0_start; __SRAM0_load_start = LOADADDR(SRAM0); DTCM (NOLOAD) : { __DTCM_start = .; KEEP(*(DTCM)) KEEP(*(DTCM.*)) __DTCM_end = .; } > DTCM __DTCM_size = __DTCM_end - __DTCM_start; __DTCM_load_start = LOADADDR(DTCM);
 .last_section :
 {
   KEEP(*(.last_section))

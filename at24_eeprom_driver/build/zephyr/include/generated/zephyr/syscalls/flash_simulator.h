@@ -20,6 +20,54 @@
 extern "C" {
 #endif
 
+extern const struct flash_simulator_params * z_impl_flash_simulator_get_params(const struct device * dev);
+
+__pinned_func
+static inline const struct flash_simulator_params * flash_simulator_get_params(const struct device * dev)
+{
+#ifdef CONFIG_USERSPACE
+	if (z_syscall_trap()) {
+		union { uintptr_t x; const struct device * val; } parm0 = { .val = dev };
+		return (const struct flash_simulator_params *) arch_syscall_invoke1(parm0.x, K_SYSCALL_FLASH_SIMULATOR_GET_PARAMS);
+	}
+#endif
+	compiler_barrier();
+	return z_impl_flash_simulator_get_params(dev);
+}
+
+#if defined(CONFIG_TRACING_SYSCALL)
+#ifndef DISABLE_SYSCALL_TRACING
+
+#define flash_simulator_get_params(dev) ({ 	const struct flash_simulator_params * syscall__retval; 	sys_port_trace_syscall_enter(K_SYSCALL_FLASH_SIMULATOR_GET_PARAMS, flash_simulator_get_params, dev); 	syscall__retval = flash_simulator_get_params(dev); 	sys_port_trace_syscall_exit(K_SYSCALL_FLASH_SIMULATOR_GET_PARAMS, flash_simulator_get_params, dev, syscall__retval); 	syscall__retval; })
+#endif
+#endif
+
+
+extern void z_impl_flash_simulator_set_callbacks(const struct device * dev, const struct flash_simulator_cb * cb);
+
+__pinned_func
+static inline void flash_simulator_set_callbacks(const struct device * dev, const struct flash_simulator_cb * cb)
+{
+#ifdef CONFIG_USERSPACE
+	if (z_syscall_trap()) {
+		union { uintptr_t x; const struct device * val; } parm0 = { .val = dev };
+		union { uintptr_t x; const struct flash_simulator_cb * val; } parm1 = { .val = cb };
+		(void) arch_syscall_invoke2(parm0.x, parm1.x, K_SYSCALL_FLASH_SIMULATOR_SET_CALLBACKS);
+		return;
+	}
+#endif
+	compiler_barrier();
+	z_impl_flash_simulator_set_callbacks(dev, cb);
+}
+
+#if defined(CONFIG_TRACING_SYSCALL)
+#ifndef DISABLE_SYSCALL_TRACING
+
+#define flash_simulator_set_callbacks(dev, cb) do { 	sys_port_trace_syscall_enter(K_SYSCALL_FLASH_SIMULATOR_SET_CALLBACKS, flash_simulator_set_callbacks, dev, cb); 	flash_simulator_set_callbacks(dev, cb); 	sys_port_trace_syscall_exit(K_SYSCALL_FLASH_SIMULATOR_SET_CALLBACKS, flash_simulator_set_callbacks, dev, cb); } while(false)
+#endif
+#endif
+
+
 extern void * z_impl_flash_simulator_get_memory(const struct device * dev, size_t * mock_size);
 
 __pinned_func

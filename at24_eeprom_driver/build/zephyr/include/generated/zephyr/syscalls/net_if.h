@@ -20,14 +20,14 @@
 extern "C" {
 #endif
 
-extern int z_impl_net_if_ipv6_addr_lookup_by_index(const struct in6_addr * addr);
+extern int z_impl_net_if_ipv6_addr_lookup_by_index(const struct net_in6_addr * addr);
 
 __pinned_func
-static inline int net_if_ipv6_addr_lookup_by_index(const struct in6_addr * addr)
+static inline int net_if_ipv6_addr_lookup_by_index(const struct net_in6_addr * addr)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
-		union { uintptr_t x; const struct in6_addr * val; } parm0 = { .val = addr };
+		union { uintptr_t x; const struct net_in6_addr * val; } parm0 = { .val = addr };
 		return (int) arch_syscall_invoke1(parm0.x, K_SYSCALL_NET_IF_IPV6_ADDR_LOOKUP_BY_INDEX);
 	}
 #endif
@@ -43,15 +43,15 @@ static inline int net_if_ipv6_addr_lookup_by_index(const struct in6_addr * addr)
 #endif
 
 
-extern bool z_impl_net_if_ipv6_addr_add_by_index(int index, const struct in6_addr * addr, enum net_addr_type addr_type, uint32_t vlifetime);
+extern bool z_impl_net_if_ipv6_addr_add_by_index(int index, const struct net_in6_addr * addr, enum net_addr_type addr_type, uint32_t vlifetime);
 
 __pinned_func
-static inline bool net_if_ipv6_addr_add_by_index(int index, const struct in6_addr * addr, enum net_addr_type addr_type, uint32_t vlifetime)
+static inline bool net_if_ipv6_addr_add_by_index(int index, const struct net_in6_addr * addr, enum net_addr_type addr_type, uint32_t vlifetime)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
 		union { uintptr_t x; int val; } parm0 = { .val = index };
-		union { uintptr_t x; const struct in6_addr * val; } parm1 = { .val = addr };
+		union { uintptr_t x; const struct net_in6_addr * val; } parm1 = { .val = addr };
 		union { uintptr_t x; enum net_addr_type val; } parm2 = { .val = addr_type };
 		union { uintptr_t x; uint32_t val; } parm3 = { .val = vlifetime };
 		return (bool) arch_syscall_invoke4(parm0.x, parm1.x, parm2.x, parm3.x, K_SYSCALL_NET_IF_IPV6_ADDR_ADD_BY_INDEX);
@@ -69,15 +69,15 @@ static inline bool net_if_ipv6_addr_add_by_index(int index, const struct in6_add
 #endif
 
 
-extern bool z_impl_net_if_ipv6_addr_rm_by_index(int index, const struct in6_addr * addr);
+extern bool z_impl_net_if_ipv6_addr_rm_by_index(int index, const struct net_in6_addr * addr);
 
 __pinned_func
-static inline bool net_if_ipv6_addr_rm_by_index(int index, const struct in6_addr * addr)
+static inline bool net_if_ipv6_addr_rm_by_index(int index, const struct net_in6_addr * addr)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
 		union { uintptr_t x; int val; } parm0 = { .val = index };
-		union { uintptr_t x; const struct in6_addr * val; } parm1 = { .val = addr };
+		union { uintptr_t x; const struct net_in6_addr * val; } parm1 = { .val = addr };
 		return (bool) arch_syscall_invoke2(parm0.x, parm1.x, K_SYSCALL_NET_IF_IPV6_ADDR_RM_BY_INDEX);
 	}
 #endif
@@ -93,14 +93,14 @@ static inline bool net_if_ipv6_addr_rm_by_index(int index, const struct in6_addr
 #endif
 
 
-extern int z_impl_net_if_ipv4_addr_lookup_by_index(const struct in_addr * addr);
+extern int z_impl_net_if_ipv4_addr_lookup_by_index(const struct net_in_addr * addr);
 
 __pinned_func
-static inline int net_if_ipv4_addr_lookup_by_index(const struct in_addr * addr)
+static inline int net_if_ipv4_addr_lookup_by_index(const struct net_in_addr * addr)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
-		union { uintptr_t x; const struct in_addr * val; } parm0 = { .val = addr };
+		union { uintptr_t x; const struct net_in_addr * val; } parm0 = { .val = addr };
 		return (int) arch_syscall_invoke1(parm0.x, K_SYSCALL_NET_IF_IPV4_ADDR_LOOKUP_BY_INDEX);
 	}
 #endif
@@ -116,15 +116,15 @@ static inline int net_if_ipv4_addr_lookup_by_index(const struct in_addr * addr)
 #endif
 
 
-extern bool z_impl_net_if_ipv4_addr_add_by_index(int index, const struct in_addr * addr, enum net_addr_type addr_type, uint32_t vlifetime);
+extern bool z_impl_net_if_ipv4_addr_add_by_index(int index, const struct net_in_addr * addr, enum net_addr_type addr_type, uint32_t vlifetime);
 
 __pinned_func
-static inline bool net_if_ipv4_addr_add_by_index(int index, const struct in_addr * addr, enum net_addr_type addr_type, uint32_t vlifetime)
+static inline bool net_if_ipv4_addr_add_by_index(int index, const struct net_in_addr * addr, enum net_addr_type addr_type, uint32_t vlifetime)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
 		union { uintptr_t x; int val; } parm0 = { .val = index };
-		union { uintptr_t x; const struct in_addr * val; } parm1 = { .val = addr };
+		union { uintptr_t x; const struct net_in_addr * val; } parm1 = { .val = addr };
 		union { uintptr_t x; enum net_addr_type val; } parm2 = { .val = addr_type };
 		union { uintptr_t x; uint32_t val; } parm3 = { .val = vlifetime };
 		return (bool) arch_syscall_invoke4(parm0.x, parm1.x, parm2.x, parm3.x, K_SYSCALL_NET_IF_IPV4_ADDR_ADD_BY_INDEX);
@@ -142,15 +142,15 @@ static inline bool net_if_ipv4_addr_add_by_index(int index, const struct in_addr
 #endif
 
 
-extern bool z_impl_net_if_ipv4_addr_rm_by_index(int index, const struct in_addr * addr);
+extern bool z_impl_net_if_ipv4_addr_rm_by_index(int index, const struct net_in_addr * addr);
 
 __pinned_func
-static inline bool net_if_ipv4_addr_rm_by_index(int index, const struct in_addr * addr)
+static inline bool net_if_ipv4_addr_rm_by_index(int index, const struct net_in_addr * addr)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
 		union { uintptr_t x; int val; } parm0 = { .val = index };
-		union { uintptr_t x; const struct in_addr * val; } parm1 = { .val = addr };
+		union { uintptr_t x; const struct net_in_addr * val; } parm1 = { .val = addr };
 		return (bool) arch_syscall_invoke2(parm0.x, parm1.x, K_SYSCALL_NET_IF_IPV4_ADDR_RM_BY_INDEX);
 	}
 #endif
@@ -166,15 +166,15 @@ static inline bool net_if_ipv4_addr_rm_by_index(int index, const struct in_addr 
 #endif
 
 
-extern bool z_impl_net_if_ipv4_set_netmask_by_index(int index, const struct in_addr * netmask);
+extern bool z_impl_net_if_ipv4_set_netmask_by_index(int index, const struct net_in_addr * netmask);
 
 __pinned_func
-static inline bool net_if_ipv4_set_netmask_by_index(int index, const struct in_addr * netmask)
+static inline bool net_if_ipv4_set_netmask_by_index(int index, const struct net_in_addr * netmask)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
 		union { uintptr_t x; int val; } parm0 = { .val = index };
-		union { uintptr_t x; const struct in_addr * val; } parm1 = { .val = netmask };
+		union { uintptr_t x; const struct net_in_addr * val; } parm1 = { .val = netmask };
 		return (bool) arch_syscall_invoke2(parm0.x, parm1.x, K_SYSCALL_NET_IF_IPV4_SET_NETMASK_BY_INDEX);
 	}
 #endif
@@ -190,16 +190,16 @@ static inline bool net_if_ipv4_set_netmask_by_index(int index, const struct in_a
 #endif
 
 
-extern bool z_impl_net_if_ipv4_set_netmask_by_addr_by_index(int index, const struct in_addr * addr, const struct in_addr * netmask);
+extern bool z_impl_net_if_ipv4_set_netmask_by_addr_by_index(int index, const struct net_in_addr * addr, const struct net_in_addr * netmask);
 
 __pinned_func
-static inline bool net_if_ipv4_set_netmask_by_addr_by_index(int index, const struct in_addr * addr, const struct in_addr * netmask)
+static inline bool net_if_ipv4_set_netmask_by_addr_by_index(int index, const struct net_in_addr * addr, const struct net_in_addr * netmask)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
 		union { uintptr_t x; int val; } parm0 = { .val = index };
-		union { uintptr_t x; const struct in_addr * val; } parm1 = { .val = addr };
-		union { uintptr_t x; const struct in_addr * val; } parm2 = { .val = netmask };
+		union { uintptr_t x; const struct net_in_addr * val; } parm1 = { .val = addr };
+		union { uintptr_t x; const struct net_in_addr * val; } parm2 = { .val = netmask };
 		return (bool) arch_syscall_invoke3(parm0.x, parm1.x, parm2.x, K_SYSCALL_NET_IF_IPV4_SET_NETMASK_BY_ADDR_BY_INDEX);
 	}
 #endif
@@ -215,15 +215,15 @@ static inline bool net_if_ipv4_set_netmask_by_addr_by_index(int index, const str
 #endif
 
 
-extern bool z_impl_net_if_ipv4_set_gw_by_index(int index, const struct in_addr * gw);
+extern bool z_impl_net_if_ipv4_set_gw_by_index(int index, const struct net_in_addr * gw);
 
 __pinned_func
-static inline bool net_if_ipv4_set_gw_by_index(int index, const struct in_addr * gw)
+static inline bool net_if_ipv4_set_gw_by_index(int index, const struct net_in_addr * gw)
 {
 #ifdef CONFIG_USERSPACE
 	if (z_syscall_trap()) {
 		union { uintptr_t x; int val; } parm0 = { .val = index };
-		union { uintptr_t x; const struct in_addr * val; } parm1 = { .val = gw };
+		union { uintptr_t x; const struct net_in_addr * val; } parm1 = { .val = gw };
 		return (bool) arch_syscall_invoke2(parm0.x, parm1.x, K_SYSCALL_NET_IF_IPV4_SET_GW_BY_INDEX);
 	}
 #endif

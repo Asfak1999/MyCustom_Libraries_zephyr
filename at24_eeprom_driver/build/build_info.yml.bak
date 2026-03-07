@@ -1,4 +1,4 @@
 west:
-  command: D:\Zephyr_Projects\.venv\Scripts\west build -b stm32f4_disco
-  topdir: D:\Zephyr_Projects
+  command: G:\.venv\Scripts\west build -b stm32f4_disco
+  topdir: G:\Zephyr_Projects
   version: 1.5.0

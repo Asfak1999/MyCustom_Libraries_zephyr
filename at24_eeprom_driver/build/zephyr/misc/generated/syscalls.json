@@ -569,6 +569,30 @@
     ],
     [
         [
+            "int k_thread_runtime_stack_unused_threshold_pct_set",
+            "struct k_thread *thread,\n\t\t\t\t\t\t\t      uint32_t pct"
+        ],
+        "kernel.h",
+        true
+    ],
+    [
+        [
+            "int k_thread_runtime_stack_unused_threshold_set",
+            "struct k_thread *thread,\n\t\t\t\t\t\t\t  size_t threshold"
+        ],
+        "kernel.h",
+        true
+    ],
+    [
+        [
+            "size_t k_thread_runtime_stack_unused_threshold_get",
+            "struct k_thread *thread"
+        ],
+        "kernel.h",
+        true
+    ],
+    [
+        [
             "int k_thread_join",
             "struct k_thread *thread, k_timeout_t timeout"
         ],
@@ -1585,6 +1609,118 @@
     ],
     [
         [
+            "int biometric_get_capabilities",
+            "const struct device *dev,\n\t\t\t\t\t struct biometric_capabilities *caps"
+        ],
+        "biometrics.h",
+        false
+    ],
+    [
+        [
+            "int biometric_attr_set",
+            "const struct device *dev, enum biometric_attribute attr,\n\t\t\t\t int32_t val"
+        ],
+        "biometrics.h",
+        false
+    ],
+    [
+        [
+            "int biometric_attr_get",
+            "const struct device *dev, enum biometric_attribute attr,\n\t\t\t\t int32_t *val"
+        ],
+        "biometrics.h",
+        false
+    ],
+    [
+        [
+            "int biometric_enroll_start",
+            "const struct device *dev, uint16_t template_id"
+        ],
+        "biometrics.h",
+        false
+    ],
+    [
+        [
+            "int biometric_enroll_capture",
+            "const struct device *dev, k_timeout_t timeout,\n\t\t\t\t       struct biometric_capture_result *result"
+        ],
+        "biometrics.h",
+        false
+    ],
+    [
+        [
+            "int biometric_enroll_finalize",
+            "const struct device *dev"
+        ],
+        "biometrics.h",
+        false
+    ],
+    [
+        [
+            "int biometric_enroll_abort",
+            "const struct device *dev"
+        ],
+        "biometrics.h",
+        false
+    ],
+    [
+        [
+            "int biometric_template_store",
+            "const struct device *dev, uint16_t id, const uint8_t *data,\n\t\t\t\t       size_t size"
+        ],
+        "biometrics.h",
+        false
+    ],
+    [
+        [
+            "int biometric_template_read",
+            "const struct device *dev, uint16_t id, uint8_t *data,\n\t\t\t\t      size_t size"
+        ],
+        "biometrics.h",
+        false
+    ],
+    [
+        [
+            "int biometric_template_delete",
+            "const struct device *dev, uint16_t id"
+        ],
+        "biometrics.h",
+        false
+    ],
+    [
+        [
+            "int biometric_template_delete_all",
+            "const struct device *dev"
+        ],
+        "biometrics.h",
+        false
+    ],
+    [
+        [
+            "int biometric_template_list",
+            "const struct device *dev, uint16_t *ids, size_t max_count,\n\t\t\t\t      size_t *actual_count"
+        ],
+        "biometrics.h",
+        false
+    ],
+    [
+        [
+            "int biometric_match",
+            "const struct device *dev, enum biometric_match_mode mode,\n\t\t\t      uint16_t template_id, k_timeout_t timeout,\n\t\t\t      struct biometric_match_result *result"
+        ],
+        "biometrics.h",
+        false
+    ],
+    [
+        [
+            "int biometric_led_control",
+            "const struct device *dev, enum biometric_led_state state"
+        ],
+        "biometrics.h",
+        false
+    ],
+    [
+        [
             "int can_get_core_clock",
             "const struct device *dev, uint32_t *rate"
         ],
@@ -1921,7 +2057,23 @@
     ],
     [
         [
+            "uint64_t counter_get_frequency_64",
+            "const struct device *dev"
+        ],
+        "counter.h",
+        false
+    ],
+    [
+        [
             "uint32_t counter_us_to_ticks",
+            "const struct device *dev, uint64_t us"
+        ],
+        "counter.h",
+        false
+    ],
+    [
+        [
+            "uint64_t counter_us_to_ticks_64",
             "const struct device *dev, uint64_t us"
         ],
         "counter.h",
@@ -1937,8 +2089,40 @@
     ],
     [
         [
+            "uint64_t counter_ticks_to_us_64",
+            "const struct device *dev, uint64_t ticks"
+        ],
+        "counter.h",
+        false
+    ],
+    [
+        [
+            "uint32_t counter_ns_to_ticks",
+            "const struct device *dev, uint64_t ns"
+        ],
+        "counter.h",
+        false
+    ],
+    [
+        [
+            "uint64_t counter_ns_to_ticks_64",
+            "const struct device *dev, uint64_t ns"
+        ],
+        "counter.h",
+        false
+    ],
+    [
+        [
             "uint64_t counter_ticks_to_ns",
             "const struct device *dev, uint32_t ticks"
+        ],
+        "counter.h",
+        false
+    ],
+    [
+        [
+            "uint64_t counter_ticks_to_ns_64",
+            "const struct device *dev, uint64_t ticks"
         ],
         "counter.h",
         false
@@ -1977,14 +2161,6 @@
     ],
     [
         [
-            "int counter_get_value_64",
-            "const struct device *dev, uint64_t *ticks"
-        ],
-        "counter.h",
-        false
-    ],
-    [
-        [
             "int counter_reset",
             "const struct device *dev"
         ],
@@ -1993,8 +2169,16 @@
     ],
     [
         [
+            "int counter_set_value",
+            "const struct device *dev, uint32_t ticks"
+        ],
+        "counter.h",
+        false
+    ],
+    [
+        [
             "int counter_set_channel_alarm",
-            "const struct device *dev,\n\t\t\t\t\tuint8_t chan_id,\n\t\t\t\t\tconst struct counter_alarm_cfg *alarm_cfg"
+            "const struct device *dev, uint8_t chan_id,\n\t\t\t\t\tconst struct counter_alarm_cfg *alarm_cfg"
         ],
         "counter.h",
         false
@@ -2002,7 +2186,7 @@
     [
         [
             "int counter_cancel_channel_alarm",
-            "const struct device *dev,\n\t\t\t\t\t   uint8_t chan_id"
+            "const struct device *dev, uint8_t chan_id"
         ],
         "counter.h",
         false
@@ -2010,7 +2194,7 @@
     [
         [
             "int counter_set_top_value",
-            "const struct device *dev,\n\t\t\t\t    const struct counter_top_cfg *cfg"
+            "const struct device *dev, const struct counter_top_cfg *cfg"
         ],
         "counter.h",
         false
@@ -2034,7 +2218,7 @@
     [
         [
             "int counter_set_guard_period",
-            "const struct device *dev,\n\t\t\t\t\tuint32_t ticks,\n\t\t\t\t\tuint32_t flags"
+            "const struct device *dev, uint32_t ticks, uint32_t flags"
         ],
         "counter.h",
         false
@@ -2042,7 +2226,71 @@
     [
         [
             "uint32_t counter_get_guard_period",
-            "const struct device *dev,\n\t\t\t\t\t    uint32_t flags"
+            "const struct device *dev, uint32_t flags"
+        ],
+        "counter.h",
+        false
+    ],
+    [
+        [
+            "uint64_t counter_get_max_top_value_64",
+            "const struct device *dev"
+        ],
+        "counter.h",
+        false
+    ],
+    [
+        [
+            "int counter_set_top_value_64",
+            "const struct device *dev,\n\t\t\t\t       const struct counter_top_cfg_64 *cfg"
+        ],
+        "counter.h",
+        false
+    ],
+    [
+        [
+            "int counter_set_channel_alarm_64",
+            "const struct device *dev, uint8_t chan_id,\n\t\t\t\t\t   const struct counter_alarm_cfg_64 *alarm_cfg"
+        ],
+        "counter.h",
+        false
+    ],
+    [
+        [
+            "uint64_t counter_get_top_value_64",
+            "const struct device *dev"
+        ],
+        "counter.h",
+        false
+    ],
+    [
+        [
+            "int counter_set_guard_period_64",
+            "const struct device *dev, uint64_t ticks, uint32_t flags"
+        ],
+        "counter.h",
+        false
+    ],
+    [
+        [
+            "uint64_t counter_get_guard_period_64",
+            "const struct device *dev, uint32_t flags"
+        ],
+        "counter.h",
+        false
+    ],
+    [
+        [
+            "int counter_get_value_64",
+            "const struct device *dev, uint64_t *ticks"
+        ],
+        "counter.h",
+        false
+    ],
+    [
+        [
+            "int counter_set_value_64",
+            "const struct device *dev, uint64_t ticks"
         ],
         "counter.h",
         false
@@ -2085,6 +2333,94 @@
             "const struct device *dev, uint8_t channel,\n\t\t\t      uint32_t value"
         ],
         "dac.h",
+        false
+    ],
+    [
+        [
+            "int dai_probe",
+            "const struct device *dev"
+        ],
+        "dai.h",
+        false
+    ],
+    [
+        [
+            "int dai_remove",
+            "const struct device *dev"
+        ],
+        "dai.h",
+        false
+    ],
+    [
+        [
+            "int dai_config_set",
+            "const struct device *dev,\n\t\t\t     const struct dai_config *cfg,\n\t\t\t     const void *bespoke_cfg,\n\t\t\t     size_t size"
+        ],
+        "dai.h",
+        false
+    ],
+    [
+        [
+            "int dai_config_get",
+            "const struct device *dev,\n\t\t\t     struct dai_config *cfg,\n\t\t\t     enum dai_dir dir"
+        ],
+        "dai.h",
+        false
+    ],
+    [
+        [
+            "int dai_get_properties_copy",
+            "const struct device *dev,\n\t\t\t\t      enum dai_dir dir,\n\t\t\t\t      int stream_id,\n\t\t\t\t      struct dai_properties *dst"
+        ],
+        "dai.h",
+        false
+    ],
+    [
+        [
+            "int dai_trigger",
+            "const struct device *dev,\n\t\t\t  enum dai_dir dir,\n\t\t\t  enum dai_trigger_cmd cmd"
+        ],
+        "dai.h",
+        false
+    ],
+    [
+        [
+            "int dai_ts_config",
+            "const struct device *dev, struct dai_ts_cfg *cfg"
+        ],
+        "dai.h",
+        false
+    ],
+    [
+        [
+            "int dai_ts_start",
+            "const struct device *dev, struct dai_ts_cfg *cfg"
+        ],
+        "dai.h",
+        false
+    ],
+    [
+        [
+            "int dai_ts_stop",
+            "const struct device *dev, struct dai_ts_cfg *cfg"
+        ],
+        "dai.h",
+        false
+    ],
+    [
+        [
+            "int dai_ts_get",
+            "const struct device *dev, struct dai_ts_cfg *cfg,\n\t\t\t struct dai_ts_data *tsd"
+        ],
+        "dai.h",
+        false
+    ],
+    [
+        [
+            "int dai_config_update",
+            "const struct device *dev,\n\t\t\t\tconst void *bespoke_cfg,\n\t\t\t\tsize_t size"
+        ],
+        "dai.h",
         false
     ],
     [
@@ -2777,22 +3113,6 @@
     ],
     [
         [
-            "void mdio_bus_enable",
-            "const struct device *dev"
-        ],
-        "mdio.h",
-        false
-    ],
-    [
-        [
-            "void mdio_bus_disable",
-            "const struct device *dev"
-        ],
-        "mdio.h",
-        false
-    ],
-    [
-        [
             "int mdio_read",
             "const struct device *dev, uint8_t prtad, uint8_t regad,\n\t\t\tuint16_t *data"
         ],
@@ -2885,6 +3205,22 @@
             "const struct device *dev, enum opamp_gain gain"
         ],
         "opamp.h",
+        false
+    ],
+    [
+        [
+            "int otp_read",
+            "const struct device *dev, off_t offset, void *data, size_t len"
+        ],
+        "otp.h",
+        false
+    ],
+    [
+        [
+            "int otp_program",
+            "const struct device *dev, off_t offset, const void *data, size_t len"
+        ],
+        "otp.h",
         false
     ],
     [
@@ -3369,106 +3705,74 @@
     ],
     [
         [
-            "int stepper_enable",
+            "int swdp_output_sequence",
+            "const struct device *dev,\n\t\t\t\t   const uint32_t count,\n\t\t\t\t   const uint8_t *const data"
+        ],
+        "swdp.h",
+        false
+    ],
+    [
+        [
+            "int swdp_input_sequence",
+            "const struct device *dev,\n\t\t\t\t  const uint32_t count,\n\t\t\t\t  uint8_t *const buf"
+        ],
+        "swdp.h",
+        false
+    ],
+    [
+        [
+            "int swdp_transfer",
+            "const struct device *dev,\n\t\t\t    const uint8_t request,\n\t\t\t    uint32_t *const data,\n\t\t\t    const uint8_t idle_cycles,\n\t\t\t    uint8_t *const response"
+        ],
+        "swdp.h",
+        false
+    ],
+    [
+        [
+            "int swdp_set_pins",
+            "const struct device *dev,\n\t\t\t    const uint8_t pins,\n\t\t\t    const uint8_t value"
+        ],
+        "swdp.h",
+        false
+    ],
+    [
+        [
+            "int swdp_get_pins",
+            "const struct device *dev,\n\t\t\t    uint8_t *const state"
+        ],
+        "swdp.h",
+        false
+    ],
+    [
+        [
+            "int swdp_set_clock",
+            "const struct device *dev,\n\t\t\t     const uint32_t clock"
+        ],
+        "swdp.h",
+        false
+    ],
+    [
+        [
+            "int swdp_port_on",
             "const struct device *dev"
         ],
-        "stepper.h",
+        "swdp.h",
         false
     ],
     [
         [
-            "int stepper_disable",
+            "int swdp_port_off",
             "const struct device *dev"
         ],
-        "stepper.h",
+        "swdp.h",
         false
     ],
     [
         [
-            "int stepper_set_micro_step_res",
-            "const struct device *dev,\n\t\t\t\t\t enum stepper_micro_step_resolution resolution"
+            "int swdp_configure",
+            "const struct device *dev,\n\t\t\t     const uint8_t turnaround,\n\t\t\t     const bool data_phase"
         ],
-        "stepper.h",
-        false
-    ],
-    [
-        [
-            "int stepper_get_micro_step_res",
-            "const struct device *dev,\n\t\t\t\t\t enum stepper_micro_step_resolution *resolution"
-        ],
-        "stepper.h",
-        false
-    ],
-    [
-        [
-            "int stepper_set_reference_position",
-            "const struct device *dev, int32_t value"
-        ],
-        "stepper.h",
-        false
-    ],
-    [
-        [
-            "int stepper_get_actual_position",
-            "const struct device *dev, int32_t *value"
-        ],
-        "stepper.h",
-        false
-    ],
-    [
-        [
-            "int stepper_set_event_callback",
-            "const struct device *dev,\n\t\t\t\t\t stepper_event_callback_t callback, void *user_data"
-        ],
-        "stepper.h",
-        false
-    ],
-    [
-        [
-            "int stepper_set_microstep_interval",
-            "const struct device *dev,\n\t\t\t\t\t     uint64_t microstep_interval_ns"
-        ],
-        "stepper.h",
-        false
-    ],
-    [
-        [
-            "int stepper_move_by",
-            "const struct device *dev, int32_t micro_steps"
-        ],
-        "stepper.h",
-        false
-    ],
-    [
-        [
-            "int stepper_move_to",
-            "const struct device *dev, int32_t micro_steps"
-        ],
-        "stepper.h",
-        false
-    ],
-    [
-        [
-            "int stepper_run",
-            "const struct device *dev, enum stepper_direction direction"
-        ],
-        "stepper.h",
-        false
-    ],
-    [
-        [
-            "int stepper_stop",
-            "const struct device *dev"
-        ],
-        "stepper.h",
-        false
-    ],
-    [
-        [
-            "int stepper_is_moving",
-            "const struct device *dev, bool *is_moving"
-        ],
-        "stepper.h",
+        "swdp.h",
         false
     ],
     [
@@ -3701,6 +4005,22 @@
             "const struct device *dev, int channel_id"
         ],
         "watchdog.h",
+        false
+    ],
+    [
+        [
+            "const struct flash_simulator_params *flash_simulator_get_params",
+            "const struct device *dev"
+        ],
+        "flash_simulator.h",
+        false
+    ],
+    [
+        [
+            "void flash_simulator_set_callbacks",
+            "const struct device *dev,\n\t\t\t\t\t     const struct flash_simulator_cb *cb"
+        ],
+        "flash_simulator.h",
         false
     ],
     [
@@ -3969,6 +4289,118 @@
     ],
     [
         [
+            "int stepper_enable",
+            "const struct device *dev"
+        ],
+        "stepper.h",
+        false
+    ],
+    [
+        [
+            "int stepper_disable",
+            "const struct device *dev"
+        ],
+        "stepper.h",
+        false
+    ],
+    [
+        [
+            "int stepper_set_micro_step_res",
+            "const struct device *dev,\n\t\t\t\t\t     enum stepper_micro_step_resolution res"
+        ],
+        "stepper.h",
+        false
+    ],
+    [
+        [
+            "int stepper_get_micro_step_res",
+            "const struct device *dev,\n\t\t\t\t\t     enum stepper_micro_step_resolution *res"
+        ],
+        "stepper.h",
+        false
+    ],
+    [
+        [
+            "int stepper_set_event_cb",
+            "const struct device *dev, stepper_event_cb_t callback,\n\t\t\t\t       void *user_data"
+        ],
+        "stepper.h",
+        false
+    ],
+    [
+        [
+            "int stepper_ctrl_set_reference_position",
+            "const struct device *dev, const int32_t value"
+        ],
+        "stepper_ctrl.h",
+        false
+    ],
+    [
+        [
+            "int stepper_ctrl_get_actual_position",
+            "const struct device *dev, int32_t *value"
+        ],
+        "stepper_ctrl.h",
+        false
+    ],
+    [
+        [
+            "int stepper_ctrl_set_event_cb",
+            "const struct device *dev,\n\t\t\t\t\tstepper_ctrl_event_callback_t callback, void *user_data"
+        ],
+        "stepper_ctrl.h",
+        false
+    ],
+    [
+        [
+            "int stepper_ctrl_set_microstep_interval",
+            "const struct device *dev,\n\t\t\t\t\t\t  const uint64_t microstep_interval_ns"
+        ],
+        "stepper_ctrl.h",
+        false
+    ],
+    [
+        [
+            "int stepper_ctrl_move_by",
+            "const struct device *dev, const int32_t micro_steps"
+        ],
+        "stepper_ctrl.h",
+        false
+    ],
+    [
+        [
+            "int stepper_ctrl_move_to",
+            "const struct device *dev, const int32_t micro_steps"
+        ],
+        "stepper_ctrl.h",
+        false
+    ],
+    [
+        [
+            "int stepper_ctrl_run",
+            "const struct device *dev,\n\t\t\t       const enum stepper_ctrl_direction direction"
+        ],
+        "stepper_ctrl.h",
+        false
+    ],
+    [
+        [
+            "int stepper_ctrl_stop",
+            "const struct device *dev"
+        ],
+        "stepper_ctrl.h",
+        false
+    ],
+    [
+        [
+            "int stepper_ctrl_is_moving",
+            "const struct device *dev, bool *is_moving"
+        ],
+        "stepper_ctrl.h",
+        false
+    ],
+    [
+        [
             "int bc12_set_role",
             "const struct device *dev, enum bc12_role role"
         ],
@@ -4202,7 +4634,7 @@
     [
         [
             "int net_if_ipv6_addr_lookup_by_index",
-            "const struct in6_addr *addr"
+            "const struct net_in6_addr *addr"
         ],
         "net_if.h",
         false
@@ -4210,7 +4642,7 @@
     [
         [
             "bool net_if_ipv6_addr_add_by_index",
-            "int index,\n\t\t\t\t\t     const struct in6_addr *addr,\n\t\t\t\t\t     enum net_addr_type addr_type,\n\t\t\t\t\t     uint32_t vlifetime"
+            "int index,\n\t\t\t\t\t     const struct net_in6_addr *addr,\n\t\t\t\t\t     enum net_addr_type addr_type,\n\t\t\t\t\t     uint32_t vlifetime"
         ],
         "net_if.h",
         false
@@ -4218,7 +4650,7 @@
     [
         [
             "bool net_if_ipv6_addr_rm_by_index",
-            "int index,\n\t\t\t\t\t    const struct in6_addr *addr"
+            "int index,\n\t\t\t\t\t    const struct net_in6_addr *addr"
         ],
         "net_if.h",
         false
@@ -4226,7 +4658,7 @@
     [
         [
             "int net_if_ipv4_addr_lookup_by_index",
-            "const struct in_addr *addr"
+            "const struct net_in_addr *addr"
         ],
         "net_if.h",
         false
@@ -4234,7 +4666,7 @@
     [
         [
             "bool net_if_ipv4_addr_add_by_index",
-            "int index,\n\t\t\t\t\t     const struct in_addr *addr,\n\t\t\t\t\t     enum net_addr_type addr_type,\n\t\t\t\t\t     uint32_t vlifetime"
+            "int index,\n\t\t\t\t\t     const struct net_in_addr *addr,\n\t\t\t\t\t     enum net_addr_type addr_type,\n\t\t\t\t\t     uint32_t vlifetime"
         ],
         "net_if.h",
         false
@@ -4242,7 +4674,7 @@
     [
         [
             "bool net_if_ipv4_addr_rm_by_index",
-            "int index,\n\t\t\t\t\t    const struct in_addr *addr"
+            "int index,\n\t\t\t\t\t    const struct net_in_addr *addr"
         ],
         "net_if.h",
         false
@@ -4250,7 +4682,7 @@
     [
         [
             "bool net_if_ipv4_set_netmask_by_index",
-            "int index,\n\t\t\t\t\t\t\t     const struct in_addr *netmask"
+            "int index,\n\t\t\t\t\t\t\t     const struct net_in_addr *netmask"
         ],
         "net_if.h",
         false
@@ -4258,7 +4690,7 @@
     [
         [
             "bool net_if_ipv4_set_netmask_by_addr_by_index",
-            "int index,\n\t\t\t\t\t\t\tconst struct in_addr *addr,\n\t\t\t\t\t\t\tconst struct in_addr *netmask"
+            "int index,\n\t\t\t\t\t\t\tconst struct net_in_addr *addr,\n\t\t\t\t\t\t\tconst struct net_in_addr *netmask"
         ],
         "net_if.h",
         false
@@ -4266,7 +4698,7 @@
     [
         [
             "bool net_if_ipv4_set_gw_by_index",
-            "int index, const struct in_addr *gw"
+            "int index, const struct net_in_addr *gw"
         ],
         "net_if.h",
         false
@@ -4282,7 +4714,7 @@
     [
         [
             "int net_addr_pton",
-            "sa_family_t family, const char *src, void *dst"
+            "net_sa_family_t family, const char *src, void *dst"
         ],
         "net_ip.h",
         false
@@ -4290,7 +4722,7 @@
     [
         [
             "char *net_addr_ntop",
-            "sa_family_t family, const void *src,\n\t\t\t      char *dst, size_t size"
+            "net_sa_family_t family, const void *src,\n\t\t\t      char *dst, size_t size"
         ],
         "net_ip.h",
         false
@@ -4338,7 +4770,7 @@
     [
         [
             "int zsock_bind",
-            "int sock, const struct sockaddr *addr,\n\t\t\t socklen_t addrlen"
+            "int sock, const struct net_sockaddr *addr,\n\t\t\t net_socklen_t addrlen"
         ],
         "socket.h",
         false
@@ -4346,7 +4778,7 @@
     [
         [
             "int zsock_connect",
-            "int sock, const struct sockaddr *addr,\n\t\t\t    socklen_t addrlen"
+            "int sock, const struct net_sockaddr *addr,\n\t\t\t    net_socklen_t addrlen"
         ],
         "socket.h",
         false
@@ -4362,7 +4794,7 @@
     [
         [
             "int zsock_accept",
-            "int sock, struct sockaddr *addr, socklen_t *addrlen"
+            "int sock, struct net_sockaddr *addr, net_socklen_t *addrlen"
         ],
         "socket.h",
         false
@@ -4370,7 +4802,7 @@
     [
         [
             "ssize_t zsock_sendto",
-            "int sock, const void *buf, size_t len,\n\t\t\t       int flags, const struct sockaddr *dest_addr,\n\t\t\t       socklen_t addrlen"
+            "int sock, const void *buf, size_t len,\n\t\t\t       int flags, const struct net_sockaddr *dest_addr,\n\t\t\t       net_socklen_t addrlen"
         ],
         "socket.h",
         false
@@ -4378,7 +4810,7 @@
     [
         [
             "ssize_t zsock_sendmsg",
-            "int sock, const struct msghdr *msg,\n\t\t\t\tint flags"
+            "int sock, const struct net_msghdr *msg,\n\t\t\t\tint flags"
         ],
         "socket.h",
         false
@@ -4386,7 +4818,7 @@
     [
         [
             "ssize_t zsock_recvfrom",
-            "int sock, void *buf, size_t max_len,\n\t\t\t\t int flags, struct sockaddr *src_addr,\n\t\t\t\t socklen_t *addrlen"
+            "int sock, void *buf, size_t max_len,\n\t\t\t\t int flags, struct net_sockaddr *src_addr,\n\t\t\t\t net_socklen_t *addrlen"
         ],
         "socket.h",
         false
@@ -4394,7 +4826,7 @@
     [
         [
             "ssize_t zsock_recvmsg",
-            "int sock, struct msghdr *msg, int flags"
+            "int sock, struct net_msghdr *msg, int flags"
         ],
         "socket.h",
         false
@@ -4418,7 +4850,7 @@
     [
         [
             "int zsock_getsockopt",
-            "int sock, int level, int optname,\n\t\t\t       void *optval, socklen_t *optlen"
+            "int sock, int level, int optname,\n\t\t\t       void *optval, net_socklen_t *optlen"
         ],
         "socket.h",
         false
@@ -4426,7 +4858,7 @@
     [
         [
             "int zsock_setsockopt",
-            "int sock, int level, int optname,\n\t\t\t       const void *optval, socklen_t optlen"
+            "int sock, int level, int optname,\n\t\t\t       const void *optval, net_socklen_t optlen"
         ],
         "socket.h",
         false
@@ -4434,7 +4866,7 @@
     [
         [
             "int zsock_getpeername",
-            "int sock, struct sockaddr *addr,\n\t\t\t\tsocklen_t *addrlen"
+            "int sock, struct net_sockaddr *addr,\n\t\t\t\tnet_socklen_t *addrlen"
         ],
         "socket.h",
         false
@@ -4442,7 +4874,7 @@
     [
         [
             "int zsock_getsockname",
-            "int sock, struct sockaddr *addr,\n\t\t\t\tsocklen_t *addrlen"
+            "int sock, struct net_sockaddr *addr,\n\t\t\t\tnet_socklen_t *addrlen"
         ],
         "socket.h",
         false
@@ -4458,7 +4890,7 @@
     [
         [
             "int zsock_inet_pton",
-            "sa_family_t family, const char *src, void *dst"
+            "net_sa_family_t family, const char *src, void *dst"
         ],
         "socket.h",
         false
@@ -4497,6 +4929,14 @@
     ],
     [
         [
+            "void rtio_sqe_signal",
+            "struct rtio_sqe *sqe"
+        ],
+        "rtio.h",
+        false
+    ],
+    [
+        [
             "int rtio_cqe_get_mempool_buffer",
             "const struct rtio *r, struct rtio_cqe *cqe,\n\t\t\t\t\t  uint8_t **buff, uint32_t *buff_len"
         ],
@@ -4514,14 +4954,6 @@
     [
         [
             "int rtio_sqe_cancel",
-            "struct rtio_sqe *sqe"
-        ],
-        "rtio.h",
-        false
-    ],
-    [
-        [
-            "void rtio_sqe_signal",
             "struct rtio_sqe *sqe"
         ],
         "rtio.h",
