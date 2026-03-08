@@ -94,11 +94,7 @@ EEPROM Initialization
 Initialize the EEPROM Driver and I2C interface
 
 .. code-block:: c 
-    /**
-    * @breif eepromInit is initialise the device driver and I2c driver
-    * @param i2c_dt_spec *dev pass the pointer to init the driver
-    * @returns none
-    */
+    
     void eepromInit(at24_eeprom_t *config, const struct i2c_dt_spec *dev);
 
 
