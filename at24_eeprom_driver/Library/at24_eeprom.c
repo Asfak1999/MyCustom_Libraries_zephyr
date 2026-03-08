@@ -35,7 +35,7 @@ void eepromInit(at24_eeprom_t *config, const struct i2c_dt_spec *dev)
  * @note	keep delay 10ms for completion of write operion for EEPROM
  */
 
-void eepromWrite8(at24_eeprom_t *config, uint8_t *data, uint16_t memAddr)
+void eepromWrite8U(at24_eeprom_t *config, uint8_t *data, uint16_t memAddr)
 {
 
 	uint8_t txBuffer[3];
@@ -60,7 +60,7 @@ void eepromWrite8(at24_eeprom_t *config, uint8_t *data, uint16_t memAddr)
  * @return	none
  */
 
-void eepromRead8(at24_eeprom_t *config, uint8_t *data, uint16_t memAddr)
+void eepromRead8U(at24_eeprom_t *config, uint8_t *data, uint16_t memAddr)
 {
 
 	uint8_t txBuffer[2];
@@ -85,7 +85,7 @@ void eepromRead8(at24_eeprom_t *config, uint8_t *data, uint16_t memAddr)
  * @note	keep delay 10ms for completion of write operion for EEPROM
  */
 
-void eepromWrite16(at24_eeprom_t *config, uint16_t *data, uint16_t memAddr)
+void eepromWrite16U(at24_eeprom_t *config, uint16_t *data, uint16_t memAddr)
 {
 
 	uint8_t txBuffer[4];
@@ -111,7 +111,7 @@ void eepromWrite16(at24_eeprom_t *config, uint16_t *data, uint16_t memAddr)
  * @return	none
  */
 
-void eepromRead16(at24_eeprom_t *config, uint16_t *data, uint16_t memAddr)
+void eepromRead16U(at24_eeprom_t *config, uint16_t *data, uint16_t memAddr)
 {
 
 	uint8_t txBuffer[2];
@@ -127,6 +127,61 @@ void eepromRead16(at24_eeprom_t *config, uint16_t *data, uint16_t memAddr)
 	}
 
 	*data = (rxBuffer[0] << 8) | (rxBuffer[1] & 0xFF);
+
+	k_msleep(100);
+}
+
+/**
+ * @breif	Write 4-Byte of data inside the specific address of EEPROM
+ * @param	config	pointer to EEPROM configuration with device driver
+ * @param	data	pointer to data to be read from EEPROM
+ * @param	memAddr	data memory address of EEPROM
+ * @return	none
+ */
+
+void eepromWrite32U(at24_eeprom_t *config, uint32_t *data, uint16_t memAddr)
+{
+	uint8_t txBuffer[6];
+
+	txBuffer[0] = (uint8_t)(memAddr >> 8);
+	txBuffer[1] = (uint8_t)(memAddr & 0xFF);
+	txBuffer[2] = (uint8_t)(*data >> 24);
+	txBuffer[3] = (uint8_t)(*data >> 16);
+	txBuffer[4] = (uint8_t)(*data >> 8);
+	txBuffer[5] = (uint8_t)(*data & 0xFF);
+
+	int ret = i2c_write_dt(config->i2c, txBuffer, 6);
+	if (ret != 0)
+	{
+		printk("Failed to write/read I2C device address \n\r");
+	}
+	k_msleep(100);
+}
+
+/**
+ * @breif	Read 4-Byte of data inside the specific address of EEPROM
+ * @param	config	pointer to EEPROM configuration with device driver
+ * @param	data	pointer to data to be read from EEPROM
+ * @param	memAddr	data memory address of EEPROM
+ * @return	none
+ */
+
+void eepromRead32U(at24_eeprom_t *config, uint32_t *data, uint16_t memAddr)
+{
+
+	uint8_t txBuffer[4];
+	txBuffer[0] = (uint8_t)(memAddr >> 8);
+	txBuffer[1] = (uint8_t)(memAddr & 0xFF);
+
+	uint8_t rxBuffer[4];
+
+	int ret = i2c_write_read_dt(config->i2c, txBuffer, 2, rxBuffer, 4);
+	if (ret != 0)
+	{
+		printk("Failed to write/read I2C device address \n\r");
+	}
+
+	*data = (rxBuffer[0] << 24) | (rxBuffer[1] << 16) | (rxBuffer[2] << 8) | (rxBuffer[3] & 0xFF);
 
 	k_msleep(100);
 }
