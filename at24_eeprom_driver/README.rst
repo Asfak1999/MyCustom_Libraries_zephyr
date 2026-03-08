@@ -139,7 +139,7 @@ Example Usage
 This example represents writes 4 bytes (uint32_t) at ``0x3456``
 and  read from same memory address.
 
-.. code-block:: console
+.. code-block:: c
 
     #include <zephyr/kernel.h>
     #include <zephyr/sys/printk.h>
