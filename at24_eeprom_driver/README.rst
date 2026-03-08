@@ -136,12 +136,37 @@ Full chip erase Function
 Example Usage
 =============
 
+This example represents writes 4 bytes (uint32_t) at ``0x3456``
+and  read from same memory address.
+
 .. code-block:: console
 
-    Hello! I\'m your echo bot.
-    Tell me something and press enter:
-    # Type e.g. "Hi there!" and hit enter!
-    Echo: Hi there!
+    #include <zephyr/kernel.h>
+    #include <zephyr/sys/printk.h>
+    #include <at24_eeprom.h>
+
+    #define EEPROM_NODE DT_NODELABEL(at24_eeprom)
+    static const struct i2c_dt_spec i2c_dev = I2C_DT_SPEC_GET(EEPROM_NODE);
+
+    at24_eeprom_t eeprom;
+
+    uint32_t writeData;
+    uint32_t readData;
+
+    int main(void)
+    {
+        eepromInit(&eeprom, &i2c_dev);
+        writeData = 1278;
+	    eepromWrite32U(&eeprom, &writeData, 0x3456);
+	    eepromRead32U(&eeprom, &readData, 0x3456);
+
+	    while (1)
+	    {
+		    k_msleep(1000);
+	    }
+
+	    return 0;
+    }
 
 
 
