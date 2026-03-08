@@ -103,7 +103,11 @@ Write Function
 
 .. code-block:: c
 
-	printf("Hello from readme fiile");
+	void eepromWrite8(at24_eeprom_t *config, uint8_t *data, uint16_t memAddr);
+
+.. code-block:: c
+
+	void eepromWrite16(at24_eeprom_t *config, uint16_t *data, uint16_t memAddr);
 
 
 Read Function
@@ -111,7 +115,14 @@ Read Function
 
 .. code-block:: c
 
-	printf("Hello from readme fiile");
+	void eepromRead8(at24_eeprom_t *config, uint8_t *data, uint16_t memAddr);
+
+.. code-block:: c
+
+	void eepromRead16(at24_eeprom_t *config, uint16_t *data, uint16_t memAddr);
+
+
+
 
 Sample Output
 =============
