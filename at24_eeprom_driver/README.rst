@@ -1,11 +1,11 @@
 
 
-AT24C256 EEPROM 
-********
+Project Discription
+*******************
 Zephyr RTOS library for AT24C256 EEPROM
 
 
-overview of EEPROM
+overview of AT24C256 EEPROM 
 ********************
 
 if you want store your data in your zephyr project ``AT24C256 EEPROM`` is best choice. in this project,
@@ -15,6 +15,40 @@ multiple byte in the order.
 
 in additon. we will see the specification of AT24C256 EEPROM.
 
+Specifiactions
+==============
+- 2-Wire Serial interface.
+- self-timed write cycle (5ms Max)
+- High reliability
+    - Endurance         : 1,000,000 write cycles
+    - Data retention    : 40 years
+- Organized as 32,768 words of 8 bits.
+- Write protection (Hardware pin)
+- Low-voltage and standard voltage operation
+    - Vcc : 1.7V to 5.5V
+- 400kHz (1.7V) and 1Mhz (2.5V, 2.7V, 5V) compatibility.
+
+Applications
+============
+- Automative ECU and Applications
+- indrustrial IoT Gateways
+- Data loggers
+
+Pin Confiurations
+=================
+
+=====     =====================
+Pin         Function
+=====     =====================
+A0          Address Input
+A1          Address Input
+A2          Address Input
+GND         Ground
+SDA         Serial data
+SCL         Serial clock Input
+WP          Write protection
+Vcc         Power supply
+=====     =====================
 
 Prerequisites
 =============
