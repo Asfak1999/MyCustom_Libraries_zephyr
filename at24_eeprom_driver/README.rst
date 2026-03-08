@@ -7,7 +7,9 @@ Zephyr RTOS library for AT24C256 EEPROM
 
 overview of AT24C256 EEPROM 
 ********************
-
+.. image:: Library/EEPROM.png
+    :align: center
+    
 if you want store your data in your zephyr project ``AT24C256 EEPROM`` is best choice. in this project,
 I was added the tutorial and zephyr driver. we will interface AT24C256 with Zephyr using I2C communication.
 you will learn how write, read and erase the data in the EEPROM. specially how to write 1-Byte, 2-Byte and 
@@ -122,9 +124,16 @@ Read Function
 	void eepromRead16(at24_eeprom_t *config, uint16_t *data, uint16_t memAddr);
 
 
+Full chip erase Function
+========================
+
+.. code-block:: c
+
+	void eepromFullErase(at24_eeprom_t *config);
 
 
-Sample Output
+
+Example Usage
 =============
 
 .. code-block:: console
@@ -136,10 +145,7 @@ Sample Output
 
 
 
-.. code-block:: c
-
-	printf("Hello from readme fiile")
 
 
-.. image:: Library/EEPROM.png
-    :align: center
+
+
