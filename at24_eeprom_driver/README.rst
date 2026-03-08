@@ -7,9 +7,9 @@ Zephyr RTOS library for AT24C256 EEPROM
 
 overview of AT24C256 EEPROM 
 ********************
-                                .. image:: Library/EEPROM.png
-                                    :align: center
-
+.. image:: Library/EEPROM.png
+    :align: center
+    
 if you want store your data in your zephyr project ``AT24C256 EEPROM`` is best choice. in this project,
 I was added the tutorial and zephyr driver. we will interface AT24C256 with Zephyr using I2C communication.
 you will learn how write, read and erase the data in the EEPROM. specially how to write 1-Byte, 2-Byte and 
@@ -38,18 +38,18 @@ Applications
 
 Pin Confiurations
 =================
-            =====     =====================
-            Pin         Function
-            =====     =====================
-            A0          Address Input
-            A1          Address Input
-            A2          Address Input
-            GND         Ground
-            SDA         Serial data
-            SCL         Serial clock Input
-            WP          Write protection
-            Vcc         Power supply
-            =====     =====================
+=========     ========================
+   Pin             Function
+=========     ========================
+   A0             Address Input
+   A1             Address Input
+   A2             Address Input
+   GND            Ground
+   SDA            Serial data
+   SCL            Serial clock Input
+   WP             Write protection
+   Vcc            Power supply
+========     =========================
 
 Memory Organization
 ===================
@@ -57,21 +57,21 @@ Memory Organization
 - Pages : 512 Pages of 64-bytes each
 - Word Address : 15-bit
 
-            +------------+--------------+-----------+-------------+
-            | Block No   | Start Addr   | End Addr  | Description |
-            +============+==============+===========+=============+
-            | 0          | 0x0000       | 0x003F    | Page 0      | 
-            +------------+--------------+-----------+-------------+
-            | 1          | 0x0040       | 0x007F    | Page 1      |
-            +------------+--------------+-----------+-------------+
-            | 2          | 0x0080       | 0x00BF    | Page 2      |
-            +------------+--------------+-----------+-------------+
-            | ...        | ...          | ...       | ...         |
-            +------------+--------------+-----------+-------------+
-            | 510        | 0x7F80       | 0x7FBF    | Page 510    |
-            +------------+--------------+-----------+-------------+
-            | 511        | 0x7FC0       | 0x7FFF    | Page 511    |
-            +------------+--------------+-----------+-------------+
++------------+--------------+-----------+-------------+
+| Block No   | Start Addr   | End Addr  | Description |
++============+==============+===========+=============+
+| 0          | 0x0000       | 0x003F    | Page 0      | 
++------------+--------------+-----------+-------------+
+| 1          | 0x0040       | 0x007F    | Page 1      |
++------------+--------------+-----------+-------------+
+| 2          | 0x0080       | 0x00BF    | Page 2      |
++------------+--------------+-----------+-------------+
+| ...        | ...          | ...       | ...         |
++------------+--------------+-----------+-------------+
+| 510        | 0x7F80       | 0x7FBF    | Page 510    |
++------------+--------------+-----------+-------------+
+| 511        | 0x7FC0       | 0x7FFF    | Page 511    |
++------------+--------------+-----------+-------------+
 
 
 Prerequisites
