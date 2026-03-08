@@ -49,7 +49,7 @@ Pin Confiurations
    SCL            Serial clock Input
    WP             Write protection
    Vcc            Power supply
-========     =========================
+=========      =======================
 
 Memory Organization
 ===================
