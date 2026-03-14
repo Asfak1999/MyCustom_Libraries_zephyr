@@ -85,10 +85,18 @@ Prerequisites
 Table of Contents
 =================
 
+- `Project Discription`_
+- `overview of AT24C256 EEPROM`_
+- `Applications`_
+- `Pin Confiurations`_
+- `Memory Organization`_
 - `Prerequisites`_
+- `EEPROM Initialization`_
 - `Write Function`_
 - `Read Function`_
-- `Sample Output`_
+- `Full chip erase Function`_
+- `Example Usage`_
+
 
 
 EEPROM Initialization
@@ -136,8 +144,9 @@ Full chip erase Function
 Example Usage
 =============
 
-This example represents writes 4 bytes (uint32_t) at ``0x3456``
-and  read from same memory address.
+This example demonstrate writing 4-byte value (uint32_t) to the EEPROM at24_eeprom
+memory address ``0x3456``, then reading the value from the same address.
+
 
 .. code-block:: c
 
@@ -157,11 +166,11 @@ and  read from same memory address.
     {
         eepromInit(&eeprom, &i2c_dev);
         writeData = 1278;
-	    eepromWrite32U(&eeprom, &writeData, 0x3456);
-	    eepromRead32U(&eeprom, &readData, 0x3456);
-
-	    while (1)
-	    {
+        eepromWrite32U(&eeprom, &writeData, 0x3456);
+        eepromRead32U(&eeprom, &readData, 0x3456);
+        
+        while (1)
+        {
 		    k_msleep(1000);
 	    }
 
